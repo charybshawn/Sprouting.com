@@ -3,12 +3,26 @@ import os
 import csv
 import time
 import json
+import re # Added for regex price parsing
 from urllib.parse import urljoin
 from datetime import datetime
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 from dotenv import load_dotenv
 
 base_shop_url = "https://sprouting.com/shop/"
+
+def extract_price_from_text(text):
+    if not text:
+        return 0.0
+    # Regex to find numbers like $16.09, 1,150.10, 231.16
+    match = re.search(r'\$?\s*(\d{1,3}(?:,\d{3})*\.\d{2}|\d+\.\d{2}|\d+)', text)
+    if match:
+        price_str = match.group(1).replace(',', '')
+        try:
+            return float(price_str)
+        except ValueError:
+            return 0.0
+    return 0.0
 
 def scrape_product_details(page, product_url):
     """
@@ -57,106 +71,95 @@ def scrape_product_details(page, product_url):
                     product_data['is_in_stock'] = False
                 return product_data # Return with default out-of-stock if no form
 
-            variation_rows = form_locator.locator('table.woocommerce-grouped-product-list tbody tr')
+            variation_rows = form_locator.locator('table.woocommerce-grouped-product-list tbody tr.woocommerce-grouped-product-list-item')
             num_variations_found = variation_rows.count()
             print(f"Found {num_variations_found} potential variations for grouped product {product_url}")
 
-            any_variation_in_stock = False
+            any_variation_in_stock_overall = False
             for i in range(num_variations_found):
                 print(f"    Processing variation {i+1}/{num_variations_found} for {product_url}...")
                 row = variation_rows.nth(i)
                 
                 size = ""
-                print(f"      Attempting to get size for variation {i+1}...")
-                size_label_locator = row.locator('td.woocommerce-grouped-product-list-item__label label')
-                if size_label_locator.count(timeout=5000) > 0: # Added timeout
-                    size_text_content = size_label_locator.text_content(timeout=5000) # Added timeout
-                    if size_text_content:
-                         size = size_text_content.strip()
-                    print(f"        Size (from label): '{size}'")
-                else:
-                    print(f"        Size label locator not found or count is 0 for variation {i+1}.")
-                    label_text_elements_locator = row.locator('td.woocommerce-grouped-product-list-item__label')
-                    if label_text_elements_locator.count(timeout=5000) > 0: # Added timeout
-                        label_text_elements = label_text_elements_locator.all_text_contents()
-                        if label_text_elements:
-                            size = " ".join(label_text_elements).strip()
-                        print(f"        Size (from all_text_contents): '{size}'")
+                price = 0.0
+                is_this_variation_in_stock = False
 
+                # --- Extract Size and Price from Label Cell ---
+                label_cell_locator = row.locator('td.woocommerce-grouped-product-list-item__label')
+                if label_cell_locator.count() > 0:
+                    # Get size from the <label> text
+                    size_label_actual_locator = label_cell_locator.locator('label').first
+                    if size_label_actual_locator.count() > 0:
+                        size = size_label_actual_locator.text_content(timeout=5000) or ""
+                        size = size.strip()
+                        print(f"        Size (from label): '{size}'")
+                    else:
+                        print(f"        Warning: <label> inside label cell not found for variation {i+1}. Full cell text: '{label_cell_locator.text_content(timeout=2000)}'")
+                        size = label_cell_locator.text_content(timeout=2000).split('\n')[0].strip() # Fallback to first line of cell
 
-                price_str = "0.00"
-                print(f"      Attempting to get price for variation {i+1} (Size: '{size}')...")
-                price_locator = row.locator('td.woocommerce-grouped-product-list-item__price span.woocommerce-Price-amount.amount bdi')
-                
-                if price_locator.count(timeout=5000) > 0: # Added timeout
-                    price_text_content = price_locator.first.text_content(timeout=5000) 
-                    if price_text_content:
-                        cleaned_price = price_text_content.replace('$', '').replace(',', '').strip()
-                        if cleaned_price: 
-                            price_str = cleaned_price
-                            print(f"        Price (from bdi): '{price_str}'")
+                    # Get price from the same label cell (new structure based on HTML snippet)
+                    price_amount_locator = label_cell_locator.locator('span.wholesale_price_container ins span.woocommerce-Price-amount.amount')
+                    if price_amount_locator.count() > 0:
+                        price_text_content = price_amount_locator.first.text_content(timeout=5000)
+                        price = extract_price_from_text(price_text_content)
+                        print(f"        Price (from label cell's .amount): '{price}' (raw: '{price_text_content}')")
+                    else: # Fallback if specific wholesale structure not found, try to get any .amount
+                        fallback_price_locator = label_cell_locator.locator('span.woocommerce-Price-amount.amount').first
+                        if fallback_price_locator.count() > 0:
+                            price_text_content = fallback_price_locator.text_content(timeout=5000)
+                            price = extract_price_from_text(price_text_content)
+                            print(f"        Price (from label cell's fallback .amount): '{price}' (raw: '{price_text_content}')")
                         else:
-                            print(f"        Warning: Price text content was empty after cleaning for variation {i+1} of {product_url}")
-                    else:
-                        print(f"        Warning: Price text content was None for variation {i+1} of {product_url}")
+                            print(f"        Warning: Price amount locator not found in label cell for variation {i+1}. Cell text: '{label_cell_locator.text_content(timeout=2000)}'")
                 else:
-                    print(f"        Warning: Price locator (bdi) not found for variation {i+1} of {product_url}.")
-                    try:
-                        price_cell_html = row.locator('td.woocommerce-grouped-product-list-item__price').inner_html(timeout=2000)
-                        print(f"          Price cell HTML: {price_cell_html[:200]}...") # Log first 200 chars
-                    except PlaywrightTimeoutError:
-                        print("          Could not get price cell HTML (timeout).")
+                    print(f"        Warning: Label cell not found for variation {i+1}")
 
 
-                is_variation_in_stock = False
-                print(f"      Attempting to check stock for variation {i+1} (Size: '{size}', Price: '{price_str}')...")
-                qty_input_locator = row.locator('input.qty[type="number"]')
+                # --- Determine Stock Status for this variation ---
+                row_classes = row.get_attribute('class') or ""
+                quantity_cell_locator = row.locator('td.woocommerce-grouped-product-list-item__quantity')
+                qty_input_locator = quantity_cell_locator.locator('input.qty[type="number"]')
+                view_button_locator = quantity_cell_locator.locator('a.button:has-text("View")')
+
+                if "instock" in row_classes and qty_input_locator.count() > 0 and qty_input_locator.is_enabled(timeout=1000):
+                    is_this_variation_in_stock = True
+                    print(f"        Variation {i+1} determined IN STOCK (row class 'instock' and qty input present/enabled).")
+                elif qty_input_locator.count() > 0 and qty_input_locator.is_enabled(timeout=1000):
+                    # If no 'instock' class, but qty input is there, check for no 'outofstock' class on row
+                    if "outofstock" not in row_classes:
+                        is_this_variation_in_stock = True
+                        print(f"        Variation {i+1} determined IN STOCK (qty input present/enabled, no 'outofstock' row class).")
+                    else:
+                        is_this_variation_in_stock = False
+                        print(f"        Variation {i+1} determined OUT OF STOCK (qty input present but row class 'outofstock').")
+                elif "outofstock" in row_classes:
+                    is_this_variation_in_stock = False
+                    print(f"        Variation {i+1} determined OUT OF STOCK (row class 'outofstock').")
+                elif view_button_locator.count() > 0:
+                    is_this_variation_in_stock = False
+                    print(f"        Variation {i+1} determined OUT OF STOCK ('View' button found instead of qty input).")
+                else:
+                    is_this_variation_in_stock = False # Default to OOS if unclear
+                    print(f"        Warning: Stock status for variation {i+1} unclear, defaulting to OUT OF STOCK. QtyInputCount: {qty_input_locator.count()}, ViewButtonCount: {view_button_locator.count()}, RowClasses: '{row_classes}'")
                 
-                if qty_input_locator.count(timeout=5000) > 0 and qty_input_locator.is_enabled(timeout=5000): # Added timeouts
-                    print(f"        Quantity input found and enabled for variation {i+1}.")
-                    price_cell_html_for_stock_check = ""
-                    row_html_for_stock_check = ""
-                    try:
-                        print(f"          Getting price cell HTML for stock check (variation {i+1})...")
-                        price_cell_html_for_stock_check = row.locator('td.woocommerce-grouped-product-list-item__price').inner_html(timeout=5000) # Added timeout
-                        print(f"          Getting row HTML for stock check (variation {i+1})...")
-                        row_html_for_stock_check = row.inner_html(timeout=5000) # Added timeout
-                    except PlaywrightTimeoutError as e_html_stock:
-                        print(f"          Timeout getting HTML for stock check (variation {i+1}): {e_html_stock}")
-
-
-                    if 'out-of-stock' not in price_cell_html_for_stock_check.lower() and 'out of stock' not in row_html_for_stock_check.lower():
-                         is_variation_in_stock = True
-                         print(f"        Variation {i+1} determined IN STOCK.")
-                    else:
-                         print(f"        Variation {i+1} determined OUT OF STOCK based on HTML content.")
-                else:
-                    print(f"        Quantity input not found or not enabled for variation {i+1}. Assuming OOS for this variation.")
-
-
-                if not size: 
-                    print(f"      Attempting fallback for size (variation {i+1}) as it was empty.")
-                    name_locator = row.locator('td.woocommerce-grouped-product-list-item__label a') 
-                    if name_locator.count(timeout=5000) > 0: # Added timeout
-                        size = name_locator.text_content(timeout=5000).strip() # Added timeout
-                        print(f"        Size (from fallback a tag): '{size}'")
-                    else: 
-                        size = f"Unknown Variation {i+1}"
-                        print(f"        Warning: Could not determine size for a variation of {product_url}. Using placeholder: '{size}'.")
-
-
-                variation = {
+                if not size: # Fallback if size still empty
+                    size = f"Unknown Variation {i+1}"
+                    print(f"        Using placeholder size: '{size}'")
+                
+                variation_data = {
                     'size': size,
-                    'price': float(price_str) if price_str and price_str.replace('.', '', 1).isdigit() else 0.0, # ensure valid float
-                    'is_variation_in_stock': is_variation_in_stock
+                    'price': price,
+                    'is_variation_in_stock': is_this_variation_in_stock
                 }
-                product_data['variations'].append(variation)
-                if is_variation_in_stock:
-                    any_variation_in_stock = True
-                print(f"    Finished processing variation {i+1}: Size='{size}', Price='{variation['price']}', InStock={is_variation_in_stock}")
+                product_data['variations'].append(variation_data)
+                
+                if is_this_variation_in_stock:
+                    any_variation_in_stock_overall = True
+                
+                print(f"    Finished processing variation {i+1}: Size='{size}', Price='{price}', InStock={is_this_variation_in_stock}")
 
-            product_data['is_in_stock'] = any_variation_in_stock
-            if not any_variation_in_stock and num_variations_found > 0 :
+            product_data['is_in_stock'] = any_variation_in_stock_overall
+            if not any_variation_in_stock_overall and num_variations_found > 0 :
                 print(f"All {num_variations_found} variations for {product_url} appear out of stock.")
             elif num_variations_found == 0:
                  print(f"No variations found in the table for grouped product {product_url}. Assuming out of stock based on table content.")
@@ -170,16 +173,17 @@ def scrape_product_details(page, product_url):
             general_out_of_stock_message = page.locator('p.stock.out-of-stock:visible, div.stock.out-of-stock:visible, form.cart p.stock.out-of-stock:visible, .woocommerce-variation-availability p.stock.out-of-stock:visible').first
             
             # Add to cart button
-            add_to_cart_button = page.locator('button.single_add_to_cart_button:not([disabled], .disabled):visible').first # Added :visible
+            add_to_cart_button = page.locator('button.single_add_to_cart_button:not([disabled], .disabled):visible').first
             
             is_available = False
-            price_str = "0.00"
+            price_str_simple_var = "0.00" # Use a different variable name
+            current_price_simple_var = 0.0
             size_description = "default" # Default for simple products
 
             if "product-type-variable" in product_classes:
                 # For variable products, variations are often loaded dynamically or present in a <form class="variations_form cart">
                 variations_form = page.locator('form.variations_form.cart')
-                if variations_form.count(timeout=5000) > 0:
+                if variations_form.count() > 0:
                     # Check if any variation is available
                     # This might involve selecting options to see if an "add to cart" becomes available
                     # For now, we check if the form itself indicates availability or if there's an add to cart button
@@ -196,7 +200,7 @@ def scrape_product_details(page, product_url):
                                 var_price_from_json = float(var_json.get('display_price', 0))
                                 
                                 # Price from html might be more accurate if available
-                                current_price = var_price_from_json 
+                                current_price_simple_var = var_price_from_json 
                                 # Simplified price extraction from HTML for variable, as it's complex
                                 # Preferring display_price from JSON for now.
 
@@ -204,32 +208,32 @@ def scrape_product_details(page, product_url):
                                 
                                 product_data['variations'].append({
                                     'size': var_size,
-                                    'price': current_price,
+                                    'price': current_price_simple_var,
                                     'is_variation_in_stock': var_is_in_stock_json
                                 })
                                 if var_is_in_stock_json:
                                     is_available = True
-                                print(f"    Variable Variation (JSON): Size='{var_size}', Price='{current_price}', InStock={var_is_in_stock_json}")
+                                print(f"    Variable Variation (JSON): Size='{var_size}', Price='{current_price_simple_var}', InStock={var_is_in_stock_json}")
                         except json.JSONDecodeError:
                             print(f"Could not parse data-product_variations for {product_url}")
                     
                     # Fallback if JSON parsing fails or not present, check for visible add to cart / out of stock messages
                     if not product_data['variations']: # If JSON didn't yield variations
-                        if add_to_cart_button.count(timeout=5000) > 0:
+                        if add_to_cart_button.count() > 0:
                             is_available = True
                             # Try to get a general price if no variations were parsed
-                            price_simple_locator = page.locator('p.price span.woocommerce-Price-amount.amount bdi, .woocommerce-variation-price span.woocommerce-Price-amount.amount bdi').first # Broader price search
-                            if price_simple_locator.count(timeout=5000) > 0: # Added timeout
-                                price_text = price_simple_locator.text_content(timeout=5000) # Added timeout
+                            price_simple_locator = page.locator('p.price span.woocommerce-Price-amount.amount bdi, .woocommerce-variation-price span.woocommerce-Price-amount.amount bdi').first
+                            if price_simple_locator.count() > 0:
+                                price_text = price_simple_locator.text_content(timeout=5000)
                                 if price_text:
-                                    price_str = price_text.replace('$', '').replace(',', '').strip()
+                                    price_str_simple_var = price_text.replace('$', '').replace(',', '').strip()
                             product_data['variations'].append({
                                 'size': 'default (check options)',
-                                'price': float(price_str) if price_str and price_str.replace('.', '', 1).isdigit() else 0.0,
+                                'price': float(price_str_simple_var) if price_str_simple_var and price_str_simple_var.replace('.', '', 1).isdigit() else 0.0,
                                 'is_variation_in_stock': True
                             })
-                            print(f"    Variable product {product_url} seems available, add to cart button visible. Price: {price_str}")
-                        elif general_out_of_stock_message.count(timeout=5000) > 0:
+                            print(f"    Variable product {product_url} seems available, add to cart button visible. Price: {price_str_simple_var}")
+                        elif general_out_of_stock_message.count() > 0:
                              print(f"    Variable product {product_url} shows general out of stock message.")
                              is_available = False
                              product_data['variations'].append({ # Add a default OOS variation
@@ -249,46 +253,46 @@ def scrape_product_details(page, product_url):
 
                 else: # No variations_form found for variable product
                     print(f"No variations_form found for variable product {product_url}. Checking general availability.")
-                    if add_to_cart_button.count(timeout=5000) > 0:
+                    if add_to_cart_button.count() > 0:
                         is_available = True
-                    elif general_out_of_stock_message.count(timeout=5000) > 0:
+                    elif general_out_of_stock_message.count() > 0:
                         is_available = False
                     # Get price for simple product logic
-                    price_simple_locator = page.locator('p.price span.woocommerce-Price-amount.amount bdi, .woocommerce-variation-price span.woocommerce-Price-amount.amount bdi').first # Broader
-                    if price_simple_locator.count(timeout=5000) > 0: # Added timeout
-                        price_text = price_simple_locator.text_content(timeout=5000) # Added timeout
+                    price_simple_locator = page.locator('p.price span.woocommerce-Price-amount.amount bdi, .woocommerce-variation-price span.woocommerce-Price-amount.amount bdi').first
+                    if price_simple_locator.count() > 0:
+                        price_text = price_simple_locator.text_content(timeout=5000)
                         if price_text:
-                            price_str = price_text.replace('$', '').replace(',', '').strip()
+                            price_str_simple_var = price_text.replace('$', '').replace(',', '').strip()
                     
                     product_data['variations'].append({
                         'size': size_description,
-                        'price': float(price_str) if price_str and price_str.replace('.', '', 1).isdigit() else 0.0,
+                        'price': float(price_str_simple_var) if price_str_simple_var and price_str_simple_var.replace('.', '', 1).isdigit() else 0.0,
                         'is_variation_in_stock': is_available
                     })
-                    print(f"    Stock for {product_type} {product_url} (no variation form): {is_available}, Price: {price_str}")
+                    print(f"    Stock for {product_type} {product_url} (no variation form): {is_available}, Price: {price_str_simple_var}")
 
             else: # Simple product specific logic
-                if add_to_cart_button.count(timeout=5000) > 0:
+                if add_to_cart_button.count() > 0:
                     is_available = True
-                elif general_out_of_stock_message.count(timeout=5000) > 0:
+                elif general_out_of_stock_message.count() > 0:
                     is_available = False
                 else: # Fallback if neither is clearly present
                     is_available = False # Default to OOS if button isn't clearly there for simple
                     print(f"    Simple product {product_url} - Add to cart button not found or general OOS message not found. Assuming OOS.")
 
 
-                price_simple_locator = page.locator('p.price span.woocommerce-Price-amount.amount bdi, div.product-type-simple span.price span.woocommerce-Price-amount.amount bdi').first # Broader
-                if price_simple_locator.count(timeout=5000) > 0: # Added timeout
-                    price_text = price_simple_locator.text_content(timeout=5000) # Added timeout
+                price_simple_locator = page.locator('p.price span.woocommerce-Price-amount.amount bdi, div.product-type-simple span.price span.woocommerce-Price-amount.amount bdi').first
+                if price_simple_locator.count() > 0:
+                    price_text = price_simple_locator.text_content(timeout=5000)
                     if price_text:
-                         price_str = price_text.replace('$', '').replace(',', '').strip()
+                         price_str_simple_var = price_text.replace('$', '').replace(',', '').strip()
                 
                 product_data['variations'].append({
                     'size': size_description,
-                    'price': float(price_str) if price_str and price_str.replace('.', '', 1).isdigit() else 0.0,
+                    'price': float(price_str_simple_var) if price_str_simple_var and price_str_simple_var.replace('.', '', 1).isdigit() else 0.0,
                     'is_variation_in_stock': is_available
                 })
-                print(f"    Stock for Simple {product_url}: {is_available}, Price: {price_str}")
+                print(f"    Stock for Simple {product_url}: {is_available}, Price: {price_str_simple_var}")
 
             product_data['is_in_stock'] = is_available
             if not product_data['variations'] and not is_available: # Ensure there's at least one variation entry if OOS
@@ -302,7 +306,7 @@ def scrape_product_details(page, product_url):
         else: # Unknown product type or issue
             print(f"Unknown product type or error for {product_url}. Classes: {product_classes}")
             # Check for general out-of-stock messages as a fallback
-            if page.locator('p.stock.out-of-stock:visible, div.woocommerce-info:has-text("Out of stock"):visible').count(timeout=5000) > 0:
+            if page.locator('p.stock.out-of-stock:visible, div.woocommerce-info:has-text("Out of stock"):visible').count() > 0:
                 product_data['is_in_stock'] = False
                 print(f"General out-of-stock message found on page {product_url} with unknown type.")
             if not product_data['variations']: # Ensure there's at least one variation entry if OOS
@@ -464,11 +468,14 @@ def save_products_to_json(data_to_save, filename="sprouting_products.json"):
         data_to_save: The dictionary containing the data to save.
         filename: The name of the JSON file to save.
     """
-    if not data_to_save.get("data"): # Check if 'data' key (product list) is empty or not present
+    if not data_to_save.get("data"): 
         print("No product data to save.")
         return
 
-    output_filename = os.path.join(os.getcwd(), filename)
+    # Ensure the output path is within the scraper directory
+    scraper_dir = os.path.dirname(os.path.abspath(__file__))
+    output_filename = os.path.join(scraper_dir, filename)
+    
     with open(output_filename, 'w', encoding='utf-8') as output_file:
         json.dump(data_to_save, output_file, ensure_ascii=False, indent=4)
     print(f"Data saved to {output_filename}")

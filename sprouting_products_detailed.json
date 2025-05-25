@@ -1,0 +1,147 @@
+{
+    "timestamp": "2025-05-25T01:24:49.402361",
+    "source_site": "https://sprouting.com",
+    "product_count": 5,
+    "data": [
+        {
+            "title": "Amaranth, Red",
+            "url": "https://sprouting.com/product/amaranth-red/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Amaranth, Red - 75 g",
+                    "price": 16.09,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Amaranth, Red - 1 kg",
+                    "price": 231.16,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Amaranth, Red - 5 kg",
+                    "price": 1150.1,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Arugula",
+            "url": "https://sprouting.com/product/arugula/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Arugula - 125 g",
+                    "price": 7.12,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Arugula - 250 g",
+                    "price": 12.3,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula - 1 kg",
+                    "price": 34.6,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula - 5 kg",
+                    "price": 167.3,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula - 10 kg",
+                    "price": 333.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula - 25 kg",
+                    "price": 829.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Arugula, Rocky Wild",
+            "url": "https://sprouting.com/product/arugula-rocky-wild/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Arugula, Rocky Wild - 125 g",
+                    "price": 27.54,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Arugula, Rocky Wild - 1 kg",
+                    "price": 163.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula, Rocky Wild - 5 kg",
+                    "price": 810.3,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Barley, hulls on",
+            "url": "https://sprouting.com/product/barley-hulls-on/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Barley, hulls on - 100 g",
+                    "price": 1.56,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Barley, hulls on - 1 kg",
+                    "price": 2.86,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Barley, hulls on - 5 kg",
+                    "price": 9.87,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Barley, hulls on - 10 kg",
+                    "price": 15.76,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Barley, hulls on - 25 kg",
+                    "price": 35.14,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Basil, Genovese",
+            "url": "https://sprouting.com/product/basil-genovese/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Basil, Genovese - 100 g",
+                    "price": 16.35,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Basil, Genovese - 1 kg",
+                    "price": 118.5,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Basil, Genovese - 5 kg",
+                    "price": 586.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Basil, Genovese - 10 kg",
+                    "price": 1172.04,
+                    "is_variation_in_stock": true
+                }
+            ]
+        }
+    ]
+}
