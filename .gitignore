@@ -1,3 +1,5 @@
+*.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -124,3 +126,6 @@ Thumbs.db
 # If you store your username/password in environment variables and source them
 # from a file that's in the repo, make sure that file is generic and doesn't
 # contain the actual secrets.
+
+# Environment variables
+.env
