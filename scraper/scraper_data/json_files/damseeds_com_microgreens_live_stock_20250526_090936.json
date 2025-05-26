@@ -1,0 +1,1853 @@
+{
+    "timestamp": "2025-05-26T09:09:36.364296",
+    "scrape_duration_seconds": 33.5,
+    "source_site": "https://www.damseeds.com",
+    "product_count": 25,
+    "data": [
+        {
+            "title": "Greencrops, 4010 Green Forage Pea - Organic",
+            "url": "https://www.damseeds.com/products/4010-green-forage-pea-organic",
+            "vendor": "William Dam Seeds",
+            "product_type": "",
+            "image_url": null,
+            "description": "Very effective Nitrogen and bio mass builder. 4010 peas are the best leafy forage peas for plowdown, producing over 40” of green mass in 10 weeks. Best practice is to allow three weeks before seeding following crops. Mow down and work into soil at flowering.",
+            "tags": [
+                "catalogueNo:4881",
+                "microgreens",
+                "primaryCat:Greencrops",
+                "subCat:",
+                "topCat:G"
+            ],
+            "variants": [
+                {
+                    "title": "450 grams",
+                    "price": 9.95,
+                    "sku": "4881A",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2 kilos",
+                    "price": 19.95,
+                    "sku": "4881B",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 35.55,
+                    "sku": "4881C",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "10 kilos",
+                    "price": 55.45,
+                    "sku": "4881D",
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "22.5 kilos",
+                    "price": 85.45,
+                    "sku": "4881E",
+                    "weight_kg": 22.5,
+                    "original_weight_value": 22.5,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Swiss Chard, Eldorado",
+            "url": "https://www.damseeds.com/products/eldorado",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/941.jpg?v=1576374162",
+            "description": "Improved Golden Sunrise. Fresh new colour for salad blends. Bright orange stalks and veins with contrasting dark green leaves. Can be used as full-grown bunches or as baby leaves in salads and braising mixes. Good frost tolerance. Matures at 45cm/18”. 32 days baby; 59 days bunching Pkt contains 100-120 sds.",
+            "tags": [
+                "catalogueNo:941",
+                "microgreens",
+                "primaryCat:Swiss Chard",
+                "subCat:",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.85,
+                    "sku": "941A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 7.95,
+                    "sku": "941B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 17.95,
+                    "sku": "941C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 49.95,
+                    "sku": "941D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 159.65,
+                    "sku": "941E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 349.55,
+                    "sku": "941F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 pounds",
+                    "price": 718.85,
+                    "sku": "941G",
+                    "weight_kg": 11.339809,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "pounds",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Swiss Chard, Ruby Red",
+            "url": "https://www.damseeds.com/products/ruby-red",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/921.jpg?v=1576374146",
+            "description": "Excellent for baby leaves or bunching. Dark green, crumpled leaves with crimson stalks and veins. Sweet, mild flavour. Plants grow 18” high. Also known as rhubarb chard. 32 days baby; 59 days bunching Pkt contains 100-225 sds.",
+            "tags": [
+                "catalogueNo:921",
+                "microgreens",
+                "primaryCat:Swiss Chard",
+                "subCat:",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "921A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 5.45,
+                    "sku": "921B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 11.95,
+                    "sku": "921C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 35.75,
+                    "sku": "921D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 97.5,
+                    "sku": "921E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 221.3,
+                    "sku": "921F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 pounds",
+                    "price": 451.55,
+                    "sku": "921G",
+                    "weight_kg": 11.339809,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "pounds",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Beets, Early Wonder AC Strain",
+            "url": "https://www.damseeds.com/products/early-wonder-ac-strain",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/861.jpg?v=1574986063",
+            "description": "Our earliest non-hybrid variety. Produces a topshaped, blood-red root for all purposes. Tall green tops are good for bunching. 60 days Pkt contains 150-200 sds",
+            "tags": [
+                "catalogueNo:861",
+                "microgreens",
+                "primaryCat:Beets",
+                "subCat:Round Beets",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "861A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 6.25,
+                    "sku": "861B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 11.6,
+                    "sku": "861C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 35.5,
+                    "sku": "861D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 100.05,
+                    "sku": "861E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 214.2,
+                    "sku": "861F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Beets, Bull's Blood",
+            "url": "https://www.damseeds.com/products/bulls-blood",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/821.jpg?v=1574986030",
+            "description": "The ultimate beet top. Dark red leaves and stems add colour and zest to salads and cooked top recipes. Beets are flat-globed and have alternating red-white zones. Tops are 10-12” in height and hold up well in the heat. 60 days Pkt contains 100-140 sds",
+            "tags": [
+                "catalogueNo:821",
+                "microgreens",
+                "primaryCat:Beets",
+                "subCat:Baby Leaf Beets",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "821A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 8.1,
+                    "sku": "821B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 18.7,
+                    "sku": "821C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 48.75,
+                    "sku": "821D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 174.95,
+                    "sku": "821E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 368.7,
+                    "sku": "821F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 pounds",
+                    "price": 742.05,
+                    "sku": "821G",
+                    "weight_kg": 11.339809,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "pounds",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Sorrel, Green de Belleville",
+            "url": "https://www.damseeds.com/products/green-de-belleville",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5315.jpg?v=1574909535",
+            "description": "R. acetosa All green strain with lemony taste. Perennial | Ht. 45cm/18” | 800-1000 sds/gm.",
+            "tags": [
+                "catalogueNo:5315",
+                "microgreens",
+                "primaryCat:Sorrel",
+                "subCat:",
+                "topCat:H"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 3.25,
+                    "sku": "5315A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "10 grams",
+                    "price": 5.25,
+                    "sku": "5315B",
+                    "weight_kg": 0.01,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 8.25,
+                    "sku": "5315C",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 16.75,
+                    "sku": "5315D",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 54.95,
+                    "sku": "5315E",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilograms",
+                    "price": 172.75,
+                    "sku": "5315F",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilo",
+                    "is_in_stock": false
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Dill, Bouquet",
+            "url": "https://www.damseeds.com/products/bouquet",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5197.jpg?v=1574909456",
+            "description": "A tall dill producing many flowerheads. Annual | Ht. 120cm/48” | 450-500 sds/gm.",
+            "tags": [
+                "catalogueNo:5197",
+                "microgreens",
+                "primaryCat:Dill",
+                "subCat:",
+                "topCat:H"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 3.25,
+                    "sku": "5197A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 6.95,
+                    "sku": "5197B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 16.75,
+                    "sku": "5197C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 45.95,
+                    "sku": "5197D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 159.75,
+                    "sku": "5197E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 337.95,
+                    "sku": "5197F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Cilantro, Santo Organic",
+            "url": "https://www.damseeds.com/products/santo-organic",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5183.jpg?v=1574909444",
+            "description": "Slow bolting selection producing broad, fresh green leaves on strong stems. Excellent for bunching. Organically grown seed. Annual | 50-100 sds/gm.",
+            "tags": [
+                "catalogueNo:5183",
+                "microgreens",
+                "primaryCat:Cilantro",
+                "subCat:",
+                "topCat:H"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 3.65,
+                    "sku": "5183A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 grams",
+                    "price": 5.25,
+                    "sku": "5183B",
+                    "weight_kg": 0.005,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 8.95,
+                    "sku": "5183C",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 24.75,
+                    "sku": "5183D",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 72.95,
+                    "sku": "5183E",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 256.75,
+                    "sku": "5183F",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 587.65,
+                    "sku": "5183G",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "10 kilos",
+                    "price": 1340.7,
+                    "sku": "5183H",
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Cilantro, Santo",
+            "url": "https://www.damseeds.com/products/santo",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5182.jpg?v=1574909442",
+            "description": "Slow bolting selection producing broad, fresh green leaves on strong stems. Excellent for bunching. Annual | 50-100 sds/gm.",
+            "tags": [
+                "catalogueNo:5182",
+                "microgreens",
+                "primaryCat:Cilantro",
+                "subCat:",
+                "topCat:H"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 3.25,
+                    "sku": "5182A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "10 grams",
+                    "price": 5.25,
+                    "sku": "5182B",
+                    "weight_kg": 0.01,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 6.95,
+                    "sku": "5182C",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 11.75,
+                    "sku": "5182D",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 41.65,
+                    "sku": "5182E",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 111.75,
+                    "sku": "5182F",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 258.75,
+                    "sku": "5182G",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 pounds",
+                    "price": 532.0,
+                    "sku": "5182H",
+                    "weight_kg": 11.339809,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "pounds",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Chervil, Brussels Winter Vertissimo",
+            "url": "https://www.damseeds.com/products/brussels-winter-vertissimo",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5159.jpg?v=1574909427",
+            "description": "Anthriscus cerefolium Brussels Winter strain. A preferred selection with darker green leaves. Chervil is a delicate leaved herb that enhances the flavours of other herbs. It is one of the fine herbs used in French cooking. Best direct seeded and kept moist until growth is seen. Annual | Ht. 45cm/18” | 300-400 sds/gm.",
+            "tags": [
+                "catalogueNo:5159",
+                "microgreens",
+                "primaryCat:Chervil",
+                "subCat:",
+                "topCat:H"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 3.25,
+                    "sku": "5159A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 6.75,
+                    "sku": "5159C",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 12.45,
+                    "sku": "5159D",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 29.75,
+                    "sku": "5159E",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 87.75,
+                    "sku": "5159F",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 185.95,
+                    "sku": "5159G",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Basil, Red Rubin Improved",
+            "url": "https://www.damseeds.com/products/red-rubin-improved",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5136.jpg?v=1574909416",
+            "description": "Improved Dark Opal. Develops deep purple colour in less favourable conditions. Suitable for greenhouse growing. Great accent plant for containers. Interesting in salads. Annual | Ht. 40cm/16” | 400-700 sds/gm.",
+            "tags": [
+                "catalogueNo:5136",
+                "microgreens",
+                "primaryCat:Basil",
+                "subCat:Red Basil",
+                "topCat:H"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 3.25,
+                    "sku": "5136A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 grams",
+                    "price": 8.75,
+                    "sku": "5136B",
+                    "weight_kg": 0.005,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "10 grams",
+                    "price": 12.65,
+                    "sku": "5136C",
+                    "weight_kg": 0.01,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": false
+                },
+                {
+                    "title": "25 grams",
+                    "price": 22.45,
+                    "sku": "5136D",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 61.75,
+                    "sku": "5136E",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 207.0,
+                    "sku": "5136F",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Greencrops, Buckwheat Organic",
+            "url": "https://www.damseeds.com/products/buckwheat-organic",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4888.jpg?v=1576374036",
+            "description": "Fastest growing summer covercrop. Buckwheat out grows everything including weeds, making it a great short term smother crop. While buckwheat does not yield a large biomass, it is an excellent scavenger of phosphorus and potassium releasing it to the next crop.",
+            "tags": [
+                "catalogueNo:4888",
+                "microgreens",
+                "primaryCat:Greencrops",
+                "subCat:Summer Seeded Greencrops",
+                "topCat:G"
+            ],
+            "variants": [
+                {
+                    "title": "450 grams",
+                    "price": 8.75,
+                    "sku": "4888A",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2 kilos",
+                    "price": 22.15,
+                    "sku": "4888B",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 37.95,
+                    "sku": "4888C",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": false
+                },
+                {
+                    "title": "10 kilos",
+                    "price": 71.65,
+                    "sku": "4888D",
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": false
+                },
+                {
+                    "title": "22.5 kilos",
+                    "price": 109.65,
+                    "sku": "4888E",
+                    "weight_kg": 22.5,
+                    "original_weight_value": 22.5,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": false
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Greens, Mizuna",
+            "url": "https://www.damseeds.com/products/mizuna",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4651.jpg?v=1574985825",
+            "description": "Very prolific, bolt-tolerant green producing up to 200 stems with holly-like serrated leaves. Excellent in gourmet salads and stir-fries. Pkt contains 650-750 sds.",
+            "tags": [
+                "catalogueNo:4651",
+                "microgreens",
+                "primaryCat:Greens",
+                "subCat:Mizuna Greens",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "4651A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 6.95,
+                    "sku": "4651B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 14.95,
+                    "sku": "4651C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 29.75,
+                    "sku": "4651D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 56.95,
+                    "sku": "4651E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 135.0,
+                    "sku": "4651F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Greens, Komatsuna",
+            "url": "https://www.damseeds.com/products/komatsuna",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4638.jpg?v=1574985816",
+            "description": "Easy to grow. Upright, fresh green plant produces tender, mild stalks with dark green, rounded leaves. Good for salads and braising. Pkt contains 500-650 sds.",
+            "tags": [
+                "catalogueNo:4638",
+                "microgreens",
+                "primaryCat:Greens",
+                "subCat:Komatsuna Greens",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "4638A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 grams",
+                    "price": 5.4,
+                    "sku": "4638B",
+                    "weight_kg": 0.005,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 10.45,
+                    "sku": "4638C",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 27.95,
+                    "sku": "4638D",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 81.1,
+                    "sku": "4638E",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 325.0,
+                    "sku": "4638F",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Greens, Garden Cress Peppergrass",
+            "url": "https://www.damseeds.com/products/garden-cress-peppergrass",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4625.jpg?v=1574985794",
+            "description": "Lepidium sativum Peppergrass. A quick growing, extra curly cress that is ready to eat in two weeks. Tasty on sandwiches or in salads. Pkt contains 1800-1950 sds.",
+            "tags": [
+                "catalogueNo:4625",
+                "microgreens",
+                "primaryCat:Greens",
+                "subCat:Cress Greens",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "4625A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 5.5,
+                    "sku": "4625B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 10.95,
+                    "sku": "4625C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 21.9,
+                    "sku": "4625D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 70.0,
+                    "sku": "4625E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 137.35,
+                    "sku": "4625F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Greens, Red Garnet Amaranth",
+            "url": "https://www.damseeds.com/products/red-garnet-amaranth",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4601.jpg?v=1574985776",
+            "description": "Interesting red leaves with soft texture. Tolerant to hot and dry conditions. Used to brighten up salads. Pkt contains 1150-1250 sds.",
+            "tags": [
+                "catalogueNo:4601",
+                "microgreens",
+                "primaryCat:Greens",
+                "subCat:Amaranth Greens",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "4601A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 6.95,
+                    "sku": "4601B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 19.95,
+                    "sku": "4601C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 46.95,
+                    "sku": "4601D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2 kilos",
+                    "price": 162.5,
+                    "sku": "4601E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 299.55,
+                    "sku": "4601F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "22.5 killos",
+                    "price": 979.1,
+                    "sku": "4601G",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Winter Radish, Red Arrow / China Rose",
+            "url": "https://www.damseeds.com/products/china-rose",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3511.jpg?v=1574983576",
+            "description": "Long, rose-coloured roots with mild, white flesh for fall and winter use. Produces pink sprouts with a nice spicy flavour. 60 days Pkt contains 300-500 sds.",
+            "tags": [
+                "catalogueNo:3511",
+                "microgreens",
+                "primaryCat:Winter Radish",
+                "subCat:European Storage Winter Radish",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "3511A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 5.1,
+                    "sku": "3511B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 10.15,
+                    "sku": "3511C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 19.7,
+                    "sku": "3511D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 49.95,
+                    "sku": "3511E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 89.65,
+                    "sku": "3511F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Winter Radish, Round Black Spanish",
+            "url": "https://www.damseeds.com/products/round-black-spanish",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3501.jpg?v=1574983574",
+            "description": "An excellent black-skinned variety with crisp, spicy white flesh. Up to 4” wide. Great keeper. 55 days Pkt contains 400-450 sds.",
+            "tags": [
+                "catalogueNo:3501",
+                "microgreens",
+                "primaryCat:Winter Radish",
+                "subCat:European Storage Winter Radish",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "3501A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 5.1,
+                    "sku": "3501B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 11.95,
+                    "sku": "3501C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 22.95,
+                    "sku": "3501D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 56.55,
+                    "sku": "3501E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 115.95,
+                    "sku": "3501F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Winter Radish, Minowase-Diakon",
+            "url": "https://www.damseeds.com/products/minowase-diakon",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3493.jpg?v=1574983571",
+            "description": "",
+            "tags": [
+                "catalogueNo:3493",
+                "microgreens",
+                "primaryCat:Winter Radish",
+                "subCat:",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "100 grams",
+                    "price": 8.95,
+                    "sku": "3493B",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 20.55,
+                    "sku": "3493C",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2 kilos",
+                    "price": 44.95,
+                    "sku": "3493D",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 86.5,
+                    "sku": "3493E",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Peas, Dwarf Grey Sugar",
+            "url": "https://www.damseeds.com/products/dwarf-grey-sugar",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3092.jpg?v=1576373938",
+            "description": "",
+            "tags": [
+                "catalogueNo:3092",
+                "microgreens",
+                "primaryCat:Peas",
+                "subCat:",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "450 grams",
+                    "price": 9.45,
+                    "sku": "3092A",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2 kilos",
+                    "price": 34.95,
+                    "sku": "3092B",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 67.85,
+                    "sku": "3092C",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "10 kilos",
+                    "price": 98.45,
+                    "sku": "3092D",
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "22.5  kilos",
+                    "price": 199.5,
+                    "sku": "3092E",
+                    "weight_kg": 22.5,
+                    "original_weight_value": 22.5,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Peas, Oregon Sugar Pod II",
+            "url": "https://www.damseeds.com/products/oregon-sugar-pod-ii",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3091.jpg?v=1574985716",
+            "description": "Large, sweet pods. Produces heavy yields of 4½” long and ¾” wide flat pods. Large, 3-4ft vines protect tender pods from the sun. Also known as Ho-lan-dow. Developed by OSU. 63 days Pkt contains 135-150 sds.",
+            "tags": [
+                "catalogueNo:3091",
+                "microgreens",
+                "primaryCat:Peas",
+                "subCat:Snow/Sugar Peas",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.85,
+                    "sku": "3091A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "125 grams",
+                    "price": 5.25,
+                    "sku": "3091B",
+                    "weight_kg": 0.125,
+                    "original_weight_value": 125.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 8.95,
+                    "sku": "3091C",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 30.25,
+                    "sku": "3091D",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 46.6,
+                    "sku": "3091E",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "10  kilos",
+                    "price": 73.7,
+                    "sku": "3091F",
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "22.5  kilos",
+                    "price": 136.75,
+                    "sku": "3091G",
+                    "weight_kg": 22.5,
+                    "original_weight_value": 22.5,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Peas, Aladdin pvp",
+            "url": "https://www.damseeds.com/products/aladdin-pvp",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2951.jpg?v=1574985689",
+            "description": "Excellent processing pea for canners. It produces high yields of 3” long pods with dark green, medium-sized peas concentrated in one or two pickings. Plants are semi-leafless and dwarf growing to 18-28” high depending on time of year. Aladdin is very heat tolerant so it can be grown as a summer pea in many areas. (HR:F/BLRV IR:PM/ PEMV) 67 days Pkt contains 150-175 sds.",
+            "tags": [
+                "catalogueNo:2951",
+                "microgreens",
+                "primaryCat:Peas",
+                "subCat:Main Season Peas",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.95,
+                    "sku": "2951A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "125 grams",
+                    "price": 5.35,
+                    "sku": "2951B",
+                    "weight_kg": 0.125,
+                    "original_weight_value": 125.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 9.95,
+                    "sku": "2951C",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 32.5,
+                    "sku": "2951D",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5  kilos",
+                    "price": 48.75,
+                    "sku": "2951E",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "10  kilos",
+                    "price": 80.65,
+                    "sku": "2951F",
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "22.5  kilos",
+                    "price": 160.45,
+                    "sku": "2951G",
+                    "weight_kg": 22.5,
+                    "original_weight_value": 22.5,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Onions, Evergreen Long White Nebuka",
+            "url": "https://www.damseeds.com/products/evergreen-long-white-nebuka",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2811.jpg?v=1574983329",
+            "description": "Long, slim, white stems. Very hardy for overwintering. Little to no bulbing. 70 days Pkt contains 400-500 sds.",
+            "tags": [
+                "catalogueNo:2811",
+                "microgreens",
+                "primaryCat:Onions",
+                "subCat:Bunching Onions",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "2811A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 8.25,
+                    "sku": "2811B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 20.65,
+                    "sku": "2811C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 60.45,
+                    "sku": "2811D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 199.5,
+                    "sku": "2811E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 458.95,
+                    "sku": "2811F",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        },
+        {
+            "title": "Fennel, Finnochio/Florence",
+            "url": "https://www.damseeds.com/products/finnochio-florence",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2245_1.jpg?v=1576011876",
+            "description": "Common fennel. Recommended for foliage use. Great in salad blends and microgreen mixes. 100 days. Pkt contains 150-300 sds.",
+            "tags": [
+                "catalogueNo:2245",
+                "microgreens",
+                "primaryCat:Fennel",
+                "subCat:Foliage Fennel",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.95,
+                    "sku": "2245A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": false
+                },
+                {
+                    "title": "10 grams",
+                    "price": 5.25,
+                    "sku": "2245B",
+                    "weight_kg": 0.01,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": false
+                },
+                {
+                    "title": "25 grams",
+                    "price": 7.95,
+                    "sku": "2245C",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": false
+                },
+                {
+                    "title": "100 grams",
+                    "price": 17.45,
+                    "sku": "2245D",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": false
+                },
+                {
+                    "title": "450 grams",
+                    "price": 46.45,
+                    "sku": "2245E",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": false
+                },
+                {
+                    "title": "2 kilos",
+                    "price": 124.75,
+                    "sku": "2245F",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": false
+                },
+                {
+                    "title": "5 kilos",
+                    "price": 278.45,
+                    "sku": "2245G",
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": false
+                }
+            ],
+            "is_in_stock": false
+        },
+        {
+            "title": "Kohlrabi, White Vienna",
+            "url": "https://www.damseeds.com/products/white-vienna",
+            "vendor": "Dam Seeds",
+            "product_type": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/1441.jpg?v=1576373880",
+            "description": "Common kohlrabi with light green skin and white flesh. Best used for salad blends and microgreen mixes. 65-70 days Pkt contains 150-200 sds",
+            "tags": [
+                "catalogueNo:1441",
+                "microgreens",
+                "primaryCat:Kohlrabi",
+                "subCat:White Kohlrabi",
+                "topCat:V"
+            ],
+            "variants": [
+                {
+                    "title": "Packet",
+                    "price": 2.75,
+                    "sku": "1441A",
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "is_in_stock": true
+                },
+                {
+                    "title": "25 grams",
+                    "price": 6.35,
+                    "sku": "1441B",
+                    "weight_kg": 0.025,
+                    "original_weight_value": 25.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "100 grams",
+                    "price": 12.1,
+                    "sku": "1441C",
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "450 grams",
+                    "price": 30.65,
+                    "sku": "1441D",
+                    "weight_kg": 0.45,
+                    "original_weight_value": 450.0,
+                    "original_weight_unit": "grams",
+                    "is_in_stock": true
+                },
+                {
+                    "title": "2  kilos",
+                    "price": 97.2,
+                    "sku": "1441E",
+                    "weight_kg": 2.0,
+                    "original_weight_value": 2.0,
+                    "original_weight_unit": "kilos",
+                    "is_in_stock": true
+                }
+            ],
+            "is_in_stock": true
+        }
+    ]
+}

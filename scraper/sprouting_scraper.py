@@ -58,6 +58,42 @@ def setup_logging():
     logger.info("Logging configured. Saving logs to: %s", LOG_FILE)
 
 
+def parse_cultivar_and_variety_from_title(title_string):
+    """Parses cultivar and plant variety from a product title string, using comma or dash as a separator."""
+    if not title_string:
+        return {"cultivar": "N/A", "plant_variety": "N/A"}
+    
+    cultivar = "N/A"
+    plant_variety = "N/A"
+
+    # Try splitting by comma first
+    parts = title_string.split(',', 1)
+    if len(parts) == 2:
+        cultivar = parts[0].strip()
+        plant_variety = parts[1].strip()
+    else:
+        # If comma not found or didn't split into two, try splitting by dash
+        parts = title_string.split('-', 1)
+        if len(parts) == 2:
+            cultivar = parts[0].strip()
+            plant_variety = parts[1].strip()
+        else:
+            # If neither comma nor dash allows a split into two parts, assume whole title is cultivar
+            cultivar = title_string.strip()
+            # plant_variety remains "N/A"
+
+    # Handle cases where splitting might result in empty strings
+    if not cultivar: cultivar = title_string.strip()
+    if not plant_variety and cultivar != title_string.strip():
+        plant_variety = "N/A"
+    elif not plant_variety and cultivar == title_string.strip():
+         plant_variety = "N/A"
+    
+    if not cultivar and title_string.strip() in [",", "-"]:
+        cultivar = "N/A"
+
+    return {"cultivar": cultivar, "plant_variety": plant_variety}
+
 def parse_weight_from_string(text_string):
     """
     Parses weight information (value and unit) from a string and converts to kilograms.
@@ -559,8 +595,12 @@ def scrape_product_list(page, max_pages_override=None):
                 if title and product_url_path:
                     product_url = urljoin(base_url_for_products, product_url_path) if not product_url_path.startswith('http') else product_url_path
                     
+                    parsed_title_info = parse_cultivar_and_variety_from_title(title)
+
                     product_data = {
                         'title': title, 
+                        'cultivar': parsed_title_info['cultivar'],
+                        'plant_variety': parsed_title_info['plant_variety'],
                         'url': product_url
                         # 'is_microgreen' and 'is_in_stock' from list page are no longer primary
                     }
@@ -822,6 +862,8 @@ def main_sync():
                         # Combine basic info (title) with detailed info
                         final_product_data = {
                             'title': basic_product_info['title'],
+                            'cultivar': basic_product_info['cultivar'],
+                            'plant_variety': basic_product_info['plant_variety'],
                             'url': detailed_info['url'],
                             'is_in_stock': detailed_info['is_in_stock'],
                             'variations': detailed_info['variations']
@@ -833,6 +875,8 @@ def main_sync():
                         # Fallback if scrape_product_details returns None (should not happen with current return structure)
                         all_scraped_product_details.append({
                             'title': basic_product_info['title'],
+                            'cultivar': basic_product_info.get('cultivar', basic_product_info['title'] if parse_cultivar_and_variety_from_title(basic_product_info['title'])['cultivar'] == basic_product_info['title'] else parse_cultivar_and_variety_from_title(basic_product_info['title'])['cultivar'] ),
+                            'plant_variety': basic_product_info.get('plant_variety', parse_cultivar_and_variety_from_title(basic_product_info['title'])['plant_variety']),
                             'url': basic_product_info['url'],
                             'is_in_stock': False,
                             'variations': [{'size':'default (detail scrape failed)', 'price':0.0, 'is_variation_in_stock': False,

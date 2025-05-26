@@ -1,0 +1,122 @@
+{
+    "timestamp": "2025-05-26T10:45:41.271234",
+    "scrape_duration_seconds": 240.31,
+    "source_site": "https://germina.ca",
+    "product_count": 6,
+    "data": [
+        {
+            "title": "Betterave Jaune biologique",
+            "cultivar": "Betterave Jaune biologique",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/boutique/betterave-jaune-biologique/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (no variations processed from JSON)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A"
+                }
+            ],
+            "scrape_error": "No variations extracted from non-empty JSON."
+        },
+        {
+            "title": "Organic Aganarpo Fennel",
+            "cultivar": "Organic Aganarpo Fennel",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/boutique/fenugrec-aganarpo/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (no variations processed from JSON)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A"
+                }
+            ],
+            "scrape_error": "No variations extracted from non-empty JSON."
+        },
+        {
+            "title": "Organic Alfalfa",
+            "cultivar": "Organic Alfalfa",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-alfalfa/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (no variations processed from JSON)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A"
+                }
+            ],
+            "scrape_error": "No variations extracted from non-empty JSON."
+        },
+        {
+            "title": "Organic Arrowroot",
+            "cultivar": "Organic Arrowroot",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-arrowroot/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (no variations processed from JSON)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A"
+                }
+            ],
+            "scrape_error": "No variations extracted from non-empty JSON."
+        },
+        {
+            "title": "Organic Arugula",
+            "cultivar": "Organic Arugula",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-aragula/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (no variations processed from JSON)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A"
+                }
+            ],
+            "scrape_error": "No variations extracted from non-empty JSON."
+        },
+        {
+            "title": "Organic Basil Cinnamon",
+            "cultivar": "Organic Basil Cinnamon",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-basil-cinnamon/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (no variations processed from JSON)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A"
+                }
+            ],
+            "scrape_error": "No variations extracted from non-empty JSON."
+        }
+    ]
+}

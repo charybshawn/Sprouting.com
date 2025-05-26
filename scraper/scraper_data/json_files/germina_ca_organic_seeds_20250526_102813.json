@@ -1,0 +1,133 @@
+{
+    "timestamp": "2025-05-26T10:28:13.472304",
+    "scrape_duration_seconds": 384.16,
+    "source_site": "https://germina.ca",
+    "product_count": 5,
+    "data": [
+        {
+            "title": "Betterave Jaune biologique",
+            "cultivar": "Betterave Jaune biologique",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/boutique/betterave-jaune-biologique/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "50g : 9,99 $",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.06,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "237721"
+                },
+                {
+                    "size": "120g : 15,49 $",
+                    "price": 15.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.135,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "237722"
+                },
+                {
+                    "size": "500g : 42,00 $",
+                    "price": 42.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.52,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237723"
+                },
+                {
+                    "size": "1kg : 73,00 $",
+                    "price": 73.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.04,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237724"
+                }
+            ]
+        },
+        {
+            "title": "Blé Roux d’Automne biologique",
+            "cultivar": "Blé Roux d’Automne biologique",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/?post_type=product&p=240249",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (error or no data)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A",
+                    "error_note": "unsupported operand type(s) for +: 'NoneType' and 'str'"
+                }
+            ],
+            "scrape_error": "unsupported operand type(s) for +: 'NoneType' and 'str'"
+        },
+        {
+            "title": "Fève Mung biologique",
+            "cultivar": "Fève Mung biologique",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/?post_type=product&p=239589",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (error or no data)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A",
+                    "error_note": "unsupported operand type(s) for +: 'NoneType' and 'str'"
+                }
+            ],
+            "scrape_error": "unsupported operand type(s) for +: 'NoneType' and 'str'"
+        },
+        {
+            "title": "Mélange Luzernette biologique (Luzerne & Ciboulette)",
+            "cultivar": "Mélange Luzernette biologique (Luzerne & Ciboulette)",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/?post_type=product&p=239631",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (error or no data)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A",
+                    "error_note": "unsupported operand type(s) for +: 'NoneType' and 'str'"
+                }
+            ],
+            "scrape_error": "unsupported operand type(s) for +: 'NoneType' and 'str'"
+        },
+        {
+            "title": "Oignon biologique",
+            "cultivar": "Oignon biologique",
+            "plant_variety": "N/A",
+            "url": "https://germina.ca/en/?post_type=product&p=239603",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (error or no data)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A",
+                    "error_note": "unsupported operand type(s) for +: 'NoneType' and 'str'"
+                }
+            ],
+            "scrape_error": "unsupported operand type(s) for +: 'NoneType' and 'str'"
+        }
+    ]
+}
