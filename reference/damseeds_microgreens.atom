@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://www.damseeds.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://www.damseeds.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://www.damseeds.com/collections/microgreens.atom"/>
+  <title>William Dam Seeds</title>
+  <updated>2019-12-24T09:16:11-05:00</updated>
+  <author>
+    <name>William Dam Seeds</name>
+  </author>
+  <entry>
+    <id>https://www.damseeds.com/products/4482010775601</id>
+    <published>2019-12-24T09:16:11-05:00</published>
+    <updated>2019-12-24T09:16:11-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/4010-green-forage-pea-organic"/>
+    <title>Greencrops, 4010 Green Forage Pea - Organic</title>
+    <s:type></s:type>
+    <s:vendor>William Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="#"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>William Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            9.95 - 85.45
+            <a href="https://www.damseeds.com/products/4010-green-forage-pea-organic">(5 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Very effective Nitrogen and bio mass<br data-mce-fragment="1">builder. 4010 peas are the best leafy forage<br data-mce-fragment="1">peas for plowdown, producing over<br data-mce-fragment="1">40” of green mass in 10 weeks. Best<br data-mce-fragment="1">practice is to allow three weeks before<br data-mce-fragment="1">seeding following crops. Mow down and<br data-mce-fragment="1">work into soil at flowering.</p>
+<p>Widely used as a fast growing microgreen.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:4881</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Greencrops</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:G</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4482010775601</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">9.95</s:price>
+      <s:sku>4881A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4482010775601</id>
+      <title>2 kilos</title>
+      <s:price currency="CAD">19.95</s:price>
+      <s:sku>4881B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4482010775601</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">35.55</s:price>
+      <s:sku>4881C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4482010775601</id>
+      <title>10 kilos</title>
+      <s:price currency="CAD">55.45</s:price>
+      <s:sku>4881D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4482010775601</id>
+      <title>22.5 kilos</title>
+      <s:price currency="CAD">85.45</s:price>
+      <s:sku>4881E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404595589169</id>
+    <published>2019-11-27T21:01:38-05:00</published>
+    <updated>2019-11-27T21:01:38-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/eldorado"/>
+    <title>Swiss Chard, Eldorado</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/941.jpg?v=1576374162"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.85 - 718.85
+            <a href="https://www.damseeds.com/products/eldorado">(7 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Improved Golden Sunrise. Fresh new colour for
+<br>salad blends. Bright orange stalks and veins with
+<br>contrasting dark green leaves. Can be used as
+<br>full-grown bunches or as baby leaves in salads and
+<br>braising mixes. Good frost tolerance. Matures at
+<br>45cm/18”. 32 days baby; 59 days bunching
+<br>Pkt contains 100-120 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:941</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Swiss Chard</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595589169</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.85</s:price>
+      <s:sku>941A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595589169</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">7.95</s:price>
+      <s:sku>941B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595589169</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">17.95</s:price>
+      <s:sku>941C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595589169</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">49.95</s:price>
+      <s:sku>941D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595589169</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">159.65</s:price>
+      <s:sku>941E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595589169</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">349.55</s:price>
+      <s:sku>941F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595589169</id>
+      <title>25 pounds</title>
+      <s:price currency="CAD">718.85</s:price>
+      <s:sku>941G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404595163185</id>
+    <published>2019-11-27T21:01:32-05:00</published>
+    <updated>2019-11-27T21:01:32-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/ruby-red"/>
+    <title>Swiss Chard, Ruby Red</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/921.jpg?v=1576374146"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 451.55
+            <a href="https://www.damseeds.com/products/ruby-red">(7 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Excellent for baby leaves or bunching. Dark green,
+<br>crumpled leaves with crimson stalks and veins. Sweet,
+<br>mild flavour. Plants grow 18” high. Also known as
+<br>rhubarb chard. 32 days baby; 59 days bunching
+<br>Pkt contains 100-225 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:921</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Swiss Chard</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595163185</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>921A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595163185</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">5.45</s:price>
+      <s:sku>921B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595163185</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">11.95</s:price>
+      <s:sku>921C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595163185</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">35.75</s:price>
+      <s:sku>921D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595163185</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">97.50</s:price>
+      <s:sku>921E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595163185</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">221.30</s:price>
+      <s:sku>921F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404595163185</id>
+      <title>25 pounds</title>
+      <s:price currency="CAD">451.55</s:price>
+      <s:sku>921G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404591231025</id>
+    <published>2019-11-27T21:00:35-05:00</published>
+    <updated>2019-11-27T21:00:35-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/early-wonder-ac-strain"/>
+    <title>Beets, Early Wonder AC Strain</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/861.jpg?v=1574986063"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 214.20
+            <a href="https://www.damseeds.com/products/early-wonder-ac-strain">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Our earliest non-hybrid variety. Produces a topshaped,
+<br>blood-red root for all purposes. Tall green
+<br>tops are good for bunching. 60 days
+<br>Pkt contains 150-200 sds</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:861</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Beets</s:tag>
+    <s:tag>subCat:Round Beets</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404591231025</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>861A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404591231025</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">6.25</s:price>
+      <s:sku>861B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404591231025</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">11.60</s:price>
+      <s:sku>861C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404591231025</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">35.50</s:price>
+      <s:sku>861D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404591231025</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">100.05</s:price>
+      <s:sku>861E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404591231025</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">214.20</s:price>
+      <s:sku>861F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404582809649</id>
+    <published>2019-11-27T20:58:48-05:00</published>
+    <updated>2019-11-27T20:58:48-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/bulls-blood"/>
+    <title>Beets, Bull&apos;s Blood</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/821.jpg?v=1574986030"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 742.05
+            <a href="https://www.damseeds.com/products/bulls-blood">(7 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The ultimate beet top. Dark red leaves and stems
+<br>add colour and zest to salads and cooked top
+<br>recipes. Beets are flat-globed and have alternating
+<br>red-white zones. Tops are 10-12” in height and hold
+<br>up well in the heat. 60 days Pkt contains 100-140 sds</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:821</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Beets</s:tag>
+    <s:tag>subCat:Baby Leaf Beets</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404582809649</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>821A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404582809649</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">8.10</s:price>
+      <s:sku>821B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404582809649</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">18.70</s:price>
+      <s:sku>821C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404582809649</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">48.75</s:price>
+      <s:sku>821D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404582809649</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">174.95</s:price>
+      <s:sku>821E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404582809649</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">368.70</s:price>
+      <s:sku>821F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404582809649</id>
+      <title>25 pounds</title>
+      <s:price currency="CAD">742.05</s:price>
+      <s:sku>821G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404540964913</id>
+    <published>2019-11-27T20:49:03-05:00</published>
+    <updated>2019-11-27T20:49:03-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/green-de-belleville"/>
+    <title>Sorrel, Green de Belleville</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5315.jpg?v=1574909535"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            3.25 - 172.75
+            <a href="https://www.damseeds.com/products/green-de-belleville">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>R. acetosa All green strain with lemony taste.
+<br>Perennial | Ht. 45cm/18” | 800-1000 sds/gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:5315</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Sorrel</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:H</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404540964913</id>
+      <title>Packet</title>
+      <s:price currency="CAD">3.25</s:price>
+      <s:sku>5315A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404540964913</id>
+      <title>10 grams</title>
+      <s:price currency="CAD">5.25</s:price>
+      <s:sku>5315B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404540964913</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">8.25</s:price>
+      <s:sku>5315C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404540964913</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">16.75</s:price>
+      <s:sku>5315D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404540964913</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">54.95</s:price>
+      <s:sku>5315E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404540964913</id>
+      <title>2  kilograms</title>
+      <s:price currency="CAD">172.75</s:price>
+      <s:sku>5315F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404538376241</id>
+    <published>2019-11-27T20:48:24-05:00</published>
+    <updated>2019-11-27T20:48:24-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/bouquet"/>
+    <title>Dill, Bouquet</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5197.jpg?v=1574909456"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            3.25 - 337.95
+            <a href="https://www.damseeds.com/products/bouquet">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A tall dill producing many flowerheads.
+<br>Annual | Ht. 120cm/48” | 450-500 sds/gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:5197</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Dill</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:H</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404538376241</id>
+      <title>Packet</title>
+      <s:price currency="CAD">3.25</s:price>
+      <s:sku>5197A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404538376241</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">6.95</s:price>
+      <s:sku>5197B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404538376241</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">16.75</s:price>
+      <s:sku>5197C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404538376241</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">45.95</s:price>
+      <s:sku>5197D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404538376241</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">159.75</s:price>
+      <s:sku>5197E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404538376241</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">337.95</s:price>
+      <s:sku>5197F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404537753649</id>
+    <published>2019-11-27T20:48:16-05:00</published>
+    <updated>2019-11-27T20:48:16-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/santo-organic"/>
+    <title>Cilantro, Santo Organic</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5183.jpg?v=1574909444"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            3.65 - 1340.70
+            <a href="https://www.damseeds.com/products/santo-organic">(8 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Slow bolting selection producing broad, fresh green leaves on strong stems. Excellent for bunching. Organically grown seed.
+<br>Annual | 50-100 sds/gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:5183</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Cilantro</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:H</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537753649</id>
+      <title>Packet</title>
+      <s:price currency="CAD">3.65</s:price>
+      <s:sku>5183A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537753649</id>
+      <title>5 grams</title>
+      <s:price currency="CAD">5.25</s:price>
+      <s:sku>5183B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537753649</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">8.95</s:price>
+      <s:sku>5183C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537753649</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">24.75</s:price>
+      <s:sku>5183D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537753649</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">72.95</s:price>
+      <s:sku>5183E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537753649</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">256.75</s:price>
+      <s:sku>5183F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537753649</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">587.65</s:price>
+      <s:sku>5183G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537753649</id>
+      <title>10 kilos</title>
+      <s:price currency="CAD">1340.70</s:price>
+      <s:sku>5183H</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404537655345</id>
+    <published>2019-11-27T20:48:14-05:00</published>
+    <updated>2019-11-27T20:48:14-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/santo"/>
+    <title>Cilantro, Santo</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5182.jpg?v=1574909442"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            3.25 - 532.00
+            <a href="https://www.damseeds.com/products/santo">(8 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Slow bolting selection producing broad, fresh green leaves on strong stems. Excellent for bunching.
+<br>Annual | 50-100 sds/gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:5182</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Cilantro</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:H</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537655345</id>
+      <title>Packet</title>
+      <s:price currency="CAD">3.25</s:price>
+      <s:sku>5182A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537655345</id>
+      <title>10 grams</title>
+      <s:price currency="CAD">5.25</s:price>
+      <s:sku>5182B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537655345</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">6.95</s:price>
+      <s:sku>5182C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537655345</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">11.75</s:price>
+      <s:sku>5182D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537655345</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">41.65</s:price>
+      <s:sku>5182E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537655345</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">111.75</s:price>
+      <s:sku>5182F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537655345</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">258.75</s:price>
+      <s:sku>5182G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537655345</id>
+      <title>25 pounds</title>
+      <s:price currency="CAD">532.00</s:price>
+      <s:sku>5182H</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404537065521</id>
+    <published>2019-11-27T20:48:06-05:00</published>
+    <updated>2019-11-27T20:48:06-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/brussels-winter-vertissimo"/>
+    <title>Chervil, Brussels Winter Vertissimo</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5159.jpg?v=1574909427"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            3.25 - 185.95
+            <a href="https://www.damseeds.com/products/brussels-winter-vertissimo">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Anthriscus cerefolium Brussels Winter strain.
+<br>A preferred selection with darker green leaves. Chervil is a delicate leaved herb that enhances the flavours of other herbs. It is one of the fine herbs used in French cooking. Best direct seeded and kept moist until growth is seen.
+<br>Annual | Ht. 45cm/18” | 300-400 sds/gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:5159</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Chervil</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:H</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537065521</id>
+      <title>Packet</title>
+      <s:price currency="CAD">3.25</s:price>
+      <s:sku>5159A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537065521</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">6.75</s:price>
+      <s:sku>5159C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537065521</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">12.45</s:price>
+      <s:sku>5159D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537065521</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">29.75</s:price>
+      <s:sku>5159E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537065521</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">87.75</s:price>
+      <s:sku>5159F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404537065521</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">185.95</s:price>
+      <s:sku>5159G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404536639537</id>
+    <published>2019-11-27T20:47:58-05:00</published>
+    <updated>2019-11-27T20:47:58-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/red-rubin-improved"/>
+    <title>Basil, Red Rubin Improved</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5136.jpg?v=1574909416"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            3.25 - 207.00
+            <a href="https://www.damseeds.com/products/red-rubin-improved">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Improved Dark Opal. Develops deep purple
+<br>colour in less favourable conditions. Suitable for greenhouse growing. Great accent plant for containers. Interesting in salads.
+<br>Annual | Ht. 40cm/16” | 400-700 sds/gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:5136</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Basil</s:tag>
+    <s:tag>subCat:Red Basil</s:tag>
+    <s:tag>topCat:H</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404536639537</id>
+      <title>Packet</title>
+      <s:price currency="CAD">3.25</s:price>
+      <s:sku>5136A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404536639537</id>
+      <title>5 grams</title>
+      <s:price currency="CAD">8.75</s:price>
+      <s:sku>5136B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404536639537</id>
+      <title>10 grams</title>
+      <s:price currency="CAD">12.65</s:price>
+      <s:sku>5136C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404536639537</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">22.45</s:price>
+      <s:sku>5136D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404536639537</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">61.75</s:price>
+      <s:sku>5136E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404536639537</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">207.00</s:price>
+      <s:sku>5136F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404534345777</id>
+    <published>2019-11-27T20:47:23-05:00</published>
+    <updated>2019-11-27T20:47:23-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/buckwheat-organic"/>
+    <title>Greencrops, Buckwheat Organic</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4888.jpg?v=1576374036"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            8.75 - 109.65
+            <a href="https://www.damseeds.com/products/buckwheat-organic">(5 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Fastest growing summer covercrop. Buckwheat out
+<br>grows everything including weeds, making it a great
+<br>short term smother crop. While buckwheat does not
+<br>yield a large biomass, it is an excellent scavenger
+<br>of phosphorus and potassium releasing it to the
+<br>next crop.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:4888</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Greencrops</s:tag>
+    <s:tag>subCat:Summer Seeded Greencrops</s:tag>
+    <s:tag>topCat:G</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404534345777</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">8.75</s:price>
+      <s:sku>4888A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404534345777</id>
+      <title>2 kilos</title>
+      <s:price currency="CAD">22.15</s:price>
+      <s:sku>4888B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404534345777</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">37.95</s:price>
+      <s:sku>4888C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404534345777</id>
+      <title>10 kilos</title>
+      <s:price currency="CAD">71.65</s:price>
+      <s:sku>4888D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404534345777</id>
+      <title>22.5 kilos</title>
+      <s:price currency="CAD">109.65</s:price>
+      <s:sku>4888E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404531789873</id>
+    <published>2019-11-27T20:46:43-05:00</published>
+    <updated>2019-11-27T20:46:43-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/mizuna"/>
+    <title>Greens, Mizuna</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4651.jpg?v=1574985825"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 135.00
+            <a href="https://www.damseeds.com/products/mizuna">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Very prolific, bolt-tolerant green producing up to 200
+<br>stems with holly-like serrated leaves. Excellent in
+<br>gourmet salads and stir-fries.
+<br>Pkt contains 650-750 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:4651</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Greens</s:tag>
+    <s:tag>subCat:Mizuna Greens</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531789873</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>4651A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531789873</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">6.95</s:price>
+      <s:sku>4651B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531789873</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">14.95</s:price>
+      <s:sku>4651C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531789873</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">29.75</s:price>
+      <s:sku>4651D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531789873</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">56.95</s:price>
+      <s:sku>4651E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531789873</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">135.00</s:price>
+      <s:sku>4651F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404531560497</id>
+    <published>2019-11-27T20:46:40-05:00</published>
+    <updated>2019-11-27T20:46:40-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/komatsuna"/>
+    <title>Greens, Komatsuna</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4638.jpg?v=1574985816"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 325.00
+            <a href="https://www.damseeds.com/products/komatsuna">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Easy to grow. Upright, fresh green plant produces
+<br>tender, mild stalks with dark green, rounded leaves.
+<br>Good for salads and braising.
+<br>Pkt contains 500-650 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:4638</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Greens</s:tag>
+    <s:tag>subCat:Komatsuna Greens</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531560497</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>4638A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531560497</id>
+      <title>5 grams</title>
+      <s:price currency="CAD">5.40</s:price>
+      <s:sku>4638B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531560497</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">10.45</s:price>
+      <s:sku>4638C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531560497</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">27.95</s:price>
+      <s:sku>4638D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531560497</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">81.10</s:price>
+      <s:sku>4638E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531560497</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">325.00</s:price>
+      <s:sku>4638F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404531167281</id>
+    <published>2019-11-27T20:46:35-05:00</published>
+    <updated>2019-11-27T20:46:35-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/garden-cress-peppergrass"/>
+    <title>Greens, Garden Cress Peppergrass</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4625.jpg?v=1574985794"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 137.35
+            <a href="https://www.damseeds.com/products/garden-cress-peppergrass">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lepidium sativum Peppergrass. A quick growing,
+<br>extra curly cress that is ready to eat in two weeks.
+<br>Tasty on sandwiches or in salads.
+<br>Pkt contains 1800-1950 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:4625</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Greens</s:tag>
+    <s:tag>subCat:Cress Greens</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531167281</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>4625A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531167281</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">5.50</s:price>
+      <s:sku>4625B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531167281</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">10.95</s:price>
+      <s:sku>4625C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531167281</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">21.90</s:price>
+      <s:sku>4625D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531167281</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">70.00</s:price>
+      <s:sku>4625E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404531167281</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">137.35</s:price>
+      <s:sku>4625F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404530511921</id>
+    <published>2019-11-27T20:46:28-05:00</published>
+    <updated>2019-11-27T20:46:28-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/red-garnet-amaranth"/>
+    <title>Greens, Red Garnet Amaranth</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4601.jpg?v=1574985776"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 979.10
+            <a href="https://www.damseeds.com/products/red-garnet-amaranth">(7 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Interesting red leaves with soft texture. Tolerant to
+<br>hot and dry conditions. Used to brighten up salads.
+<br>Pkt contains 1150-1250 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:4601</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Greens</s:tag>
+    <s:tag>subCat:Amaranth Greens</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404530511921</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>4601A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404530511921</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">6.95</s:price>
+      <s:sku>4601B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404530511921</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">19.95</s:price>
+      <s:sku>4601C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404530511921</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">46.95</s:price>
+      <s:sku>4601D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404530511921</id>
+      <title>2 kilos</title>
+      <s:price currency="CAD">162.50</s:price>
+      <s:sku>4601E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404530511921</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">299.55</s:price>
+      <s:sku>4601F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404530511921</id>
+      <title>22.5 killos</title>
+      <s:price currency="CAD">979.10</s:price>
+      <s:sku>4601G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404515799089</id>
+    <published>2019-11-27T20:42:41-05:00</published>
+    <updated>2019-11-27T20:42:41-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/china-rose"/>
+    <title>Winter Radish, Red Arrow / China Rose</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3511.jpg?v=1574983576"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 89.65
+            <a href="https://www.damseeds.com/products/china-rose">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Long, rose-coloured roots with mild, white flesh for
+<br>fall and winter use. Produces pink sprouts with a
+<br>nice spicy flavour. 60 days
+<br>Pkt contains 300-500 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:3511</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Winter Radish</s:tag>
+    <s:tag>subCat:European Storage Winter Radish</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515799089</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>3511A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515799089</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">5.10</s:price>
+      <s:sku>3511B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515799089</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">10.15</s:price>
+      <s:sku>3511C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515799089</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">19.70</s:price>
+      <s:sku>3511D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515799089</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">49.95</s:price>
+      <s:sku>3511E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515799089</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">89.65</s:price>
+      <s:sku>3511F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404515668017</id>
+    <published>2019-11-27T20:42:38-05:00</published>
+    <updated>2019-11-27T20:42:38-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/round-black-spanish"/>
+    <title>Winter Radish, Round Black Spanish</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3501.jpg?v=1574983574"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 115.95
+            <a href="https://www.damseeds.com/products/round-black-spanish">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>An excellent black-skinned variety with crisp, spicy
+<br>white flesh. Up to 4” wide. Great keeper. 55 days
+<br>Pkt contains 400-450 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:3501</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Winter Radish</s:tag>
+    <s:tag>subCat:European Storage Winter Radish</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515668017</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>3501A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515668017</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">5.10</s:price>
+      <s:sku>3501B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515668017</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">11.95</s:price>
+      <s:sku>3501C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515668017</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">22.95</s:price>
+      <s:sku>3501D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515668017</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">56.55</s:price>
+      <s:sku>3501E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515668017</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">115.95</s:price>
+      <s:sku>3501F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404515569713</id>
+    <published>2019-11-27T20:42:36-05:00</published>
+    <updated>2019-11-27T20:42:36-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/minowase-diakon"/>
+    <title>Winter Radish, Minowase-Diakon</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3493.jpg?v=1574983571"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            8.95 - 86.50
+            <a href="https://www.damseeds.com/products/minowase-diakon">(4 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">Widely used radish microgreen.  Produces a green, oval leaf, with a hot, peppery taste.  Fast grower</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:3493</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Winter Radish</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515569713</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">8.95</s:price>
+      <s:sku>3493B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515569713</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">20.55</s:price>
+      <s:sku>3493C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515569713</id>
+      <title>2 kilos</title>
+      <s:price currency="CAD">44.95</s:price>
+      <s:sku>3493D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404515569713</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">86.50</s:price>
+      <s:sku>3493E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404508033073</id>
+    <published>2019-11-27T20:40:38-05:00</published>
+    <updated>2019-11-27T20:40:38-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/dwarf-grey-sugar"/>
+    <title>Peas, Dwarf Grey Sugar</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3092.jpg?v=1576373938"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            9.45 - 199.50
+            <a href="https://www.damseeds.com/products/dwarf-grey-sugar">(5 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">A Sugar pea widely used for microgreens.  Produces a round, green leaf with a reddish tinted stem and a sweet pleasant taste.</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:3092</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Peas</s:tag>
+    <s:tag>subCat:</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404508033073</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">9.45</s:price>
+      <s:sku>3092A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404508033073</id>
+      <title>2 kilos</title>
+      <s:price currency="CAD">34.95</s:price>
+      <s:sku>3092B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404508033073</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">67.85</s:price>
+      <s:sku>3092C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404508033073</id>
+      <title>10 kilos</title>
+      <s:price currency="CAD">98.45</s:price>
+      <s:sku>3092D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404508033073</id>
+      <title>22.5  kilos</title>
+      <s:price currency="CAD">199.50</s:price>
+      <s:sku>3092E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404507934769</id>
+    <published>2019-11-27T20:40:36-05:00</published>
+    <updated>2019-11-27T20:40:36-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/oregon-sugar-pod-ii"/>
+    <title>Peas, Oregon Sugar Pod II</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3091.jpg?v=1574985716"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.85 - 136.75
+            <a href="https://www.damseeds.com/products/oregon-sugar-pod-ii">(7 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Large, sweet pods. Produces heavy yields of 4½”
+<br>long and ¾” wide flat pods. Large, 3-4ft vines
+<br>protect tender pods from the sun. Also known as
+<br>Ho-lan-dow. Developed by OSU. 63 days
+<br>Pkt contains 135-150 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:3091</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Peas</s:tag>
+    <s:tag>subCat:Snow/Sugar Peas</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404507934769</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.85</s:price>
+      <s:sku>3091A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404507934769</id>
+      <title>125 grams</title>
+      <s:price currency="CAD">5.25</s:price>
+      <s:sku>3091B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404507934769</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">8.95</s:price>
+      <s:sku>3091C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404507934769</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">30.25</s:price>
+      <s:sku>3091D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404507934769</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">46.60</s:price>
+      <s:sku>3091E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404507934769</id>
+      <title>10  kilos</title>
+      <s:price currency="CAD">73.70</s:price>
+      <s:sku>3091F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404507934769</id>
+      <title>22.5  kilos</title>
+      <s:price currency="CAD">136.75</s:price>
+      <s:sku>3091G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404506525745</id>
+    <published>2019-11-27T20:40:16-05:00</published>
+    <updated>2019-11-27T20:40:16-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/aladdin-pvp"/>
+    <title>Peas, Aladdin pvp</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2951.jpg?v=1574985689"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.95 - 160.45
+            <a href="https://www.damseeds.com/products/aladdin-pvp">(7 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Excellent processing pea for canners. It
+<br>produces high yields of 3” long pods with dark
+<br>green, medium-sized peas concentrated in one or
+<br>two pickings. Plants are semi-leafless and dwarf
+<br>growing to 18-28” high depending on time of year.
+<br>Aladdin is very heat tolerant so it can be grown as
+<br>a summer pea in many areas. (HR:F/BLRV IR:PM/
+<br>PEMV) 67 days
+<br>Pkt contains 150-175 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:2951</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Peas</s:tag>
+    <s:tag>subCat:Main Season Peas</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404506525745</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.95</s:price>
+      <s:sku>2951A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404506525745</id>
+      <title>125 grams</title>
+      <s:price currency="CAD">5.35</s:price>
+      <s:sku>2951B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404506525745</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">9.95</s:price>
+      <s:sku>2951C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404506525745</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">32.50</s:price>
+      <s:sku>2951D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404506525745</id>
+      <title>5  kilos</title>
+      <s:price currency="CAD">48.75</s:price>
+      <s:sku>2951E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404506525745</id>
+      <title>10  kilos</title>
+      <s:price currency="CAD">80.65</s:price>
+      <s:sku>2951F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404506525745</id>
+      <title>22.5  kilos</title>
+      <s:price currency="CAD">160.45</s:price>
+      <s:sku>2951G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404505346097</id>
+    <published>2019-11-27T20:39:56-05:00</published>
+    <updated>2019-11-27T20:39:56-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/evergreen-long-white-nebuka"/>
+    <title>Onions, Evergreen Long White Nebuka</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2811.jpg?v=1574983329"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 458.95
+            <a href="https://www.damseeds.com/products/evergreen-long-white-nebuka">(6 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Long, slim, white stems. Very hardy for
+<br>overwintering. Little to no bulbing. 70 days
+<br>Pkt contains 400-500 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:2811</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Onions</s:tag>
+    <s:tag>subCat:Bunching Onions</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404505346097</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>2811A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404505346097</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">8.25</s:price>
+      <s:sku>2811B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404505346097</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">20.65</s:price>
+      <s:sku>2811C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404505346097</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">60.45</s:price>
+      <s:sku>2811D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404505346097</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">199.50</s:price>
+      <s:sku>2811E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404505346097</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">458.95</s:price>
+      <s:sku>2811F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404494729265</id>
+    <published>2019-11-27T20:37:06-05:00</published>
+    <updated>2019-11-27T20:37:06-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/finnochio-florence"/>
+    <title>Fennel, Finnochio/Florence</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2245_1.jpg?v=1576011876"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.95 - 278.45
+            <a href="https://www.damseeds.com/products/finnochio-florence">(7 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Common fennel. Recommended for foliage use. Great in salad blends and microgreen mixes. 100 days. Pkt contains 150-300 sds.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:2245</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Fennel</s:tag>
+    <s:tag>subCat:Foliage Fennel</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404494729265</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.95</s:price>
+      <s:sku>2245A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404494729265</id>
+      <title>10 grams</title>
+      <s:price currency="CAD">5.25</s:price>
+      <s:sku>2245B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404494729265</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">7.95</s:price>
+      <s:sku>2245C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404494729265</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">17.45</s:price>
+      <s:sku>2245D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404494729265</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">46.45</s:price>
+      <s:sku>2245E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404494729265</id>
+      <title>2 kilos</title>
+      <s:price currency="CAD">124.75</s:price>
+      <s:sku>2245F</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404494729265</id>
+      <title>5 kilos</title>
+      <s:price currency="CAD">278.45</s:price>
+      <s:sku>2245G</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.damseeds.com/products/4404483096625</id>
+    <published>2019-11-27T20:33:54-05:00</published>
+    <updated>2019-11-27T20:33:54-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.damseeds.com/products/white-vienna"/>
+    <title>Kohlrabi, White Vienna</title>
+    <s:type></s:type>
+    <s:vendor>Dam Seeds</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0244/8248/0177/products/1441.jpg?v=1576373880"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Dam Seeds<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2.75 - 97.20
+            <a href="https://www.damseeds.com/products/white-vienna">(5 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Common kohlrabi with light green skin and white
+<br>flesh. Best used for salad blends and microgreen
+<br>mixes. 65-70 days
+<br>Pkt contains 150-200 sds</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>catalogueNo:1441</s:tag>
+    <s:tag>microgreens</s:tag>
+    <s:tag>primaryCat:Kohlrabi</s:tag>
+    <s:tag>subCat:White Kohlrabi</s:tag>
+    <s:tag>topCat:V</s:tag>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404483096625</id>
+      <title>Packet</title>
+      <s:price currency="CAD">2.75</s:price>
+      <s:sku>1441A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404483096625</id>
+      <title>25 grams</title>
+      <s:price currency="CAD">6.35</s:price>
+      <s:sku>1441B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404483096625</id>
+      <title>100 grams</title>
+      <s:price currency="CAD">12.10</s:price>
+      <s:sku>1441C</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404483096625</id>
+      <title>450 grams</title>
+      <s:price currency="CAD">30.65</s:price>
+      <s:sku>1441D</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.damseeds.com/products/4404483096625</id>
+      <title>2  kilos</title>
+      <s:price currency="CAD">97.20</s:price>
+      <s:sku>1441E</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

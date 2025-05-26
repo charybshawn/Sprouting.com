@@ -1,0 +1,2742 @@
+{
+    "timestamp": "2025-05-26T08:24:37.648304",
+    "scrape_duration_seconds": 336.76,
+    "source_site": "https://sprouting.com",
+    "product_count": 87,
+    "data": [
+        {
+            "title": "Amaranth, Red",
+            "url": "https://sprouting.com/product/amaranth-red/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Amaranth, Red - 75 g",
+                    "price": 16.09,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Amaranth, Red - 1 kg",
+                    "price": 231.16,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Amaranth, Red - 5 kg",
+                    "price": 1150.1,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Arugula",
+            "url": "https://sprouting.com/product/arugula/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Arugula - 125 g",
+                    "price": 7.12,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Arugula - 250 g",
+                    "price": 12.3,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula - 1 kg",
+                    "price": 34.6,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula - 5 kg",
+                    "price": 167.3,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula - 10 kg",
+                    "price": 333.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula - 25 kg",
+                    "price": 829.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Arugula, Rocky Wild",
+            "url": "https://sprouting.com/product/arugula-rocky-wild/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Arugula, Rocky Wild - 125 g",
+                    "price": 27.54,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Arugula, Rocky Wild - 1 kg",
+                    "price": 163.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Arugula, Rocky Wild - 5 kg",
+                    "price": 810.3,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Barley, hulls on",
+            "url": "https://sprouting.com/product/barley-hulls-on/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Barley, hulls on - 100 g",
+                    "price": 1.56,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Barley, hulls on - 1 kg",
+                    "price": 2.86,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Barley, hulls on - 5 kg",
+                    "price": 9.87,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Barley, hulls on - 10 kg",
+                    "price": 15.76,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Barley, hulls on - 25 kg",
+                    "price": 35.14,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Basil, Genovese",
+            "url": "https://sprouting.com/product/basil-genovese/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Basil, Genovese - 100 g",
+                    "price": 16.35,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Basil, Genovese - 1 kg",
+                    "price": 118.5,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Basil, Genovese - 5 kg",
+                    "price": 586.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Basil, Genovese - 10 kg",
+                    "price": 1172.04,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Basil, Purple",
+            "url": "https://sprouting.com/product/basil-purple/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Basil, Purple - 100 g",
+                    "price": 13.24,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Basil, Purple - 1 kg",
+                    "price": 93.02,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Basil, Purple - 5 kg",
+                    "price": 459.4,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Basil, Purple - 10 kg",
+                    "price": 917.24,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Basil, Thai",
+            "url": "https://sprouting.com/product/basil-thai/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Basil, Thai - 1 kg",
+                    "price": 147.86,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Basil, Thai - 5 kg",
+                    "price": 733.6,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Basil, Thai - 10 kg",
+                    "price": 1465.64,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Beet, Bull’s Blood",
+            "url": "https://sprouting.com/product/beet-bulls-blood/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Beet, Bull's Blood - 30 g",
+                    "price": 3.5,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Beet, Bull's Blood - 100 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Beet, Bull's Blood - 1 kg",
+                    "price": 40.42,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Beet, Bull's Blood - 5 kg",
+                    "price": 196.4,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Beet, Bull's Blood - 10 kg",
+                    "price": 391.97,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Beet, Pink",
+            "url": "https://sprouting.com/product/beet-pink/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Beet, Pink - 1 kg",
+                    "price": 43.78,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Beet, Pink - 5 kg",
+                    "price": 213.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Beet, Pink - 10 kg",
+                    "price": 425.57,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Beet, Ruby",
+            "url": "https://sprouting.com/product/beet-ruby/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Beet, Ruby - 30 g",
+                    "price": 4.99,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Beet, Ruby - 100 g",
+                    "price": 7.02,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Beet, Ruby - 1 kg",
+                    "price": 42.34,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Beet, Ruby - 5 kg",
+                    "price": 214.47,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Beet, Ruby - 10 kg",
+                    "price": 424.84,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Bok Choy (Pak Choi)",
+            "url": "https://sprouting.com/product/bok-choy-pak-choi/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Bok Choy (Pak Choi) - 100 g",
+                    "price": 7.01,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Bok Choy (Pak Choi) - 200 g",
+                    "price": 12.11,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Bok Choy (Pak Choi) - 1 kg",
+                    "price": 42.0,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Bok Choy (Pak Choi) - 5 kg",
+                    "price": 204.3,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Bok Choy (Pak Choi) - 10 kg",
+                    "price": 407.04,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Bok Choy (Pak Choi) - 25 kg",
+                    "price": 1014.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Borage",
+            "url": "https://sprouting.com/product/borage/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Borage - 50 g",
+                    "price": 11.34,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Borage - 1 kg",
+                    "price": 37.34,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Borage - 5 kg",
+                    "price": 181.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Borage - 10 kg",
+                    "price": 360.44,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Brilliant Blend",
+            "url": "https://sprouting.com/product/brilliant-blend/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Brilliant Blend - 125 g",
+                    "price": 3.58,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Brilliant Blend - 250 g",
+                    "price": 7.18,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Brilliant Blend - 1 kg",
+                    "price": 13.79,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Brilliant Blend - 5 kg",
+                    "price": 63.25,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Brilliant Blend - 10 kg",
+                    "price": 124.94,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Broccoli",
+            "url": "https://sprouting.com/product/broccoli/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Broccoli - 100 g",
+                    "price": 6.33,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Broccoli - 200 g",
+                    "price": 10.87,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Broccoli - 1 kg",
+                    "price": 36.41,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Broccoli - 5 kg",
+                    "price": 176.34,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Broccoli - 10 kg",
+                    "price": 351.12,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Broccoli - 25 kg",
+                    "price": 874.57,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Broccoli Raab (Rapini)",
+            "url": "https://sprouting.com/product/broccoli-raab-rapini/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Broccoli Raab (Rapini) - 100 g",
+                    "price": 4.23,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Broccoli Raab (Rapini) - 200 g",
+                    "price": 7.05,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Broccoli Raab (Rapini) - 1 kg",
+                    "price": 19.2,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Broccoli Raab (Rapini) - 5 kg",
+                    "price": 90.3,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Broccoli Raab (Rapini) - 10 kg",
+                    "price": 179.04,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Broccoli Raab (Rapini) - 25 kg",
+                    "price": 444.37,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Buckwheat",
+            "url": "https://sprouting.com/product/buckwheat/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Buckwheat - 100 g",
+                    "price": 2.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Buckwheat - 250 g",
+                    "price": 4.86,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Buckwheat - 1 kg",
+                    "price": 7.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Buckwheat - 5 kg",
+                    "price": 33.3,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Buckwheat - 10 kg",
+                    "price": 65.04,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Buckwheat - 25 kg",
+                    "price": 159.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Cabbage, Red",
+            "url": "https://sprouting.com/product/cabbage-red/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Cabbage, Red - 100 g",
+                    "price": 9.22,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cabbage, Red - 200 g",
+                    "price": 16.13,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cabbage, Red - 1 kg",
+                    "price": 60.1,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cabbage, Red - 5 kg",
+                    "price": 294.8,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cabbage, Red - 10 kg",
+                    "price": 588.04,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cabbage, Red - 25 kg",
+                    "price": 1466.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Carrot",
+            "url": "https://sprouting.com/product/carrot/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Carrot - 50 g",
+                    "price": 9.29,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Carrot - 1 kg",
+                    "price": 119.78,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Carrot - 5 kg",
+                    "price": 593.2,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Carrot - 10 kg",
+                    "price": 1184.84,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Celery",
+            "url": "https://sprouting.com/product/celery/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Celery - 50 g",
+                    "price": 11.37,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Celery - 1 kg",
+                    "price": 152.92,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Celery - 5 kg",
+                    "price": 758.9,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Celery - 10 kg",
+                    "price": 1516.24,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Chervil",
+            "url": "https://sprouting.com/product/chervil/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Chervil - 75 g",
+                    "price": 16.2,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Chervil - 1 kg",
+                    "price": 155.78,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chervil - 5 kg",
+                    "price": 773.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chervil - 10 kg",
+                    "price": 1544.84,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Chia, Black",
+            "url": "https://sprouting.com/product/chia-black/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Chia, Black - 200 g",
+                    "price": 5.55,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Chia, Black - 1 kg",
+                    "price": 12.44,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chia, Black - 5 kg",
+                    "price": 56.5,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chia, Black - 10 kg",
+                    "price": 111.14,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chia, Black - 25 kg",
+                    "price": 275.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Chicory",
+            "url": "https://sprouting.com/product/chicory/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Chicory - 50 g",
+                    "price": 5.07,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chicory - 1 kg",
+                    "price": 51.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chicory - 5 kg",
+                    "price": 247.3,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chicory - 10 kg",
+                    "price": 493.04,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Chicory - 25 kg",
+                    "price": 1101.08,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Clover, Crimson",
+            "url": "https://sprouting.com/product/clover-crimson/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Clover, Crimson - 125 g",
+                    "price": 5.23,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Crimson - 250 g",
+                    "price": 8.87,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Crimson - 1 kg",
+                    "price": 22.24,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Crimson - 5 kg",
+                    "price": 105.5,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Crimson - 10 kg",
+                    "price": 209.44,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Crimson - 25 kg",
+                    "price": 520.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Clover, Red",
+            "url": "https://sprouting.com/product/clover-red/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Clover, Red - 125 g",
+                    "price": 4.55,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Red - 250 g",
+                    "price": 7.62,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Red - 1 kg",
+                    "price": 17.74,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Red - 5 kg",
+                    "price": 83.0,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Red - 10 kg",
+                    "price": 164.44,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Clover, Red - 25 kg",
+                    "price": 407.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Collard",
+            "url": "https://sprouting.com/product/collard/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Collard - 75 g",
+                    "price": 7.94,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Collard - 1 kg",
+                    "price": 65.56,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Collard - 5 kg",
+                    "price": 322.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Collard - 10 kg",
+                    "price": 642.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Collard - 25 kg",
+                    "price": 1603.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Coriander",
+            "url": "https://sprouting.com/product/coriander/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Coriander - 100 g",
+                    "price": 4.04,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Coriander - 30 g",
+                    "price": 2.38,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Coriander - 1 kg",
+                    "price": 9.74,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Coriander - 5 kg",
+                    "price": 43.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Coriander - 10 kg",
+                    "price": 84.44,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Corn Salad (Mache)",
+            "url": "https://sprouting.com/product/corn-salad/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Corn Salad (Mache) - 30 g",
+                    "price": 5.59,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Corn Salad (Mache) - 1 kg",
+                    "price": 109.96,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Corn Salad (Mache) - 5 kg",
+                    "price": 544.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Corn Salad (Mache) - 10 kg",
+                    "price": 1086.64,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Cranberry Bean",
+            "url": "https://sprouting.com/product/cranberry-bean/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Cranberry Bean - 250 g",
+                    "price": 5.19,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cranberry Bean - 1 kg",
+                    "price": 8.98,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cranberry Bean - 5 kg",
+                    "price": 39.2,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cranberry Bean - 10 kg",
+                    "price": 76.84,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Cranberry Bean - 25 kg",
+                    "price": 188.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Curly Cress (Garden Cress)",
+            "url": "https://sprouting.com/product/curly-cress/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Curly Cress (Garden Cress) - 125 g",
+                    "price": 5.05,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Curly Cress (Garden Cress) - 250 g",
+                    "price": 8.54,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Curly Cress (Garden Cress) - 1 kg",
+                    "price": 21.06,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Curly Cress (Garden Cress) - 5 kg",
+                    "price": 99.6,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Curly Cress (Garden Cress) - 10 kg",
+                    "price": 197.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Curly Cress (Garden Cress) - 25 kg",
+                    "price": 490.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Dill",
+            "url": "https://sprouting.com/product/dill/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Dill - 50 g",
+                    "price": 5.49,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Dill - 100 g",
+                    "price": 9.34,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Dill - 1 kg",
+                    "price": 57.46,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Dill - 5 kg",
+                    "price": 281.6,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Dill - 10 kg",
+                    "price": 561.64,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Endive",
+            "url": "https://sprouting.com/product/endive/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Endive - 50 g",
+                    "price": 8.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Endive - 1 kg",
+                    "price": 109.96,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Endive - 5 kg",
+                    "price": 544.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Endive - 10 kg",
+                    "price": 1086.64,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Fava Beans",
+            "url": "https://sprouting.com/product/fava-beans/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Fava Beans - 300 g",
+                    "price": 4.66,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fava Beans - 1 kg",
+                    "price": 6.16,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fava Beans - 5 kg",
+                    "price": 25.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fava Beans - 10 kg",
+                    "price": 48.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fava Beans - 25 kg",
+                    "price": 118.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Fennel",
+            "url": "https://sprouting.com/product/fennel/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Fennel - 50 g",
+                    "price": 6.94,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fennel - 1 kg",
+                    "price": 81.28,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fennel - 5 kg",
+                    "price": 400.7,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fennel - 10 kg",
+                    "price": 799.84,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Fenugreek",
+            "url": "https://sprouting.com/product/fenugreek/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Fenugreek - 125 g",
+                    "price": 3.57,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fenugreek - 250 g",
+                    "price": 5.85,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fenugreek - 1 kg",
+                    "price": 11.36,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fenugreek - 5 kg",
+                    "price": 49.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fenugreek - 10 kg",
+                    "price": 100.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Fenugreek - 25 kg",
+                    "price": 248.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Garlic Chives",
+            "url": "https://sprouting.com/product/garlic-chives/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Garlic Chives - 75 g",
+                    "price": 12.32,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Garlic Chives - 1 kg",
+                    "price": 103.16,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Garlic Chives - 5 kg",
+                    "price": 504.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Garlic Chives - 10 kg",
+                    "price": 1006.64,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Kale, Green",
+            "url": "https://sprouting.com/product/kale-green/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Kale, Green - 100 g",
+                    "price": 9.94,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Kale, Green - 200 g",
+                    "price": 17.43,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kale, Green - 1 kg",
+                    "price": 65.96,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kale, Green - 5 kg",
+                    "price": 324.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kale, Green - 10 kg",
+                    "price": 646.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kale, Green - 25 kg",
+                    "price": 1613.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Kale, Red",
+            "url": "https://sprouting.com/product/kale-red/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Kale, Red - 100 g",
+                    "price": 8.95,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Kale, Red - 1 kg",
+                    "price": 57.86,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Kale, Red - 5 kg",
+                    "price": 283.6,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Kale, Red - 10 kg",
+                    "price": 565.64,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Kale, Red - 25 kg",
+                    "price": 1410.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Kamut®",
+            "url": "https://sprouting.com/product/kamut/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Kamut® - 125 g",
+                    "price": 2.69,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kamut® - 300 g",
+                    "price": 4.46,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kamut® - 1 kg",
+                    "price": 5.56,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kamut® - 5 kg",
+                    "price": 22.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kamut® - 10 kg",
+                    "price": 42.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kamut® - 25 kg",
+                    "price": 103.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Kohlrabi, Purple",
+            "url": "https://sprouting.com/product/kohlrabi-purple/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Kohlrabi, Purple - 100 g",
+                    "price": 8.71,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kohlrabi, Purple - 200 g",
+                    "price": 15.19,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kohlrabi, Purple - 1 kg",
+                    "price": 55.9,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kohlrabi, Purple - 5 kg",
+                    "price": 273.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kohlrabi, Purple - 10 kg",
+                    "price": 546.04,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Kohlrabi, Purple - 25 kg",
+                    "price": 1361.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Komatsuna",
+            "url": "https://sprouting.com/product/komatsuna/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Komatsuna - 75 g",
+                    "price": 7.96,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Komatsuna - 1 kg",
+                    "price": 72.02,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Komatsuna - 5 kg",
+                    "price": 354.4,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Komatsuna - 10 kg",
+                    "price": 707.24,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Komatsuna - 25 kg",
+                    "price": 1764.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Komatsuna, Purple",
+            "url": "https://sprouting.com/product/purple-komatsuna/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Komatsuna, Purple - 75 g",
+                    "price": 8.27,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Komatsuna, Purple - 1 kg",
+                    "price": 72.02,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Komatsuna, Purple - 5 kg",
+                    "price": 354.4,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Komatsuna, Purple - 10 kg",
+                    "price": 603.35,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Leek",
+            "url": "https://sprouting.com/product/leek/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Leek - 75 g",
+                    "price": 11.72,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Leek - 1 kg",
+                    "price": 97.3,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Leek - 5 kg",
+                    "price": 480.8,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Leek - 10 kg",
+                    "price": 960.04,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Lemon Balm",
+            "url": "https://sprouting.com/product/lemon-balm/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Lemon Balm - 50 g",
+                    "price": 22.24,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lemon Balm - 1 kg",
+                    "price": 368.3,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lemon Balm - 5 kg",
+                    "price": 1835.8,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lemon Balm - 10 kg",
+                    "price": 3670.04,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Lentils, Black",
+            "url": "https://sprouting.com/product/lentils-black/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Lentils, Black - 100 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, Black - 200 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, Black - 1 kg",
+                    "price": 8.32,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Black - 5 kg",
+                    "price": 35.9,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Black - 10 kg",
+                    "price": 70.24,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Black - 25 kg",
+                    "price": 172.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Lentils, Crimson",
+            "url": "https://sprouting.com/product/lentils-crimson/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Lentils, Crimson - 125 g",
+                    "price": 2.5,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, Crimson - 275 g",
+                    "price": 4.53,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Crimson - 1 kg",
+                    "price": 6.16,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Crimson - 5 kg",
+                    "price": 25.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Crimson - 10 kg",
+                    "price": 48.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Crimson - 25 kg",
+                    "price": 118.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Lentils, French",
+            "url": "https://sprouting.com/product/lentils-french/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Lentils, French - 125 g",
+                    "price": 2.9,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, French - 275 g",
+                    "price": 5.41,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, French - 1 kg",
+                    "price": 9.02,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, French - 5 kg",
+                    "price": 39.4,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, French - 10 kg",
+                    "price": 77.24,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, French - 25 kg",
+                    "price": 189.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Lentils, Large Green",
+            "url": "https://sprouting.com/product/lentils-large-green/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Lentils, Large Green - 100 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentil, Large Green - 200 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, Large Green - 1 kg",
+                    "price": 6.78,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Large Green - 5 kg",
+                    "price": 28.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Large Green - 10 kg",
+                    "price": 54.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Large Green - 25 kg",
+                    "price": 133.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Lentils, Small Green",
+            "url": "https://sprouting.com/product/lentils-small-green/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Lentils, Small Green - 100 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, Small Green - 200 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Lentils, Small Green - 1 kg",
+                    "price": 11.28,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Small Green - 5 kg",
+                    "price": 50.7,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Small Green - 10 kg",
+                    "price": 99.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Lentils, Small Green - 25 kg",
+                    "price": 246.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Mellow Microgreen Mix",
+            "url": "https://sprouting.com/product/mellow-microgreen-mix/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Mellow Microgreen Mix - 100 g",
+                    "price": 5.37,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mellow Microgreen Mix - 200 g",
+                    "price": 11.11,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mellow Microgreen Mix - 1 kg",
+                    "price": 32.96,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mellow Microgreen Mix - 5 kg",
+                    "price": 159.08,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mellow Microgreen Mix - 25 kg",
+                    "price": 788.27,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mellow Microgreen Mix - 10 kg",
+                    "price": 316.6,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Microgreen Salad Mix",
+            "url": "https://sprouting.com/product/microgreen-salad-mix/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Microgreen Salad Mix - 125 g",
+                    "price": 2.85,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Microgreen Salad Mix - 275 g",
+                    "price": 5.15,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Microgreen Salad Mix - 1 kg",
+                    "price": 6.65,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Microgreen Salad Mix - 5 kg",
+                    "price": 27.55,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Microgreen Salad Mix - 10 kg",
+                    "price": 53.54,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Microgreen Salad Mix - 25 kg",
+                    "price": 130.63,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Mung Beans",
+            "url": "https://sprouting.com/product/mung-beans/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Mung Beans - 125 g",
+                    "price": 3.14,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mung Beans - 250 g",
+                    "price": 5.07,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mung Beans - 1 kg",
+                    "price": 8.56,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mung Beans - 5 kg",
+                    "price": 37.1,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mung Beans - 10 kg",
+                    "price": 72.64,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mung Beans - 25 kg",
+                    "price": 178.37,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Brown",
+            "url": "https://sprouting.com/product/mustard-brown/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Mustard, Brown - 100 g",
+                    "price": 2.66,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Brown - 200 g",
+                    "price": 4.72,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Brown - 1 kg",
+                    "price": 8.74,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Brown - 5 kg",
+                    "price": 38.0,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Brown - 10 kg",
+                    "price": 74.44,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Brown - 25 kg",
+                    "price": 182.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Mizuna",
+            "url": "https://sprouting.com/product/mustard-mizuna/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Mustard, Mizuna - 1 kg",
+                    "price": 45.82,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Mizuna - 5 kg",
+                    "price": 223.4,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Mizuna - 10 kg",
+                    "price": 445.24,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Mizuna - 25 kg",
+                    "price": 1109.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Oriental",
+            "url": "https://sprouting.com/product/mustard-oriental/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Mustard, Oriental - 100 g",
+                    "price": 2.74,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Oriental - 200 g",
+                    "price": 4.88,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Oriental - 1 kg",
+                    "price": 9.46,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Oriental - 5 kg",
+                    "price": 41.6,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Oriental - 10 kg",
+                    "price": 81.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Oriental - 25 kg",
+                    "price": 200.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Red",
+            "url": "https://sprouting.com/product/mustard-red/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Mustard, Red - 1 kg",
+                    "price": 65.8,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Red - 5 kg",
+                    "price": 323.3,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Red - 10 kg",
+                    "price": 645.04,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Red - 25 kg",
+                    "price": 1609.37,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Red Mizuna",
+            "url": "https://sprouting.com/product/mustard-red-mizuna/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Mustard, Red Mizuna - 1 kg",
+                    "price": 60.46,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Red Mizuna - 5 kg",
+                    "price": 296.6,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Red Mizuna - 10 kg",
+                    "price": 591.64,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Red Mizuna - 25 kg",
+                    "price": 1475.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Ruby Streaks",
+            "url": "https://sprouting.com/product/mustard-scarlett-frills/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Mustard, Ruby Streaks - 100 g",
+                    "price": 19.34,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Ruby Streaks - 1 kg",
+                    "price": 81.26,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Ruby Streaks - 5 kg",
+                    "price": 400.6,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Ruby Streaks - 10 kg",
+                    "price": 799.64,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Ruby Streaks - 25 kg",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Tat Soi",
+            "url": "https://sprouting.com/product/mustard-tat-soi/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Mustard, Tat Soi - 1 kg",
+                    "price": 83.68,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Tat Soi - 5 kg",
+                    "price": 412.7,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Tat Soi - 10 kg",
+                    "price": 823.84,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Tat Soi - 25 kg",
+                    "price": 2056.37,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Tokyo Bekana",
+            "url": "https://sprouting.com/product/mustard-tokyo-bekana/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Mustard, Tokyo Bekana - 1 kg",
+                    "price": 121.46,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Tokyo Bekana - 5 kg",
+                    "price": 601.6,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Tokyo Bekana - 10 kg",
+                    "price": 1201.64,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Mustard, Tokyo Bekana - 25 kg",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Mustard, Yellow",
+            "url": "https://sprouting.com/product/mustard-yellow/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Mustard, Yellow - 100 g",
+                    "price": 2.55,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Yellow - 200 g",
+                    "price": 4.49,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Yellow - 1 kg",
+                    "price": 7.7,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Yellow - 5 kg",
+                    "price": 32.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Yellow - 10 kg",
+                    "price": 58.62,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Mustard, Yellow - 25 kg",
+                    "price": 156.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Nasturtium, Emerald",
+            "url": "https://sprouting.com/product/nasturtium/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Nasturtium Emerald - 50 g",
+                    "price": 7.67,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Nasturtium, Emerald - 1 kg",
+                    "price": 83.76,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Nasturtium, Emerald - 5 kg",
+                    "price": 413.1,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Nasturtium, Red",
+            "url": "https://sprouting.com/product/red-nasturtium/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Nasturtium, Red - 50 g",
+                    "price": 8.12,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Nasturtium, Red - 1 kg",
+                    "price": 89.54,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Nasturtium, Red - 5 kg",
+                    "price": 442.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Nasturtium, Red - 10 kg",
+                    "price": 882.44,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Oats, Hulless",
+            "url": "https://sprouting.com/product/oats-hulless/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Oats, Hulless - 5 kg",
+                    "price": 25.1,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Oats, Hulless - 1 kg",
+                    "price": 6.16,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Oats, Hulless - 25 kg",
+                    "price": 118.37,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Oats, Hulless - 10 kg",
+                    "price": 48.64,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Onion",
+            "url": "https://sprouting.com/product/onion/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Onion - 75 g",
+                    "price": 11.25,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Onion - 1 kg",
+                    "price": 101.76,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Onion - 5 kg",
+                    "price": 503.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Onion - 10 kg",
+                    "price": 1004.64,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Parsley",
+            "url": "https://sprouting.com/product/parsley/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Parsley - 1 kg",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Parsley - 5 kg",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Parsley - 10 kg",
+                    "price": 913.64,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Peas, Dwarf Grey Sugar",
+            "url": "https://sprouting.com/product/peas-dwarf-grey-sugar/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Peas, Dwarf Grey Sugar - 125 g",
+                    "price": 2.51,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Dwarf Grey Sugar - 275 g",
+                    "price": 3.99,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Dwarf Grey Sugar - 1 kg",
+                    "price": 4.38,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Dwarf Grey Sugar - 5 kg",
+                    "price": 16.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Dwarf Grey Sugar - 10 kg",
+                    "price": 30.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Dwarf Grey Sugar - 25 kg",
+                    "price": 73.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Peas, Green",
+            "url": "https://sprouting.com/product/peas-green/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Peas, Green - 125 g",
+                    "price": 2.41,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Green - 275 g",
+                    "price": 3.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Green - 1 kg",
+                    "price": 3.76,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Green - 5 kg",
+                    "price": 13.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Green - 10 kg",
+                    "price": 24.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Green - 25 kg",
+                    "price": 58.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Peas, Oregon Giant",
+            "url": "https://sprouting.com/product/peas-oregon-giant/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Peas, Oregon Giant - 275 g",
+                    "price": 3.85,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Oregon Giant - 1 kg",
+                    "price": 3.92,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Oregon Giant - 5 kg",
+                    "price": 13.9,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Oregon Giant - 10 kg",
+                    "price": 26.24,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Oregon Giant - 25 kg",
+                    "price": 62.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Peas, Speckled",
+            "url": "https://sprouting.com/product/peas-speckled/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Peas, Speckled - 125 g",
+                    "price": 2.42,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Speckled - 275 g",
+                    "price": 3.83,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Speckled - 1 kg",
+                    "price": 3.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Speckled - 5 kg",
+                    "price": 13.5,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Speckled - 10 kg",
+                    "price": 25.44,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Speckled - 25 kg",
+                    "price": 60.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Peas, Yellow",
+            "url": "https://sprouting.com/product/peas-yellow/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Peas, Yellow - 125 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Peas, Yellow - 275 g",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Peas, Yellow - 1 kg",
+                    "price": 3.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Yellow - 5 kg",
+                    "price": 13.3,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Yellow - 10 kg",
+                    "price": 25.04,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Peas, Yellow - 25 kg",
+                    "price": 59.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Popcorn",
+            "url": "https://sprouting.com/product/popcorn/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Popcorn - 275 g",
+                    "price": 5.03,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Popcorn - 1 kg",
+                    "price": 7.78,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Popcorn - 5 kg",
+                    "price": 33.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Popcorn - 10 kg",
+                    "price": 64.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Popcorn - 25 kg",
+                    "price": 158.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Radish, Daikon",
+            "url": "https://sprouting.com/product/radish-daikon/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Radish, Daikon - 100 g",
+                    "price": 3.42,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Daikon - 200 g",
+                    "price": 5.57,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Daikon - 1 kg",
+                    "price": 12.56,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Daikon - 5 kg",
+                    "price": 57.1,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Daikon - 10 kg",
+                    "price": 112.64,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Daikon - 25 kg",
+                    "price": 278.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Radish, Red",
+            "url": "https://sprouting.com/product/radish-red/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Radish, Red - 100 g",
+                    "price": 7.32,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Radish, Red - 200 g",
+                    "price": 12.67,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Radish, Red - 1 kg",
+                    "price": 44.52,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Radish, Red - 5 kg",
+                    "price": 216.9,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Radish, Red - 10 kg",
+                    "price": 432.24,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Radish, Red - 25 kg",
+                    "price": 1077.37,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Radish, Ruby Stem",
+            "url": "https://sprouting.com/product/radish-ruby-stem/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Radish, Ruby Stem - 100 g",
+                    "price": 4.59,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Ruby Stem - 200 g",
+                    "price": 7.71,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Ruby Stem - 1 kg",
+                    "price": 22.18,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Ruby Stem - 5 kg",
+                    "price": 105.2,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Ruby Stem - 10 kg",
+                    "price": 208.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Ruby Stem - 25 kg",
+                    "price": 518.87,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Radish, Triton",
+            "url": "https://sprouting.com/product/radish-triton/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Radish, Triton - 100 g",
+                    "price": 4.05,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Triton - 200 g",
+                    "price": 6.72,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Radish, Triton - 1 kg",
+                    "price": 17.74,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Radish, Triton - 5 kg",
+                    "price": 83.0,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Radish, Triton - 10 kg",
+                    "price": 164.44,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Radish, Triton - 25 kg",
+                    "price": 407.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Rainbow Radish",
+            "url": "https://sprouting.com/product/rainbow-radish/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Rainbow Radish - 100 g",
+                    "price": 4.91,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Rainbow Radish - 200 g",
+                    "price": 9.11,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Rainbow Radish - 1 kg",
+                    "price": 24.75,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Rainbow Radish - 5 kg",
+                    "price": 118.05,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Rainbow Radish - 10 kg",
+                    "price": 234.54,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Rainbow Radish - 25 kg",
+                    "price": 583.12,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Red Shiso (Perilla)",
+            "url": "https://sprouting.com/product/perilla/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Red Shiso (Perilla) - 75 g",
+                    "price": 49.75,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Red Shiso (Perilla) - 1 kg",
+                    "price": 550.88,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Red Shiso (Perilla) - 5 kg",
+                    "price": 2748.7,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Red Shiso (Perilla) - 10 kg",
+                    "price": 5495.84,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Spicy Microgreen Blend",
+            "url": "https://sprouting.com/product/spicy-microgreen-blend/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Spicy Microgreen Blend - 100 g",
+                    "price": 3.13,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Spicy Microgreen Blend - 200 g",
+                    "price": 6.19,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Spicy Microgreen Blend - 1 kg",
+                    "price": 12.79,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Spicy Microgreen Blend - 5 kg",
+                    "price": 58.27,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Spigarello",
+            "url": "https://sprouting.com/product/spigarello/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Spigarello - 100 g",
+                    "price": 6.85,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Spigarello - 200 g",
+                    "price": 11.82,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Spigarello - 1 kg",
+                    "price": 40.7,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Spigarello - 5 kg",
+                    "price": 197.8,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Spigarello - 10 kg",
+                    "price": 394.04,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Spigarello - 25 kg",
+                    "price": 981.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Sunflower, Black Oilseed",
+            "url": "https://sprouting.com/product/sunflower-black-oilseed/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "default (unknown type / out of stock)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Swiss Chard, Red",
+            "url": "https://sprouting.com/product/swiss-chard-ruby/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Swiss Chard, Red - 30 g",
+                    "price": 3.58,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Swiss Chard, Red - 75 g",
+                    "price": 6.55,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Swiss Chard, Red - 1 kg",
+                    "price": 42.62,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Swiss Chard, Red - 5 kg",
+                    "price": 207.4,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Swiss Chard, Red - 10 kg",
+                    "price": 413.24,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Swiss Chard, Yellow",
+            "url": "https://sprouting.com/product/swiss-chard-yellow/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Swiss Chard, Yellow - 1 kg",
+                    "price": 49.16,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Swiss Chard, Yellow - 5 kg",
+                    "price": 240.1,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Swiss Chard, Yellow - 10 kg",
+                    "price": 478.64,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Thyme",
+            "url": "https://sprouting.com/product/thyme/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Thyme - 100 g",
+                    "price": 16.35,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Thyme - 1 kg",
+                    "price": 111.5,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Thyme - 5 kg",
+                    "price": 551.8,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Thyme - 10 kg",
+                    "price": 1102.04,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Turnip",
+            "url": "https://sprouting.com/product/turnip/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Turnip - 1 kg",
+                    "price": 33.46,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Turnip - 5 kg",
+                    "price": 161.6,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Turnip - 10 kg",
+                    "price": 321.64,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Turnip - 25 kg",
+                    "price": 800.87,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Watercress",
+            "url": "https://sprouting.com/product/watercress/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Watercress - 50g",
+                    "price": 59.9,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Watercress - 1 kg",
+                    "price": 672.22,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Watercress - 5 kg",
+                    "price": 3355.4,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Watercress - 10 kg",
+                    "price": 6709.24,
+                    "is_variation_in_stock": false
+                }
+            ]
+        },
+        {
+            "title": "Wheat, Hard Red Spring",
+            "url": "https://sprouting.com/product/wheat-hard-red-spring/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "Wheat, Hard Red Spring - 125 g",
+                    "price": 2.37,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Wheat, Hard Red Spring - 300 g",
+                    "price": 3.77,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Wheat, Hard Red Spring - 1 kg",
+                    "price": 3.48,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Wheat, Hard Red Spring - 5 kg",
+                    "price": 11.7,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Wheat, Hard Red Spring - 10 kg",
+                    "price": 21.84,
+                    "is_variation_in_stock": true
+                },
+                {
+                    "size": "Wheat, Hard Red Spring - 25 kg",
+                    "price": 51.37,
+                    "is_variation_in_stock": true
+                }
+            ]
+        },
+        {
+            "title": "Wheat, Hard Red Winter",
+            "url": "https://sprouting.com/product/wheat-hard-red-winter/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Wheat, Hard Red Winter - 1 kg",
+                    "price": 5.56,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Wheat, Hard Red Winter - 5 kg",
+                    "price": 22.1,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Wheat, Hard Red Winter - 10 kg",
+                    "price": 42.64,
+                    "is_variation_in_stock": false
+                },
+                {
+                    "size": "Wheat, Hard Red Winter - 25 kg",
+                    "price": 103.37,
+                    "is_variation_in_stock": false
+                }
+            ]
+        }
+    ]
+}
