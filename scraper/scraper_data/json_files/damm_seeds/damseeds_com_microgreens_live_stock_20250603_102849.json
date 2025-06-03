@@ -1,11 +1,14 @@
 {
-    "timestamp": "2025-05-26T09:09:36.364296",
-    "scrape_duration_seconds": 33.5,
+    "timestamp": "2025-06-03T10:28:49.094397",
+    "scrape_duration_seconds": 33.73,
     "source_site": "https://www.damseeds.com",
+    "currency_code": "CAD",
     "product_count": 25,
     "data": [
         {
             "title": "Greencrops, 4010 Green Forage Pea - Organic",
+            "common_name": "Pea",
+            "cultivar_name": "Greencrops",
             "url": "https://www.damseeds.com/products/4010-green-forage-pea-organic",
             "vendor": "William Dam Seeds",
             "product_type": "",
@@ -18,57 +21,59 @@
                 "subCat:",
                 "topCat:G"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 9.95,
                     "sku": "4881A",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2 kilos",
+                    "size": "2 kilograms",
                     "price": 19.95,
                     "sku": "4881B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 35.55,
                     "sku": "4881C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "10 kilos",
+                    "size": "10 kilograms",
                     "price": 55.45,
                     "sku": "4881D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 10.0,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "22.5 kilos",
+                    "size": "22.5 kilograms",
                     "price": 85.45,
                     "sku": "4881E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 22.5,
                     "original_weight_value": 22.5,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Swiss Chard, Eldorado",
+            "common_name": "Swiss Chard",
+            "cultivar_name": "Eldorado",
             "url": "https://www.damseeds.com/products/eldorado",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -81,75 +86,77 @@
                 "subCat:",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.85,
                     "sku": "941A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 7.95,
                     "sku": "941B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 17.95,
                     "sku": "941C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 49.95,
                     "sku": "941D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 159.65,
                     "sku": "941E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 349.55,
                     "sku": "941F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "25 pounds",
+                    "size": "25 pounds",
                     "price": 718.85,
                     "sku": "941G",
+                    "is_variation_in_stock": true,
                     "weight_kg": 11.339809,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "pounds",
-                    "is_in_stock": true
+                    "original_weight_unit": "pounds"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Swiss Chard, Ruby Red",
+            "common_name": "Swiss Chard",
+            "cultivar_name": "Ruby Red",
             "url": "https://www.damseeds.com/products/ruby-red",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -162,75 +169,77 @@
                 "subCat:",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "921A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 5.45,
                     "sku": "921B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 11.95,
                     "sku": "921C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 35.75,
                     "sku": "921D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 97.5,
                     "sku": "921E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 221.3,
                     "sku": "921F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "25 pounds",
+                    "size": "25 pounds",
                     "price": 451.55,
                     "sku": "921G",
+                    "is_variation_in_stock": true,
                     "weight_kg": 11.339809,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "pounds",
-                    "is_in_stock": true
+                    "original_weight_unit": "pounds"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Beets, Early Wonder AC Strain",
+            "common_name": "Beets,",
+            "cultivar_name": "Early Wonder AC Strain",
             "url": "https://www.damseeds.com/products/early-wonder-ac-strain",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -243,66 +252,68 @@
                 "subCat:Round Beets",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "861A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 6.25,
                     "sku": "861B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 11.6,
                     "sku": "861C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 35.5,
                     "sku": "861D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 100.05,
                     "sku": "861E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 214.2,
                     "sku": "861F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Beets, Bull's Blood",
+            "common_name": "Beets,",
+            "cultivar_name": "Bull's Blood",
             "url": "https://www.damseeds.com/products/bulls-blood",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -315,75 +326,77 @@
                 "subCat:Baby Leaf Beets",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "821A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 8.1,
                     "sku": "821B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 18.7,
                     "sku": "821C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 48.75,
                     "sku": "821D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 174.95,
                     "sku": "821E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 368.7,
                     "sku": "821F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "25 pounds",
+                    "size": "25 pounds",
                     "price": 742.05,
                     "sku": "821G",
+                    "is_variation_in_stock": true,
                     "weight_kg": 11.339809,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "pounds",
-                    "is_in_stock": true
+                    "original_weight_unit": "pounds"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Sorrel, Green de Belleville",
+            "common_name": "Sorrel",
+            "cultivar_name": "Green de Belleville",
             "url": "https://www.damseeds.com/products/green-de-belleville",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -396,66 +409,68 @@
                 "subCat:",
                 "topCat:H"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 3.25,
                     "sku": "5315A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "10 grams",
+                    "size": "10 grams",
                     "price": 5.25,
                     "sku": "5315B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.01,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 8.25,
                     "sku": "5315C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 16.75,
                     "sku": "5315D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 54.95,
                     "sku": "5315E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilograms",
+                    "size": "2 kilograms",
                     "price": 172.75,
                     "sku": "5315F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilo",
-                    "is_in_stock": false
+                    "original_weight_unit": "kilo"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Dill, Bouquet",
+            "common_name": "Dill",
+            "cultivar_name": "Bouquet",
             "url": "https://www.damseeds.com/products/bouquet",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -468,66 +483,68 @@
                 "subCat:",
                 "topCat:H"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 3.25,
                     "sku": "5197A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 6.95,
                     "sku": "5197B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 16.75,
                     "sku": "5197C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 45.95,
                     "sku": "5197D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 159.75,
                     "sku": "5197E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 337.95,
                     "sku": "5197F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Cilantro, Santo Organic",
+            "common_name": "Cilantro",
+            "cultivar_name": "Santo",
             "url": "https://www.damseeds.com/products/santo-organic",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -540,84 +557,86 @@
                 "subCat:",
                 "topCat:H"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 3.65,
                     "sku": "5183A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "5 grams",
+                    "size": "5 grams",
                     "price": 5.25,
                     "sku": "5183B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.005,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 8.95,
                     "sku": "5183C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 24.75,
                     "sku": "5183D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 72.95,
                     "sku": "5183E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 256.75,
                     "sku": "5183F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 587.65,
                     "sku": "5183G",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "10 kilos",
+                    "size": "10 kilograms",
                     "price": 1340.7,
                     "sku": "5183H",
+                    "is_variation_in_stock": true,
                     "weight_kg": 10.0,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Cilantro, Santo",
+            "common_name": "Cilantro",
+            "cultivar_name": "Santo",
             "url": "https://www.damseeds.com/products/santo",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -630,84 +649,86 @@
                 "subCat:",
                 "topCat:H"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 3.25,
                     "sku": "5182A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "10 grams",
+                    "size": "10 grams",
                     "price": 5.25,
                     "sku": "5182B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.01,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 6.95,
                     "sku": "5182C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 11.75,
                     "sku": "5182D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 41.65,
                     "sku": "5182E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 111.75,
                     "sku": "5182F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 258.75,
                     "sku": "5182G",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "25 pounds",
+                    "size": "25 pounds",
                     "price": 532.0,
                     "sku": "5182H",
+                    "is_variation_in_stock": true,
                     "weight_kg": 11.339809,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "pounds",
-                    "is_in_stock": true
+                    "original_weight_unit": "pounds"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Chervil, Brussels Winter Vertissimo",
+            "common_name": "Chervil",
+            "cultivar_name": "Brussels Winter Vertissimo",
             "url": "https://www.damseeds.com/products/brussels-winter-vertissimo",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -720,66 +741,68 @@
                 "subCat:",
                 "topCat:H"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 3.25,
                     "sku": "5159A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 6.75,
                     "sku": "5159C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 12.45,
                     "sku": "5159D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 29.75,
                     "sku": "5159E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 87.75,
                     "sku": "5159F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 185.95,
                     "sku": "5159G",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Basil, Red Rubin Improved",
+            "common_name": "Basil",
+            "cultivar_name": "Red Rubin Improved",
             "url": "https://www.damseeds.com/products/red-rubin-improved",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -792,66 +815,68 @@
                 "subCat:Red Basil",
                 "topCat:H"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 3.25,
                     "sku": "5136A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "5 grams",
+                    "size": "5 grams",
                     "price": 8.75,
                     "sku": "5136B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.005,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "10 grams",
+                    "size": "10 grams",
                     "price": 12.65,
                     "sku": "5136C",
+                    "is_variation_in_stock": false,
                     "weight_kg": 0.01,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": false
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 22.45,
                     "sku": "5136D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 61.75,
                     "sku": "5136E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 207.0,
                     "sku": "5136F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Greencrops, Buckwheat Organic",
+            "common_name": "Buckwheat",
+            "cultivar_name": "Greencrops",
             "url": "https://www.damseeds.com/products/buckwheat-organic",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -864,57 +889,59 @@
                 "subCat:Summer Seeded Greencrops",
                 "topCat:G"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 8.75,
                     "sku": "4888A",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2 kilos",
+                    "size": "2 kilograms",
                     "price": 22.15,
                     "sku": "4888B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 37.95,
                     "sku": "4888C",
+                    "is_variation_in_stock": false,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": false
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "10 kilos",
+                    "size": "10 kilograms",
                     "price": 71.65,
                     "sku": "4888D",
+                    "is_variation_in_stock": false,
                     "weight_kg": 10.0,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": false
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "22.5 kilos",
+                    "size": "22.5 kilograms",
                     "price": 109.65,
                     "sku": "4888E",
+                    "is_variation_in_stock": false,
                     "weight_kg": 22.5,
                     "original_weight_value": 22.5,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": false
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Greens, Mizuna",
+            "common_name": "Mizuna",
+            "cultivar_name": "Greens,",
             "url": "https://www.damseeds.com/products/mizuna",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -927,66 +954,68 @@
                 "subCat:Mizuna Greens",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "4651A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 6.95,
                     "sku": "4651B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 14.95,
                     "sku": "4651C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 29.75,
                     "sku": "4651D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 56.95,
                     "sku": "4651E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 135.0,
                     "sku": "4651F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Greens, Komatsuna",
+            "common_name": "Komatsuna",
+            "cultivar_name": "Greens,",
             "url": "https://www.damseeds.com/products/komatsuna",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -999,66 +1028,68 @@
                 "subCat:Komatsuna Greens",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "4638A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "5 grams",
+                    "size": "5 grams",
                     "price": 5.4,
                     "sku": "4638B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.005,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 10.45,
                     "sku": "4638C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 27.95,
                     "sku": "4638D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 81.1,
                     "sku": "4638E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 325.0,
                     "sku": "4638F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Greens, Garden Cress Peppergrass",
+            "common_name": "Peppergrass",
+            "cultivar_name": "Greens, Garden Cress",
             "url": "https://www.damseeds.com/products/garden-cress-peppergrass",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1071,66 +1102,68 @@
                 "subCat:Cress Greens",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "4625A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 5.5,
                     "sku": "4625B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 10.95,
                     "sku": "4625C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 21.9,
                     "sku": "4625D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 70.0,
                     "sku": "4625E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 137.35,
                     "sku": "4625F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Greens, Red Garnet Amaranth",
+            "common_name": "Amaranth",
+            "cultivar_name": "Greens, Red Garnet",
             "url": "https://www.damseeds.com/products/red-garnet-amaranth",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1143,75 +1176,77 @@
                 "subCat:Amaranth Greens",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "4601A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 6.95,
                     "sku": "4601B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 19.95,
                     "sku": "4601C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 46.95,
                     "sku": "4601D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2 kilos",
+                    "size": "2 kilograms",
                     "price": 162.5,
                     "sku": "4601E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 299.55,
                     "sku": "4601F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "22.5 killos",
+                    "size": "22.5 killos",
                     "price": 979.1,
                     "sku": "4601G",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Winter Radish, Red Arrow / China Rose",
+            "common_name": "Radish",
+            "cultivar_name": "N/A",
             "url": "https://www.damseeds.com/products/china-rose",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1224,66 +1259,68 @@
                 "subCat:European Storage Winter Radish",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "3511A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 5.1,
                     "sku": "3511B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 10.15,
                     "sku": "3511C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 19.7,
                     "sku": "3511D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 49.95,
                     "sku": "3511E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 89.65,
                     "sku": "3511F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Winter Radish, Round Black Spanish",
+            "common_name": "Radish",
+            "cultivar_name": "N/A",
             "url": "https://www.damseeds.com/products/round-black-spanish",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1296,66 +1333,68 @@
                 "subCat:European Storage Winter Radish",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "3501A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 5.1,
                     "sku": "3501B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 11.95,
                     "sku": "3501C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 22.95,
                     "sku": "3501D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 56.55,
                     "sku": "3501E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 115.95,
                     "sku": "3501F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Winter Radish, Minowase-Diakon",
+            "common_name": "Radish",
+            "cultivar_name": "Winter , Minowase-Diakon",
             "url": "https://www.damseeds.com/products/minowase-diakon",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1368,48 +1407,50 @@
                 "subCat:",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 8.95,
                     "sku": "3493B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 20.55,
                     "sku": "3493C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2 kilos",
+                    "size": "2 kilograms",
                     "price": 44.95,
                     "sku": "3493D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 86.5,
                     "sku": "3493E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Peas, Dwarf Grey Sugar",
+            "common_name": "Peas,",
+            "cultivar_name": "Dwarf Grey Sugar",
             "url": "https://www.damseeds.com/products/dwarf-grey-sugar",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1422,57 +1463,59 @@
                 "subCat:",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 9.45,
                     "sku": "3092A",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2 kilos",
+                    "size": "2 kilograms",
                     "price": 34.95,
                     "sku": "3092B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 67.85,
                     "sku": "3092C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "10 kilos",
+                    "size": "10 kilograms",
                     "price": 98.45,
                     "sku": "3092D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 10.0,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "22.5  kilos",
+                    "size": "22.5 kilograms",
                     "price": 199.5,
                     "sku": "3092E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 22.5,
                     "original_weight_value": 22.5,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Peas, Oregon Sugar Pod II",
+            "common_name": "Peas,",
+            "cultivar_name": "Oregon Sugar Pod II",
             "url": "https://www.damseeds.com/products/oregon-sugar-pod-ii",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1485,75 +1528,77 @@
                 "subCat:Snow/Sugar Peas",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.85,
                     "sku": "3091A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "125 grams",
+                    "size": "125 grams",
                     "price": 5.25,
                     "sku": "3091B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.125,
                     "original_weight_value": 125.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 8.95,
                     "sku": "3091C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 30.25,
                     "sku": "3091D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 46.6,
                     "sku": "3091E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "10  kilos",
+                    "size": "10 kilograms",
                     "price": 73.7,
                     "sku": "3091F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 10.0,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "22.5  kilos",
+                    "size": "22.5 kilograms",
                     "price": 136.75,
                     "sku": "3091G",
+                    "is_variation_in_stock": true,
                     "weight_kg": 22.5,
                     "original_weight_value": 22.5,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Peas, Aladdin pvp",
+            "common_name": "Peas,",
+            "cultivar_name": "Aladdin pvp",
             "url": "https://www.damseeds.com/products/aladdin-pvp",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1566,75 +1611,77 @@
                 "subCat:Main Season Peas",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.95,
                     "sku": "2951A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "125 grams",
+                    "size": "125 grams",
                     "price": 5.35,
                     "sku": "2951B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.125,
                     "original_weight_value": 125.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 9.95,
                     "sku": "2951C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 32.5,
                     "sku": "2951D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5  kilos",
+                    "size": "5 kilograms",
                     "price": 48.75,
                     "sku": "2951E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "10  kilos",
+                    "size": "10 kilograms",
                     "price": 80.65,
                     "sku": "2951F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 10.0,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "22.5  kilos",
+                    "size": "22.5 kilograms",
                     "price": 160.45,
                     "sku": "2951G",
+                    "is_variation_in_stock": true,
                     "weight_kg": 22.5,
                     "original_weight_value": 22.5,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Onions, Evergreen Long White Nebuka",
+            "common_name": "Onions,",
+            "cultivar_name": "Evergreen Long White Nebuka",
             "url": "https://www.damseeds.com/products/evergreen-long-white-nebuka",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1647,66 +1694,68 @@
                 "subCat:Bunching Onions",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "2811A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 8.25,
                     "sku": "2811B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 20.65,
                     "sku": "2811C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 60.45,
                     "sku": "2811D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 199.5,
                     "sku": "2811E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 458.95,
                     "sku": "2811F",
+                    "is_variation_in_stock": true,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true
         },
         {
             "title": "Fennel, Finnochio/Florence",
+            "common_name": "Fennel",
+            "cultivar_name": "Finnochio/Florence",
             "url": "https://www.damseeds.com/products/finnochio-florence",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1719,75 +1768,77 @@
                 "subCat:Foliage Fennel",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.95,
                     "sku": "2245A",
+                    "is_variation_in_stock": false,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": false
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "10 grams",
+                    "size": "10 grams",
                     "price": 5.25,
                     "sku": "2245B",
+                    "is_variation_in_stock": false,
                     "weight_kg": 0.01,
                     "original_weight_value": 10.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": false
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 7.95,
                     "sku": "2245C",
+                    "is_variation_in_stock": false,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": false
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 17.45,
                     "sku": "2245D",
+                    "is_variation_in_stock": false,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": false
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 46.45,
                     "sku": "2245E",
+                    "is_variation_in_stock": false,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": false
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2 kilos",
+                    "size": "2 kilograms",
                     "price": 124.75,
                     "sku": "2245F",
+                    "is_variation_in_stock": false,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": false
+                    "original_weight_unit": "kilos"
                 },
                 {
-                    "title": "5 kilos",
+                    "size": "5 kilograms",
                     "price": 278.45,
                     "sku": "2245G",
+                    "is_variation_in_stock": false,
                     "weight_kg": 5.0,
                     "original_weight_value": 5.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": false
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": false
         },
         {
             "title": "Kohlrabi, White Vienna",
+            "common_name": "Kohlrabi",
+            "cultivar_name": "White Vienna",
             "url": "https://www.damseeds.com/products/white-vienna",
             "vendor": "Dam Seeds",
             "product_type": "",
@@ -1800,51 +1851,51 @@
                 "subCat:White Kohlrabi",
                 "topCat:V"
             ],
-            "variants": [
+            "variations": [
                 {
-                    "title": "Packet",
+                    "size": "Packet",
                     "price": 2.75,
                     "sku": "1441A",
+                    "is_variation_in_stock": true,
                     "weight_kg": null,
                     "original_weight_value": null,
-                    "original_weight_unit": null,
-                    "is_in_stock": true
+                    "original_weight_unit": null
                 },
                 {
-                    "title": "25 grams",
+                    "size": "25 grams",
                     "price": 6.35,
                     "sku": "1441B",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.025,
                     "original_weight_value": 25.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "100 grams",
+                    "size": "100 grams",
                     "price": 12.1,
                     "sku": "1441C",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.1,
                     "original_weight_value": 100.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "450 grams",
+                    "size": "450 grams",
                     "price": 30.65,
                     "sku": "1441D",
+                    "is_variation_in_stock": true,
                     "weight_kg": 0.45,
                     "original_weight_value": 450.0,
-                    "original_weight_unit": "grams",
-                    "is_in_stock": true
+                    "original_weight_unit": "grams"
                 },
                 {
-                    "title": "2  kilos",
+                    "size": "2 kilograms",
                     "price": 97.2,
                     "sku": "1441E",
+                    "is_variation_in_stock": true,
                     "weight_kg": 2.0,
                     "original_weight_value": 2.0,
-                    "original_weight_unit": "kilos",
-                    "is_in_stock": true
+                    "original_weight_unit": "kilos"
                 }
             ],
             "is_in_stock": true

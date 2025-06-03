@@ -4,18 +4,67 @@ import csv
 import time
 import json
 import re # Added for regex price parsing
+import argparse # Added for command-line arguments
 from urllib.parse import urljoin
 from datetime import datetime
 import logging
-import logging.handlers # For RotatingFileHandler
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 from dotenv import load_dotenv
+from seed_name_parser import parse_with_botanical_field_names
+from scraper_utils import (
+    setup_logging, retry_on_failure, parse_weight_from_string as utils_parse_weight,
+    standardize_size_format as utils_standardize_size, extract_price,
+    save_products_to_json as utils_save_json, validate_product_data,
+    clean_text, make_absolute_url, ScraperError, NetworkError, LoginError
+)
+
+"""
+# Standardized JSON output format for all scrapers:
+{
+    "timestamp": "2025-05-27T12:39:07.123456", # ISO format timestamp when scrape completed
+    "scrape_duration_seconds": 123.45,         # Time taken to complete the scrape
+    "source_site": "https://example.com",      # Base URL of the scraped site
+    "currency_code": "CAD",                    # Currency code (CAD, USD, etc.)
+    "product_count": 42,                       # Number of products in the data array
+    "data": [                                  # Array of product objects
+        {
+            "title": "Product Name",           # Full product title
+            "common_name": "sunflower",        # Common name (lowercase, botanical convention)
+            "cultivar_name": "'Black Oil'",    # Cultivar name (in single quotes, botanical convention)
+            "url": "https://example.com/product/sunflower", # Product page URL
+            "is_in_stock": true,               # Overall product stock status
+            "variations": [                    # Array of product variations
+                {
+                    "size": "100g",            # Size/weight/description of the variation
+                    "price": 12.99,            # Price in the currency specified above
+                    "is_variation_in_stock": true, # Stock status of this specific variation
+                    "weight_kg": 0.1,          # Weight in kg (normalized)
+                    "original_weight_value": 100, # Original weight value from label
+                    "original_weight_unit": "g", # Original weight unit from label
+                    "sku": "SF-100",           # SKU if available, "N/A" if not
+                    "lot_number": "SF4K"       # Lot number if available, null if not
+                }
+            ]
+        }
+    ]
+}
+"""
+
+def detect_currency_on_page(page_content_text):
+    """Detects currency (CAD or USD) from page text content."""
+    # Prioritize explicit CAD or C$
+    if re.search(r'C\$|CAD', page_content_text, re.IGNORECASE):
+        return "CAD"
+    # Then check for USD. If only a generic $ is found, we'll rely on the default.
+    if re.search(r'USD', page_content_text, re.IGNORECASE):
+        return "USD"
+    return None # Return None if no clear CAD/USD found, or only ambiguous '$'
 
 base_shop_url = "https://sprouting.com/shop/"
-SHARED_OUTPUT_DIR = "./scraper_data/json_files/" # Define the shared output directory
+SHARED_OUTPUT_DIR = "./scraper_data/json_files/mumms_seeds" # Define the shared output directory
 LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
 LOG_FILE = os.path.join(LOG_DIR, "scraper.log")
-HEADLESS = True
+HEADLESS = False
 TEST_MODE = False # Set to True for testing, False for production (full scrape)
 
 # Setup Logger
@@ -57,42 +106,6 @@ def setup_logging():
 
     logger.info("Logging configured. Saving logs to: %s", LOG_FILE)
 
-
-def parse_cultivar_and_variety_from_title(title_string):
-    """Parses cultivar and plant variety from a product title string, using comma or dash as a separator."""
-    if not title_string:
-        return {"cultivar": "N/A", "plant_variety": "N/A"}
-    
-    cultivar = "N/A"
-    plant_variety = "N/A"
-
-    # Try splitting by comma first
-    parts = title_string.split(',', 1)
-    if len(parts) == 2:
-        cultivar = parts[0].strip()
-        plant_variety = parts[1].strip()
-    else:
-        # If comma not found or didn't split into two, try splitting by dash
-        parts = title_string.split('-', 1)
-        if len(parts) == 2:
-            cultivar = parts[0].strip()
-            plant_variety = parts[1].strip()
-        else:
-            # If neither comma nor dash allows a split into two parts, assume whole title is cultivar
-            cultivar = title_string.strip()
-            # plant_variety remains "N/A"
-
-    # Handle cases where splitting might result in empty strings
-    if not cultivar: cultivar = title_string.strip()
-    if not plant_variety and cultivar != title_string.strip():
-        plant_variety = "N/A"
-    elif not plant_variety and cultivar == title_string.strip():
-         plant_variety = "N/A"
-    
-    if not cultivar and title_string.strip() in [",", "-"]:
-        cultivar = "N/A"
-
-    return {"cultivar": cultivar, "plant_variety": plant_variety}
 
 def parse_weight_from_string(text_string):
     """
@@ -146,6 +159,57 @@ def extract_price_from_text(text):
             return 0.0
     return 0.0
 
+def standardize_size_format(original_size_text, parsed_weight_info):
+    """
+    Standardizes the size format to match the format used in damseeds_scraper: "{value} {unit full name}"
+    Example: "75 g" becomes "75 grams", "1 kg" becomes "1 kilogram"
+    
+    Args:
+        original_size_text: The original size text
+        parsed_weight_info: Dictionary returned by parse_weight_from_string()
+        
+    Returns:
+        Standardized size string or the original if no weight info was parsed
+    """
+    if not parsed_weight_info:
+        return original_size_text
+    
+    # Get value and unit from parsed weight info
+    value = parsed_weight_info['value']
+    unit = parsed_weight_info['unit']
+    
+    # Standardize units to their full names
+    unit_mapping = {
+        'g': 'grams',
+        'gram': 'grams',
+        'grams': 'grams',
+        'kg': 'kilograms',
+        'kilo': 'kilograms',
+        'kilos': 'kilograms',
+        'kilogram': 'kilograms',
+        'kilograms': 'kilograms',
+        'lb': 'pounds',
+        'lbs': 'pounds',
+        'pound': 'pounds',
+        'pounds': 'pounds',
+        'oz': 'ounces',
+        'ounce': 'ounces'
+    }
+    
+    # Get the standardized unit name
+    std_unit = unit_mapping.get(unit.lower(), unit)
+    
+    # If value is a whole number, convert to int for cleaner display
+    if value == int(value):
+        value = int(value)
+    
+    # Handle singular form for value of 1
+    if value == 1:
+        if std_unit.endswith('s'):
+            std_unit = std_unit[:-1]  # Remove the 's' for singular
+    
+    return f"{value} {std_unit}"
+
 def scrape_product_details(page, product_url):
     """
     Scrapes detailed product information from its individual page,
@@ -182,7 +246,86 @@ def scrape_product_details(page, product_url):
         product_div = page.locator('div.product').first
         product_classes = product_div.get_attribute('class') or ""
 
-        if "product-type-grouped" in product_classes:
+        # Add specific handling for WooCommerce Grouped Products (woosg) for products like Sunflower
+        if "product-type-woosg" in product_classes:
+            logger.info(f"Product type: WooSG (Grouped Products) - {product_url}")
+            
+            # These products use a special structure with woosg-products
+            woosg_items = page.locator('div.woosg-product')
+            num_variations_found = woosg_items.count()
+            logger.info(f"Found {num_variations_found} potential variations for WooSG product {product_url}")
+            
+            any_variation_in_stock_overall = False
+            valid_variations = [] # Track valid variations (≥25g)
+            
+            for i in range(num_variations_found):
+                item = woosg_items.nth(i)
+                
+                # Get the variation name (includes size)
+                name_locator = item.locator('div.woosg-name')
+                size = name_locator.text_content().strip() if name_locator.count() > 0 else f"Unknown Size {i+1}"
+                
+                # Get the price
+                price_text = ""
+                price_container = item.locator('div.woosg-price span.woocommerce-Price-amount.amount')
+                if price_container.count() > 0:
+                    price_text = price_container.first.text_content()
+                
+                price = extract_price_from_text(price_text)
+                
+                # Check if variation is in stock
+                # In woosg products, if the quantity input is enabled and max > 0, it's in stock
+                qty_input = item.locator('input.woosg-qty')
+                is_variation_in_stock = False
+                
+                if qty_input.count() > 0:
+                    # Check max attribute
+                    max_qty = 0
+                    try:
+                        max_qty_str = qty_input.get_attribute('max')
+                        if max_qty_str and max_qty_str.isdigit():
+                            max_qty = int(max_qty_str)
+                    except Exception as e:
+                        logger.warning(f"Error getting max quantity for {size}: {e}")
+                    
+                    is_enabled = qty_input.is_enabled()
+                    is_variation_in_stock = is_enabled and max_qty > 0
+                    logger.debug(f"Variation {size}: max_qty={max_qty}, is_enabled={is_enabled}")
+                
+                if is_variation_in_stock:
+                    any_variation_in_stock_overall = True
+                
+                parsed_weight_info = parse_weight_from_string(size)
+                
+                # Skip if variation is a packet or less than 25g
+                if parsed_weight_info and parsed_weight_info['unit'] == 'g' and parsed_weight_info['value'] < 25:
+                    logger.info(f"    Skipping variation: {size} - less than 25g")
+                    continue
+                
+                if "packet" in size.lower():
+                    logger.info(f"    Skipping variation: {size} - labeled as packet")
+                    continue
+                
+                standardized_size = standardize_size_format(size, parsed_weight_info)
+                
+                variation_data = {
+                    'size': standardized_size,
+                    'price': price,
+                    'is_variation_in_stock': is_variation_in_stock,
+                    'weight_kg': parsed_weight_info['weight_kg'] if parsed_weight_info else None,
+                    'original_weight_value': parsed_weight_info['value'] if parsed_weight_info else None,
+                    'original_weight_unit': parsed_weight_info['unit'] if parsed_weight_info else None,
+                    'lot_number': None,  # WooSG products don't have lot numbers in their structure
+                }
+                
+                valid_variations.append(variation_data)
+                logger.info(f"    WooSG Variation: {standardized_size}, Price: {price}, In Stock: {is_variation_in_stock}")
+            
+            # Update variations and check if any valid variations are in stock
+            product_data['variations'] = valid_variations
+            product_data['is_in_stock'] = any(var['is_variation_in_stock'] for var in valid_variations) if valid_variations else False
+            
+        elif "product-type-grouped" in product_classes:
             logger.info(f"Product type: Grouped - {product_url}")
             form_locator = page.locator('form.cart.grouped_form')
             if form_locator.count() == 0:
@@ -198,6 +341,8 @@ def scrape_product_details(page, product_url):
             logger.info(f"Found {num_variations_found} potential variations for grouped product {product_url}")
 
             any_variation_in_stock_overall = False
+            valid_variations = [] # Track valid variations (≥25g)
+            
             for i in range(num_variations_found):
                 logger.debug(f"    Processing variation {i+1}/{num_variations_found} for {product_url}...")
                 row = variation_rows.nth(i)
@@ -269,25 +414,40 @@ def scrape_product_details(page, product_url):
                     logger.warning(f"        Using placeholder size: '{size}'")
                 
                 parsed_weight_info = parse_weight_from_string(size)
-
+                
+                # Skip if variation is a packet or less than 25g
+                if parsed_weight_info and parsed_weight_info['unit'] == 'g' and parsed_weight_info['value'] < 25:
+                    logger.info(f"    Skipping variation: {size} - less than 25g")
+                    continue
+                
+                if "packet" in size.lower():
+                    logger.info(f"    Skipping variation: {size} - labeled as packet")
+                    continue
+                
+                standardized_size = standardize_size_format(size, parsed_weight_info)
+                
                 variation_data = {
-                    'size': size,
+                    'size': standardized_size,
                     'price': price,
                     'is_variation_in_stock': is_this_variation_in_stock,
                     'weight_kg': parsed_weight_info['weight_kg'] if parsed_weight_info else None,
                     'original_weight_value': parsed_weight_info['value'] if parsed_weight_info else None,
                     'original_weight_unit': parsed_weight_info['unit'] if parsed_weight_info else None,
+                    'lot_number': None,  # Grouped products don't have lot numbers in their structure
                 }
-                product_data['variations'].append(variation_data)
+                valid_variations.append(variation_data)
                 
                 if is_this_variation_in_stock:
                     any_variation_in_stock_overall = True
                 
-                logger.debug(f"    Finished processing variation {i+1}: Size='{size}', Price='{price}', InStock={is_this_variation_in_stock}")
+                logger.debug(f"    Finished processing variation {i+1}: Size='{standardized_size}', Price='{price}', InStock={is_this_variation_in_stock}")
 
-            product_data['is_in_stock'] = any_variation_in_stock_overall
-            if not any_variation_in_stock_overall and num_variations_found > 0 :
-                logger.info(f"All {num_variations_found} variations for {product_url} appear out of stock.")
+            # Update product data with valid variations
+            product_data['variations'] = valid_variations
+            product_data['is_in_stock'] = any(var['is_variation_in_stock'] for var in valid_variations) if valid_variations else False
+            
+            if not valid_variations and num_variations_found > 0:
+                logger.info(f"No valid variations (≥25g) found for {product_url} after filtering.")
             elif num_variations_found == 0:
                  logger.warning(f"No variations found in the table for grouped product {product_url}. Assuming out of stock based on table content.")
                  product_data['is_in_stock'] = False # No variations means nothing to buy
@@ -306,6 +466,7 @@ def scrape_product_details(page, product_url):
             price_str_simple_var = "0.00" # Use a different variable name
             current_price_simple_var = 0.0
             size_description = "default" # Default for simple products
+            valid_variations = [] # Track valid variations (≥25g)
 
             if "product-type-variable" in product_classes:
                 # For variable products, variations are often loaded dynamically or present in a <form class="variations_form cart">
@@ -322,7 +483,11 @@ def scrape_product_details(page, product_url):
                             variations_json = json.loads(form_data_variations)
                             for var_json in variations_json:
                                 var_attributes = var_json.get('attributes', {})
-                                var_size = ", ".join(var_attributes.values()) if var_attributes else 'default'
+                                # Extract lot number if available
+                                lot_number = var_attributes.get('attribute_lot', '')
+                                # Filter out lot from the size description
+                                size_attrs = {k: v for k, v in var_attributes.items() if k != 'attribute_lot'}
+                                var_size = ", ".join(size_attrs.values()) if size_attrs else 'default'
                                 var_price_html = var_json.get('price_html', '') # Price might be in HTML
                                 var_price_from_json = float(var_json.get('display_price', 0))
                                 
@@ -334,23 +499,35 @@ def scrape_product_details(page, product_url):
                                 var_is_in_stock_json = var_json.get('is_in_stock', False)
                                 
                                 parsed_weight_info_var = parse_weight_from_string(var_size)
-
-                                product_data['variations'].append({
-                                    'size': var_size,
+                                
+                                # Skip if variation is a packet or less than 25g
+                                if parsed_weight_info_var and parsed_weight_info_var['unit'] == 'g' and parsed_weight_info_var['value'] < 25:
+                                    logger.info(f"    Skipping variation: {var_size} - less than 25g")
+                                    continue
+                                
+                                if "packet" in var_size.lower():
+                                    logger.info(f"    Skipping variation: {var_size} - labeled as packet")
+                                    continue
+                                
+                                standardized_size = standardize_size_format(var_size, parsed_weight_info_var)
+                                
+                                variation_data = {
+                                    'size': standardized_size,
                                     'price': current_price_simple_var,
                                     'is_variation_in_stock': var_is_in_stock_json,
                                     'weight_kg': parsed_weight_info_var['weight_kg'] if parsed_weight_info_var else None,
                                     'original_weight_value': parsed_weight_info_var['value'] if parsed_weight_info_var else None,
                                     'original_weight_unit': parsed_weight_info_var['unit'] if parsed_weight_info_var else None,
-                                })
-                                if var_is_in_stock_json:
-                                    is_available = True
-                                logger.debug(f"    Variable Variation (JSON): Size='{var_size}', Price='{current_price_simple_var}', InStock={var_is_in_stock_json}")
+                                    'lot_number': lot_number if lot_number and lot_number != 'Current Available Lot' else None,
+                                }
+                                valid_variations.append(variation_data)
+                                
+                                logger.debug(f"    Variable Variation (JSON): Size='{standardized_size}', Price='{current_price_simple_var}', InStock={var_is_in_stock_json}")
                         except json.JSONDecodeError:
                             logger.error(f"Could not parse data-product_variations for {product_url}", exc_info=True)
                     
                     # Fallback if JSON parsing fails or not present, check for visible add to cart / out of stock messages
-                    if not product_data['variations']: # If JSON didn't yield variations
+                    if not valid_variations: # If JSON didn't yield variations
                         if add_to_cart_button.count() > 0:
                             is_available = True
                             # Try to get a general price if no variations were parsed
@@ -363,37 +540,25 @@ def scrape_product_details(page, product_url):
                             temp_size_for_parsing = 'default (check options)'
                             parsed_weight_info_fallback = parse_weight_from_string(temp_size_for_parsing)
 
-                            product_data['variations'].append({
-                                'size': temp_size_for_parsing, # Use the actual size string
+                            standardized_size = standardize_size_format(temp_size_for_parsing, parsed_weight_info_fallback)
+
+                            variation_data = {
+                                'size': standardized_size,
                                 'price': float(price_str_simple_var) if price_str_simple_var and price_str_simple_var.replace('.', '', 1).isdigit() else 0.0,
                                 'is_variation_in_stock': True,
                                 'weight_kg': parsed_weight_info_fallback['weight_kg'] if parsed_weight_info_fallback else None,
                                 'original_weight_value': parsed_weight_info_fallback['value'] if parsed_weight_info_fallback else None,
                                 'original_weight_unit': parsed_weight_info_fallback['unit'] if parsed_weight_info_fallback else None,
-                            })
+                                'lot_number': None,  # Fallback variation doesn't have lot info
+                            }
+                            valid_variations.append(variation_data)
                             logger.info(f"    Variable product {product_url} seems available, add to cart button visible. Price: {price_str_simple_var}")
                         elif general_out_of_stock_message.count() > 0:
                              logger.info(f"    Variable product {product_url} shows general out of stock message.")
                              is_available = False
-                             product_data['variations'].append({ # Add a default OOS variation
-                                'size': 'default (out of stock)',
-                                'price': 0.0,
-                                'is_variation_in_stock': False,
-                                'weight_kg': None,
-                                'original_weight_value': None,
-                                'original_weight_unit': None,
-                            })
                         else:
                             logger.warning(f"    Variable product {product_url} - stock status unclear, no variations JSON, no clear OOS/Add to Cart button. Assuming OOS.")
                             is_available = False # Default to OOS if unclear
-                            product_data['variations'].append({
-                                'size': 'default (status unclear)',
-                                'price': 0.0,
-                                'is_variation_in_stock': False,
-                                'weight_kg': None,
-                                'original_weight_value': None,
-                                'original_weight_unit': None,
-                            })
 
 
                 else: # No variations_form found for variable product
@@ -410,15 +575,26 @@ def scrape_product_details(page, product_url):
                             price_str_simple_var = price_text.replace('$', '').replace(',', '').strip()
                     
                     parsed_weight_info_simple_var_no_form = parse_weight_from_string(size_description)
-                    product_data['variations'].append({
-                        'size': size_description,
-                        'price': float(price_str_simple_var) if price_str_simple_var and price_str_simple_var.replace('.', '', 1).isdigit() else 0.0,
-                        'is_variation_in_stock': is_available,
-                        'weight_kg': parsed_weight_info_simple_var_no_form['weight_kg'] if parsed_weight_info_simple_var_no_form else None,
-                        'original_weight_value': parsed_weight_info_simple_var_no_form['value'] if parsed_weight_info_simple_var_no_form else None,
-                        'original_weight_unit': parsed_weight_info_simple_var_no_form['unit'] if parsed_weight_info_simple_var_no_form else None,
-                    })
-                    logger.info(f"    Stock for {product_type} {product_url} (no variation form): {is_available}, Price: {price_str_simple_var}")
+                    
+                    # Skip if size description indicates a packet or less than 25g
+                    if parsed_weight_info_simple_var_no_form and parsed_weight_info_simple_var_no_form['unit'] == 'g' and parsed_weight_info_simple_var_no_form['value'] < 25:
+                        logger.info(f"    Skipping simple variation: {size_description} - less than 25g")
+                    elif "packet" in size_description.lower():
+                        logger.info(f"    Skipping simple variation: {size_description} - labeled as packet")
+                    else:
+                        standardized_size = standardize_size_format(size_description, parsed_weight_info_simple_var_no_form)
+                        
+                        variation_data = {
+                            'size': standardized_size,
+                            'price': float(price_str_simple_var) if price_str_simple_var and price_str_simple_var.replace('.', '', 1).isdigit() else 0.0,
+                            'is_variation_in_stock': is_available,
+                            'weight_kg': parsed_weight_info_simple_var_no_form['weight_kg'] if parsed_weight_info_simple_var_no_form else None,
+                            'original_weight_value': parsed_weight_info_simple_var_no_form['value'] if parsed_weight_info_simple_var_no_form else None,
+                            'original_weight_unit': parsed_weight_info_simple_var_no_form['unit'] if parsed_weight_info_simple_var_no_form else None,
+                            'lot_number': None,  # Simple products don't have lot numbers
+                        }
+                        valid_variations.append(variation_data)
+                        logger.info(f"    Stock for {product_type} {product_url} (no variation form): {is_available}, Price: {price_str_simple_var}")
 
             else: # Simple product specific logic
                 if add_to_cart_button.count() > 0:
@@ -437,26 +613,30 @@ def scrape_product_details(page, product_url):
                          price_str_simple_var = price_text.replace('$', '').replace(',', '').strip()
                 
                 parsed_weight_info_simple = parse_weight_from_string(size_description)
-                product_data['variations'].append({
-                    'size': size_description,
-                    'price': float(price_str_simple_var) if price_str_simple_var and price_str_simple_var.replace('.', '', 1).isdigit() else 0.0,
-                    'is_variation_in_stock': is_available,
-                    'weight_kg': parsed_weight_info_simple['weight_kg'] if parsed_weight_info_simple else None,
-                    'original_weight_value': parsed_weight_info_simple['value'] if parsed_weight_info_simple else None,
-                    'original_weight_unit': parsed_weight_info_simple['unit'] if parsed_weight_info_simple else None,
-                })
-                logger.info(f"    Stock for Simple {product_url}: {is_available}, Price: {price_str_simple_var}")
+                
+                # Skip if simple product is less than 25g or a packet
+                if parsed_weight_info_simple and parsed_weight_info_simple['unit'] == 'g' and parsed_weight_info_simple['value'] < 25:
+                    logger.info(f"    Skipping simple product: {size_description} - less than 25g")
+                elif "packet" in size_description.lower():
+                    logger.info(f"    Skipping simple product: {size_description} - labeled as packet")
+                else:
+                    standardized_size = standardize_size_format(size_description, parsed_weight_info_simple)
+                    
+                    variation_data = {
+                        'size': standardized_size,
+                        'price': float(price_str_simple_var) if price_str_simple_var and price_str_simple_var.replace('.', '', 1).isdigit() else 0.0,
+                        'is_variation_in_stock': is_available,
+                        'weight_kg': parsed_weight_info_simple['weight_kg'] if parsed_weight_info_simple else None,
+                        'original_weight_value': parsed_weight_info_simple['value'] if parsed_weight_info_simple else None,
+                        'original_weight_unit': parsed_weight_info_simple['unit'] if parsed_weight_info_simple else None,
+                        'lot_number': None,  # Simple products don't have lot numbers
+                    }
+                    valid_variations.append(variation_data)
+                    logger.info(f"    Stock for Simple {product_url}: {is_available}, Price: {price_str_simple_var}")
 
-            product_data['is_in_stock'] = is_available
-            if not product_data['variations'] and not is_available: # Ensure there's at least one variation entry if OOS
-                product_data['variations'].append({
-                    'size': 'default (out of stock)',
-                    'price': 0.0,
-                    'is_variation_in_stock': False,
-                    'weight_kg': None,
-                    'original_weight_value': None,
-                    'original_weight_unit': None,
-                })
+            # Update product data with valid variations and recalculate overall stock status
+            product_data['variations'] = valid_variations
+            product_data['is_in_stock'] = any(var['is_variation_in_stock'] for var in valid_variations) if valid_variations else False
 
 
         else: # Unknown product type or issue
@@ -465,32 +645,24 @@ def scrape_product_details(page, product_url):
             if page.locator('p.stock.out-of-stock:visible, div.woocommerce-info:has-text("Out of stock"):visible').count() > 0:
                 product_data['is_in_stock'] = False
                 logger.info(f"General out-of-stock message found on page {product_url} with unknown type.")
-            if not product_data['variations']: # Ensure there's at least one variation entry if OOS
-                product_data['variations'].append({
-                    'size': 'default (unknown type / out of stock)',
-                    'price': 0.0,
-                    'is_variation_in_stock': False,
-                    'weight_kg': None,
-                    'original_weight_value': None,
-                    'original_weight_unit': None,
-                })
-
 
         # Final check: if no variations were added at all, and it's marked in stock, add a default placeholder
         if product_data['is_in_stock'] and not product_data['variations']:
             logger.warning(f"Warning: Product {product_url} marked in_stock but no variations found. Adding a default placeholder variation.")
             product_data['variations'].append({
-                'size': 'default (check page)',
+                'size': 'Default (check page)',
                 'price': 0.0, # Price unknown
                 'is_variation_in_stock': True,
                 'weight_kg': None,
                 'original_weight_value': None,
                 'original_weight_unit': None,
             })
-        elif not product_data['is_in_stock'] and not product_data['variations']:
-            # If determined OOS and no variations were logged (e.g. early exit), add a placeholder
+        elif not product_data['variations']:
+            # If no valid variations after filtering (e.g. all <25g), mark as out of stock
+            product_data['is_in_stock'] = False
+            # Add a placeholder to indicate filtering occurred
             product_data['variations'].append({
-                'size': 'default (out of stock)',
+                'size': 'No valid sizes (all <25g or packets)',
                 'price': 0.0,
                 'is_variation_in_stock': False,
                 'weight_kg': None,
@@ -499,15 +671,15 @@ def scrape_product_details(page, product_url):
             })
 
 
-        logger.info(f"Finished scraping details for {product_url}. Overall Stock: {product_data['is_in_stock']}, Variations found: {len(product_data['variations'])}")
+        logger.info(f"Finished scraping details for {product_url}. Overall Stock: {product_data['is_in_stock']}, Valid Variations found: {len(product_data['variations'])}")
         return product_data
 
     except PlaywrightTimeoutError as pte: # Give the exception an alias
         logger.error(f"Playwright timeout during detail extraction for {product_url}. Error: {pte}", exc_info=True)
-        return {'url': product_url, 'is_in_stock': False, 'variations': [{'size': 'default (timeout)', 'price': 0.0, 'is_variation_in_stock': False}], 'error': f'Timeout during detail extraction: {str(pte)}'}
+        return {'url': product_url, 'is_in_stock': False, 'variations': [{'size': 'Default (timeout)', 'price': 0.0, 'is_variation_in_stock': False}], 'error': f'Timeout during detail extraction: {str(pte)}'}
     except Exception as e:
         logger.exception(f"Error scraping product page {product_url}: {e}")
-        return {'url': product_url, 'is_in_stock': False, 'variations': [{'size': 'default (error)', 'price': 0.0, 'is_variation_in_stock': False}], 'error': str(e)}
+        return {'url': product_url, 'is_in_stock': False, 'variations': [{'size': 'Default (error)', 'price': 0.0, 'is_variation_in_stock': False}], 'error': str(e)}
 
 def scrape_product_list(page, max_pages_override=None):
     """
@@ -595,12 +767,12 @@ def scrape_product_list(page, max_pages_override=None):
                 if title and product_url_path:
                     product_url = urljoin(base_url_for_products, product_url_path) if not product_url_path.startswith('http') else product_url_path
                     
-                    parsed_title_info = parse_cultivar_and_variety_from_title(title)
-
+                    parsed_title_info = parse_with_botanical_field_names(title)
+                    
                     product_data = {
                         'title': title, 
-                        'cultivar': parsed_title_info['cultivar'],
-                        'plant_variety': parsed_title_info['plant_variety'],
+                        'common_name': parsed_title_info['common_name'],
+                        'cultivar_name': parsed_title_info['cultivar_name'],
                         'url': product_url
                         # 'is_microgreen' and 'is_in_stock' from list page are no longer primary
                     }
@@ -679,10 +851,23 @@ def save_products_to_json(data_to_save, supplier_name, base_filename_prefix="pro
         logger.error(f"Error setting permissions for {output_filename}: {e}", exc_info=True)
 
 def main_sync():
+    # Configure command-line arguments
+    parser = argparse.ArgumentParser(description='Scrape sprouting.com for microgreen seeds data')
+    parser.add_argument('--cultivar', type=str, help='Only scrape products matching this cultivar name (case-insensitive)')
+    parser.add_argument('--test', action='store_true', help='Enable test mode (limited number of pages)')
+    args = parser.parse_args()
+    
+    # Override test mode if specified in command line
+    global TEST_MODE
+    if args.test:
+        TEST_MODE = True
+    
     setup_logging() # Initialize logging configuration
     
     overall_start_time = time.time() # Start timer for the whole main_sync operation
     logger.info("Starting main_sync process.")
+    if args.cultivar:
+        logger.info(f"Filtering for cultivar: {args.cultivar}")
 
     load_dotenv() 
 
@@ -701,6 +886,8 @@ def main_sync():
         logger.warning("Attempting to scrape without login (public data only).")
 
     all_scraped_product_details = [] # This will store the final detailed data for all products
+    global_error_message = None
+    site_currency_code = "CAD" # Set directly to CAD
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=playwright_headless_mode) 
@@ -740,77 +927,139 @@ def main_sync():
                 # Click and then wait for navigation OR specific error messages
                 login_button_locator = page.locator("button[name='login']")
                 if login_button_locator.count() > 0:
-                    login_button_locator.click(timeout=10000) # Short timeout for click itself
+                    # Use try-except to handle click timeout issues
+                    try:
+                        logger.info("Clicking login button and waiting for navigation...")
+                        # Use Promise.all pattern in Playwright - click and then wait for navigation
+                        with page.expect_navigation(timeout=30000) as navigation_info:
+                            login_button_locator.click(timeout=20000, force=True)
+                        
+                        # Navigation completed successfully
+                        logger.info(f"Navigation completed after login. New URL: {page.url}")
+                        
+                        # Wait a bit for any page content to fully load
+                        page.wait_for_load_state("domcontentloaded", timeout=10000)
+                        
+                        if "sprouting.com/shop/" in page.url:
+                            # Successfully navigated to shop, now confirm login status
+                            body_classes_shop = page.locator('body').get_attribute('class') or ""
+                            logout_link_visible_shop = page.locator('a[href*="logout"]:visible, a:has-text("Logout"):visible, a:has-text("Log out"):visible').count() > 0
+
+                            if 'logged-in' in body_classes_shop or logout_link_visible_shop:
+                                login_successful = True
+                                user_type = 'wholesale_customer' if 'wholesale_customer' in body_classes_shop else 'logged-in'
+                                logger.info(f"Login successful! Confirmed on {page.url}. User type: {user_type}")
+                            else:
+                                logger.warning(f"Redirected to {page.url}, but could not confirm logged-in status (no 'logged-in' class or logout link).")
+                                save_error_page_content(page.content(), "error_page_shop_login_check_fail")
+                                login_successful = False # Treat as fail if cant confirm
+                        else:
+                            # Handle other URL scenarios
+                            logger.info(f"Login redirected to {page.url} instead of shop page")
+                            # Check if we're on my-account page with errors
+                            if "sprouting.com/my-account/" in page.url:
+                                # Check for error messages on the my-account page
+                                error_message_selectors = [
+                                    "ul.woocommerce-error li", 
+                                    ".woocommerce-notices-wrapper .woocommerce-error",
+                                    ".woocommerce-message" # General message container
+                                ]
+                                immediate_login_error_found = False
+                                for selector in error_message_selectors:
+                                    error_elements = page.locator(selector)
+                                    if error_elements.count() > 0:
+                                        for i in range(error_elements.count()):
+                                            error_text = error_elements.nth(i).text_content().strip().lower()
+                                            # Broader error check
+                                            if "error" in error_text or "unknown email" in error_text or "incorrect password" in error_text or "the password you entered" in error_text:
+                                                logger.error(f"Login Error Found on {page.url}: {error_elements.nth(i).text_content().strip()}")
+                                                immediate_login_error_found = True
+                                                break
+                                        if immediate_login_error_found: break
+                                
+                                if immediate_login_error_found:
+                                    login_successful = False
+                                    logger.error("Login failed: Error message displayed on /my-account/ page.")
+                                    save_error_page_content(page.content(), "error_page_login_immediate_fail_on_myaccount")
+                                else:
+                                    # No explicit error, but try to navigate to shop
+                                    logger.warning("Still on /my-account/ after login attempt, but no clear error message. Trying to navigate to shop.")
+                                    try:
+                                        # Try navigating to shop directly as a fallback
+                                        page.goto("https://sprouting.com/shop/", timeout=30000, wait_until="domcontentloaded")
+                                        
+                                        # Check if logged in on shop page
+                                        body_classes_shop = page.locator('body').get_attribute('class') or ""
+                                        logout_link_visible_shop = page.locator('a[href*="logout"]:visible, a:has-text("Logout"):visible, a:has-text("Log out"):visible').count() > 0
+                                        
+                                        if 'logged-in' in body_classes_shop or logout_link_visible_shop:
+                                            login_successful = True
+                                            user_type = 'wholesale_customer' if 'wholesale_customer' in body_classes_shop else 'logged-in'
+                                            logger.info(f"Login successful after navigation to shop! User type: {user_type}")
+                                        else:
+                                            logger.warning("Not logged in after direct navigation to shop. Login likely failed.")
+                                            login_successful = False
+                                    except Exception as nav_ex:
+                                        logger.error(f"Failed direct navigation to shop after login: {nav_ex}")
+                            else:
+                                # Some other page - try to detect login state
+                                body_classes = page.locator('body').get_attribute('class') or ""
+                                logout_link_visible = page.locator('a[href*="logout"]:visible, a:has-text("Logout"):visible, a:has-text("Log out"):visible').count() > 0
+                                
+                                if 'logged-in' in body_classes or logout_link_visible:
+                                    login_successful = True
+                                    logger.info(f"Login appears successful on unexpected page {page.url}")
+                                else:
+                                    logger.warning(f"Login appears to have failed on unexpected page {page.url}")
+                                    login_successful = False
+                    
+                    except PlaywrightTimeoutError as click_timeout:
+                        logger.warning(f"Timeout during login button click or navigation: {click_timeout}")
+                        
+                        # Check current page state after timeout
+                        current_url = page.url
+                        logger.info(f"Current URL after timeout: {current_url}")
+                        
+                        # We might actually be logged in despite the timeout
+                        if "sprouting.com/shop/" in current_url or "sprouting.com/my-account/" not in current_url:
+                            # We navigated somewhere, check login state
+                            body_classes = page.locator('body').get_attribute('class') or ""
+                            logout_link_visible = page.locator('a[href*="logout"]:visible, a:has-text("Logout"):visible, a:has-text("Log out"):visible').count() > 0
+                            
+                            if 'logged-in' in body_classes or logout_link_visible:
+                                login_successful = True
+                                logger.info(f"Login appears successful despite timeout! Current URL: {current_url}")
+                            else:
+                                logger.warning(f"Not logged in after timeout. Current URL: {current_url}")
+                                login_successful = False
+                        else:
+                            # Still on login page or similar
+                            logger.error("Still on login page after timeout. Login likely failed.")
+                            try:
+                                save_error_page_content(page.content(), "error_page_login_timeout_still_on_login")
+                            except Exception:
+                                pass
+                            login_successful = False
+                            
+                            # Try navigating to shop as a last resort
+                            try:
+                                logger.info("Attempting direct navigation to shop after login timeout...")
+                                page.goto("https://sprouting.com/shop/", timeout=30000, wait_until="domcontentloaded")
+                                
+                                # Check if we're logged in
+                                body_classes_shop = page.locator('body').get_attribute('class') or ""
+                                logout_link_visible_shop = page.locator('a[href*="logout"]:visible, a:has-text("Logout"):visible, a:has-text("Log out"):visible').count() > 0
+                                
+                                if 'logged-in' in body_classes_shop or logout_link_visible_shop:
+                                    login_successful = True
+                                    logger.info("Login successful after direct navigation to shop!")
+                                else:
+                                    logger.warning("Not logged in after direct navigation to shop")
+                            except Exception as nav_ex:
+                                logger.error(f"Failed direct navigation to shop after login timeout: {nav_ex}")
                 else:
                     logger.error("Login button not found!")
                     raise Exception("Login button not found on /my-account/ page.")
-
-                # Check for immediate errors on the current page OR successful navigation
-                try:
-                    # Option 1: Successful navigation (priority)
-                    # Wait for EITHER shop URL or my-account URL (if errors appear there)
-                    logger.info("Waiting for navigation or error message after login click...")
-                    page.wait_for_url(lambda url: "sprouting.com/shop/" in url or "sprouting.com/my-account/" in url, timeout=25000)
-                    logger.info(f"Landed on URL: {page.url} after login attempt.")
-
-                    if "sprouting.com/shop/" in page.url:
-                        # Successfully navigated to shop, now confirm login status
-                        body_classes_shop = page.locator('body').get_attribute('class') or ""
-                        logout_link_visible_shop = page.locator('a[href*="logout"]:visible, a:has-text("Logout"):visible, a:has-text("Log out"):visible').count() > 0
-
-                        if 'logged-in' in body_classes_shop or logout_link_visible_shop:
-                            login_successful = True
-                            user_type = 'wholesale_customer' if 'wholesale_customer' in body_classes_shop else 'logged-in'
-                            logger.info(f"Login successful! Confirmed on {page.url}. User type: {user_type}")
-                        else:
-                            logger.warning(f"Redirected to {page.url}, but could not confirm logged-in status (no 'logged-in' class or logout link).")
-                            save_error_page_content(page.content(), "error_page_shop_login_check_fail")
-                            login_successful = False # Treat as fail if cant confirm
-
-                    elif "sprouting.com/my-account/" in page.url:
-                        # Still on my-account, check for errors
-                        error_message_selectors = [
-                            "ul.woocommerce-error li", 
-                            ".woocommerce-notices-wrapper .woocommerce-error",
-                            ".woocommerce-message" # General message container
-                        ]
-                        immediate_login_error_found = False
-                        for selector in error_message_selectors:
-                            error_elements = page.locator(selector)
-                            if error_elements.count() > 0:
-                                for i in range(error_elements.count()):
-                                    error_text = error_elements.nth(i).text_content().strip().lower()
-                                    # Broader error check
-                                    if "error" in error_text or "unknown email" in error_text or "incorrect password" in error_text or "the password you entered" in error_text:
-                                        logger.error(f"Login Error Found on {page.url}: {error_elements.nth(i).text_content().strip()}")
-                                        immediate_login_error_found = True
-                                        break
-                                if immediate_login_error_found: break
-                        
-                        if immediate_login_error_found:
-                            login_successful = False
-                            logger.error("Login failed: Error message displayed on /my-account/ page.")
-                            save_error_page_content(page.content(), "error_page_login_immediate_fail_on_myaccount")
-                        else:
-                            logger.warning("Still on /my-account/ after login attempt, but no clear error message. Assuming login failed.")
-                            login_successful = False
-                            save_error_page_content(page.content(), "error_page_login_stuck_on_myaccount_no_error")
-                    else:
-                        # Unexpected URL
-                        logger.error(f"Landed on unexpected URL {page.url} after login attempt. Assuming login failed.")
-                        login_successful = False
-                        save_error_page_content(page.content(), "error_page_login_unexpected_url")
-
-                except PlaywrightTimeoutError:
-                    logger.error(f"Timeout waiting for navigation/response after login click. Current URL: {page.url}. Login likely failed.")
-                    current_content = ""
-                    try: current_content = page.content()
-                    except Exception: pass # page might be closed or in bad state
-                    save_error_page_content(current_content, "error_page_login_timeout_after_click")
-                    login_successful = False
-
-            else: # No username/password
-                logger.info("No username/password provided, skipping login.")
 
             if not login_successful and (username and password): # Only halt if login was attempted and failed
                  logger.critical("Halting script due to login failure or inability to confirm login.")
@@ -838,19 +1087,29 @@ def main_sync():
             # --- Product Detail Scraping ---
             if basic_microgreen_products:
                 logger.info(f"\nFound {len(basic_microgreen_products)} microgreen products from list pages. Now scraping details...")
-                # Create a new page for detail scraping to avoid state conflicts if desired,
-                # or reuse the existing 'page'. Reusing 'page' is simpler for now.
-                # If issues arise, a dedicated detail_page = context.new_page() can be used.
                 
-                if TEST_MODE:
+                products_to_scrape_details_for = [] # Initialize
+                
+                # Filter by cultivar if specified
+                if args.cultivar:
+                    filtered_products = []
+                    cultivar_pattern = re.compile(re.escape(args.cultivar), re.IGNORECASE)
+                    for product in basic_microgreen_products:
+                        if cultivar_pattern.search(product['cultivar_name']):
+                            filtered_products.append(product)
+                            logger.info(f"Including product: {product['title']} (matches cultivar filter)")
+                        else:
+                            logger.debug(f"Excluding product: {product['title']} (doesn't match cultivar filter)")
+                    
+                    products_to_scrape_details_for = filtered_products
+                    logger.info(f"Filtered to {len(products_to_scrape_details_for)} products matching cultivar: {args.cultivar}")
+                elif TEST_MODE:
                     max_detail_pages_to_scrape = 2 # Small number for testing
                     logger.info(f"TEST_MODE is True. Limiting detail scraping to {max_detail_pages_to_scrape} products.")
                     products_to_scrape_details_for = basic_microgreen_products[:max_detail_pages_to_scrape]
                 else:
                     products_to_scrape_details_for = basic_microgreen_products # Scrape all found products
                     logger.info(f"TEST_MODE is False. Will scrape details for all {len(products_to_scrape_details_for)} found products.")
-                
-                # logger.info(f"Will scrape details for up to {max_detail_pages_to_scrape} products (or fewer if less were found).") # This log is now conditional
 
                 for i, basic_product_info in enumerate(products_to_scrape_details_for):
                     logger.info(f"\nProcessing product {i+1}/{len(products_to_scrape_details_for)}: {basic_product_info['title']}")
@@ -862,8 +1121,8 @@ def main_sync():
                         # Combine basic info (title) with detailed info
                         final_product_data = {
                             'title': basic_product_info['title'],
-                            'cultivar': basic_product_info['cultivar'],
-                            'plant_variety': basic_product_info['plant_variety'],
+                            'common_name': basic_product_info['common_name'],
+                            'cultivar_name': basic_product_info['cultivar_name'],
                             'url': detailed_info['url'],
                             'is_in_stock': detailed_info['is_in_stock'],
                             'variations': detailed_info['variations']
@@ -875,11 +1134,11 @@ def main_sync():
                         # Fallback if scrape_product_details returns None (should not happen with current return structure)
                         all_scraped_product_details.append({
                             'title': basic_product_info['title'],
-                            'cultivar': basic_product_info.get('cultivar', basic_product_info['title'] if parse_cultivar_and_variety_from_title(basic_product_info['title'])['cultivar'] == basic_product_info['title'] else parse_cultivar_and_variety_from_title(basic_product_info['title'])['cultivar'] ),
-                            'plant_variety': basic_product_info.get('plant_variety', parse_cultivar_and_variety_from_title(basic_product_info['title'])['plant_variety']),
+                            'common_name': basic_product_info.get('common_name', 'N/A'),
+                            'cultivar_name': basic_product_info.get('cultivar_name', 'N/A'),
                             'url': basic_product_info['url'],
                             'is_in_stock': False,
-                            'variations': [{'size':'default (detail scrape failed)', 'price':0.0, 'is_variation_in_stock': False,
+                            'variations': [{'size':'Default (detail scrape failed)', 'price':0.0, 'is_variation_in_stock': False,
                                            'weight_kg': None, 'original_weight_value': None, 'original_weight_unit': None}],
                             'scrape_error': 'Detail scraping function returned None'
                         })
@@ -898,6 +1157,7 @@ def main_sync():
                     "timestamp": current_timestamp_iso,
                     "scrape_duration_seconds": core_scrape_duration_seconds, # Added duration
                     "source_site": "https://sprouting.com", 
+                    "currency_code": site_currency_code, # Use the detected or default currency
                     "product_count": len(all_scraped_product_details),
                     "data": all_scraped_product_details
                 }

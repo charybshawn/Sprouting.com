@@ -4,44 +4,70 @@ import csv
 import time
 import json
 import re 
+import argparse
 from urllib.parse import urljoin
 from datetime import datetime
 import logging
-import logging.handlers 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+from seed_name_parser import parse_with_botanical_field_names
+from scraper_utils import (
+    setup_logging, retry_on_failure, parse_weight_from_string,
+    standardize_size_format, extract_price, save_products_to_json,
+    validate_product_data, clean_text, make_absolute_url,
+    ScraperError, NetworkError
+)
 
-# --- Constants ---
-BASE_SHOP_URL = "https://germina.ca/en/store/"
-SUPPLIER_NAME = "germina_ca"
-SHARED_OUTPUT_DIR = "./scraper_data/json_files/"
-LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+"""
+# Standardized JSON output format for all scrapers:
+{
+    "timestamp": "2025-05-27T12:39:07.123456", # ISO format timestamp when scrape completed
+    "scrape_duration_seconds": 123.45,         # Time taken to complete the scrape
+    "source_site": "https://example.com",      # Base URL of the scraped site
+    "currency_code": "CAD",                    # Currency code (CAD, USD, etc.)
+    "product_count": 42,                       # Number of products in the data array
+    "data": [                                  # Array of product objects
+        {
+            "title": "Product Name",           # Full product title
+            "common_name": "Sunflower",        # Common name (e.g., "Sunflower")
+            "cultivar_name": "Black Oil",      # Cultivar name (e.g., "Black Oil") 
+            "url": "https://example.com/product/sunflower", # Product page URL
+            "is_in_stock": true,               # Overall product stock status
+            "variations": [                    # Array of product variations
+                {
+                    "size": "100g",            # Size/weight/description of the variation
+                    "price": 12.99,            # Price in the currency specified above
+                    "is_variation_in_stock": true, # Stock status of this specific variation
+                    "weight_kg": 0.1,          # Weight in kg (normalized)
+                    "original_weight_value": 100, # Original weight value from label
+                    "original_weight_unit": "g", # Original weight unit from label
+                    "sku": "SF-100"            # SKU if available, "N/A" if not
+                }
+            ]
+        }
+    ]
+}
+"""
+
+# --- Global Configuration & Constants ---
+logger = logging.getLogger("GerminaScraper") # MOVED HERE
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_DIR = os.path.join(SCRIPT_DIR, "logs")
 LOG_FILE = os.path.join(LOG_DIR, "germina_scraper.log")
+# Assuming SHARED_OUTPUT_DIR is where individual scrape JSONs go, e.g., scraper_data/json_files/
+SHARED_OUTPUT_DIR = "./scraper_data/json_files/germina_seeds"  # Shared with all scrapers
+
 HEADLESS = True 
-TEST_MODE = True 
+TEST_MODE = False 
 TARGET_PRODUCT_CATEGORY_CLASS = "product_cat-organic-seeds"
 BASE_URL_FOR_PRODUCTS = "https://germina.ca" # For resolving relative product URLs
 
-# --- Known Cultivars Management ---
-DEFAULT_CULTIVARS = sorted(list(set([
-    "Alfalfa", "Amaranth", "Arugula", "Barley", "Basil", "Beet", "Bok Choy", "Borage", 
-    "Broccoli", "Buckwheat", "Cabbage", "Carrot", "Celery", "Chervil", "Chia", "Chicory", 
-    "Cilantro", "Clover", "Collard", "Coriander", "Corn Salad", "Cress", "Dill", 
-    "Endive", "Fava Bean", "Fennel", "Fenugreek", "Flax", "Garlic Chives", "Kale", 
-    "Kamut", "Kohlrabi", "Komatsuna", "Leek", "Lemon Balm", "Lentil", "Lettuce", 
-    "Mache", "Melon", "Millet", "Mizuna", "Mung Bean", "Mustard", "Nasturtium", "Oat", 
-    "Okra", "Onion", "Pak Choi", "Parsley", "Pea", "Peppergrass", "Perilla", "Popcorn", 
-    "Poppy", "Purslane", "Quinoa", "Radish", "Rapini", "Red Shiso", "Rice", "Rocket", 
-    "Rutabaga", "Rye", "Shiso", "Sorrel", "Spelt", "Spinach", "Sunflower", "Swiss Chard", 
-    "Tatsoi", "Thyme", "Turnip", "Watercress", "Wheat", "Wheatgrass"
-    # Add more common general cultivar names if needed
-])))
 
-# Determine the path for known_cultivars.csv in the scraper_data directory
-# SHARED_OUTPUT_DIR is ./scraper_data/json_files/, so os.path.dirname(SHARED_OUTPUT_DIR) is ./scraper_data/
-_scraper_data_dir = os.path.dirname(SHARED_OUTPUT_DIR)
-if not _scraper_data_dir: # Fallback if SHARED_OUTPUT_DIR is at root like "./"
-    _scraper_data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scraper_data")
-CULTIVARS_CSV_FILEPATH = os.path.join(_scraper_data_dir, "known_cultivars.csv")
+# Corrected path for CULTIVARS_CSV_FILEPATH
+# SCRIPT_DIR is .../Sprouting.com/scraper/
+# We want .../Sprouting.com/scraper/scraper_data/known_cultivars.csv
+SCRAPER_DATA_ROOT_DIR = os.path.join(SCRIPT_DIR, "scraper_data")
+CULTIVARS_CSV_FILEPATH = os.path.join(SCRAPER_DATA_ROOT_DIR, "known_cultivars.csv")
 
 def save_known_cultivars_to_csv(filepath, cultivars_list):
     try:
@@ -53,7 +79,10 @@ def save_known_cultivars_to_csv(filepath, cultivars_list):
             writer.writerow(['cultivar_name']) # Header
             for cultivar in sorted_cultivars:
                 writer.writerow([cultivar])
-        logger.info(f"Saved {len(sorted_cultivars)} known cultivars to {filepath}")
+        if cultivars_list: # Only log success if there was something to save
+            logger.info(f"Saved {len(sorted_cultivars)} known cultivars to {filepath}")
+        else:
+            logger.info(f"Saved an empty known cultivars CSV to {filepath} (as input list was empty or only contained empty strings).")
     except Exception as e:
         logger.error(f"Error saving known cultivars to {filepath}: {e}")
 
@@ -73,20 +102,25 @@ def load_known_cultivars_from_csv(filepath):
                         cultivars.append(cultivar_name)
         logger.info(f"Loaded {len(set(c for c in cultivars if c))} unique known cultivars from {filepath}")
     except FileNotFoundError:
-        logger.warning(f"Known cultivars CSV not found at {filepath}. Initializing with default list and creating the file.")
-        cultivars = list(DEFAULT_CULTIVARS) # Use a copy
-        save_known_cultivars_to_csv(filepath, cultivars)
+        logger.error(f"Known cultivars CSV not found at {filepath}. No default cultivars will be loaded. Please create this file, e.g., by running create_cultivars_csv.py.")
+        # Attempt to create an empty CSV so the file exists for next time, though it will be empty.
+        # This prevents repeated FileNotFoundError if the create_cultivars_csv.py script hasn't been run.
+        save_known_cultivars_to_csv(filepath, []) 
+        return [] # Return empty list as the file was not found
+    except csv.Error as e:
+        logger.error(f"CSV formatting error in {filepath}: {e}. Returning empty list of cultivars.")
+        return []
     except Exception as e:
-        logger.error(f"Error loading known cultivars from {filepath}: {e}. Using default list.")
-        cultivars = list(DEFAULT_CULTIVARS)
+        logger.error(f"Error loading known cultivars from {filepath}: {e}. Returning empty list of cultivars.")
+        return [] # Return empty list in case of other errors
 
     # Remove duplicates and empty strings, then sort by length descending for matching
     unique_cultivars = sorted(list(set(c for c in cultivars if c)), key=len, reverse=True)
 
-    if not unique_cultivars and DEFAULT_CULTIVARS:
-        logger.warning(f"No valid cultivars loaded from {filepath} or CSV was empty. Re-initializing with defaults and saving.")
-        unique_cultivars = sorted(list(set(c for c in DEFAULT_CULTIVARS if c)), key=len, reverse=True)
-        save_known_cultivars_to_csv(filepath, unique_cultivars)
+    # Removed the logic that re-initialized with DEFAULT_CULTIVARS if unique_cultivars was empty.
+    # If the CSV is empty or contains no valid cultivars, unique_cultivars will be empty.
+    if not unique_cultivars:
+        logger.warning(f"Known cultivars CSV ({filepath}) was found but contained no valid cultivar names. Scraper will proceed without known cultivars for matching.")
     
     return unique_cultivars
 
@@ -94,8 +128,9 @@ def load_known_cultivars_from_csv(filepath):
 KNOWN_CULTIVARS = load_known_cultivars_from_csv(CULTIVARS_CSV_FILEPATH)
 
 # --- Setup Logger ---
-logger = logging.getLogger("GerminaScraper")
-logger.setLevel(logging.INFO)
+# The logger is already obtained globally. This function will configure its handlers and level.
+# logger = logging.getLogger("GerminaScraper") # This line is now at the top
+logger.setLevel(logging.INFO) # Setting level here or in setup_logging is fine
 
 def setup_logging():
     """Configures logging to console and rotating file."""
@@ -125,128 +160,6 @@ def setup_logging():
 
 # --- Helper Functions (copied from sprouting_scraper.py and adapted/verified as needed) ---
 
-def parse_cultivar_and_variety_from_title(title_string):
-    """
-    Parses cultivar and plant variety from a product title string.
-    It removes 'organic' or 'biologique', then tries to split by common delimiters.
-    If no delimiter, it uses a predefined list of KNOWN_CULTIVARS to identify the cultivar.
-    Finally, it validates the found cultivar against KNOWN_CULTIVARS and standardizes casing.
-    """
-    if not title_string:
-        return {"cultivar": "N/A", "plant_variety": "N/A"}
-
-    # Remove "organic" or "biologique" case-insensitively and strip extra spaces
-    processed_title = re.sub(r'\\b(organic|biologique)\\b', '', title_string, flags=re.IGNORECASE).strip()
-    processed_title = ' '.join(processed_title.split()) # Normalize spaces
-
-    cultivar = "N/A"
-    plant_variety = "N/A"
-
-    # Try splitting by comma or dash first
-    delimiters = [',', '-']
-    split_done = False
-    for delimiter in delimiters:
-        if delimiter in processed_title:
-            parts = processed_title.split(delimiter, 1)
-            if len(parts) == 2:
-                cultivar = parts[0].strip()
-                plant_variety = parts[1].strip()
-                if cultivar and plant_variety: # Ensure both parts are non-empty
-                    split_done = True
-                    break
-                elif cultivar and not plant_variety: # If only cultivar found, treat it as such
-                    plant_variety = "N/A"
-                    split_done = True
-                    break
-                elif not cultivar and plant_variety: # Unlikely, but handle
-                    cultivar = plant_variety # Treat the second part as cultivar if first is empty
-                    plant_variety = "N/A"
-                    split_done = True
-                    break
-            elif len(parts) == 1 and parts[0].strip(): # Only one part after split
-                cultivar = parts[0].strip()
-                plant_variety = "N/A"
-                split_done = True
-                break
-    
-    if not split_done and processed_title: # If not split by delimiter and title is not empty
-        if KNOWN_CULTIVARS:
-            found_by_list = False
-            for known_cult in KNOWN_CULTIVARS:
-                # Case-insensitive match at the beginning of the string
-                if re.match(rf'^{re.escape(known_cult)}\\b', processed_title, re.IGNORECASE):
-                    cultivar = known_cult # Use the exact case from KNOWN_CULTIVARS for consistency
-                    # The rest of the string is the variety
-                    remaining_part = processed_title[len(known_cult):].strip()
-                    if remaining_part:
-                        plant_variety = remaining_part
-                    else:
-                        plant_variety = "N/A"
-                    found_by_list = True
-                    break
-            if not found_by_list: # If no known cultivar matched
-                cultivar = processed_title # Assign the whole processed title as cultivar
-                plant_variety = "N/A"
-        else: # No KNOWN_CULTIVARS list provided
-            cultivar = processed_title
-            plant_variety = "N/A"
-    elif not cultivar and processed_title: # If split_done but cultivar is still N/A (e.g. from empty part before delimiter)
-        cultivar = processed_title
-        plant_variety = "N/A"
-
-    # Standardize and Validate Cultivar
-    final_cultivar = "N/A"
-    standardized = False
-    if cultivar and cultivar != "N/A":
-        for known in KNOWN_CULTIVARS: # KNOWN_CULTIVARS is sorted by length, descending
-            # Case-insensitive match: if the parsed cultivar is a substring of a known one, or vice-versa,
-            # or if they are equal ignoring case.
-            # We prioritize matching the start of the string for multi-word known cultivars.
-            if re.match(rf'^{re.escape(known)}\\b', cultivar, re.IGNORECASE):
-                final_cultivar = known # Use casing from KNOWN_CULTIVARS
-                standardized = True
-                break
-            elif re.match(rf'^{re.escape(cultivar)}\\b', known, re.IGNORECASE): # Parsed cultivar is start of a known one
-                final_cultivar = known
-                standardized = True
-                break
-        if not standardized:
-            # If no direct match, check if any part of the cultivar (if multi-word) is a known cultivar
-            # This handles cases like "Pea Spearmint" where "Pea" is known.
-            cultivar_parts = cultivar.split()
-            best_match_from_parts = ""
-            for part in cultivar_parts:
-                for known_single in KNOWN_CULTIVARS:
-                    if part.lower() == known_single.lower():
-                        if len(known_single) > len(best_match_from_parts): # Prefer longer match if multiple parts match
-                            best_match_from_parts = known_single
-            
-            if best_match_from_parts:
-                final_cultivar = best_match_from_parts
-                # Attempt to reconstruct variety if we took a part as cultivar
-                # This is a simple heuristic
-                if final_cultivar.lower() in cultivar.lower():
-                    try:
-                        idx = cultivar.lower().find(final_cultivar.lower())
-                        temp_variety = cultivar[:idx].strip() + " " + cultivar[idx+len(final_cultivar):].strip()
-                        plant_variety = temp_variety.strip() if temp_variety.strip() else plant_variety # Keep original if new is empty
-                    except: # Keep original plant_variety on error
-                        pass 
-                standardized = True # Considered standardized as we matched a part to a known cultivar
-            else:
-                final_cultivar = cultivar # Use the parsed one as is
-                logger.warning(f"Cultivar '{final_cultivar}' from title '{title_string}' (processed: '{processed_title}') not found in KNOWN_CULTIVARS. Consider updating known_cultivars.csv.")
-    else: # cultivar was N/A or empty initially
-        final_cultivar = "N/A"
-
-    # Ensure plant_variety is not same as cultivar if cultivar was identified
-    if final_cultivar != "N/A" and plant_variety.lower().strip() == final_cultivar.lower().strip():
-        plant_variety = "N/A"
-    if not plant_variety: plant_variety = "N/A"
-    if not final_cultivar: final_cultivar = "N/A"
-
-    return {"cultivar": final_cultivar, "plant_variety": plant_variety}
-
 def parse_weight_from_string(text_string):
     if not text_string:
         return None
@@ -266,6 +179,57 @@ def parse_weight_from_string(text_string):
         except ValueError:
             logger.warning(f"Could not convert value '{value_str}' for weight parsing in '{text_string}'")
     return None
+
+def standardize_size_format(original_size_text, parsed_weight_info):
+    """
+    Standardizes the size format to match the format used in damseeds_scraper: "{value} {unit full name}"
+    Example: "75 g" becomes "75 grams", "1 kg" becomes "1 kilogram"
+    
+    Args:
+        original_size_text: The original size text
+        parsed_weight_info: Dictionary returned by parse_weight_from_string()
+        
+    Returns:
+        Standardized size string or the original if no weight info was parsed
+    """
+    if not parsed_weight_info:
+        return original_size_text
+    
+    # Get value and unit from parsed weight info
+    value = parsed_weight_info['value']
+    unit = parsed_weight_info['unit']
+    
+    # Standardize units to their full names
+    unit_mapping = {
+        'g': 'grams',
+        'gram': 'grams',
+        'grams': 'grams',
+        'kg': 'kilograms',
+        'kilo': 'kilograms',
+        'kilos': 'kilograms',
+        'kilogram': 'kilograms',
+        'kilograms': 'kilograms',
+        'lb': 'pounds',
+        'lbs': 'pounds',
+        'pound': 'pounds',
+        'pounds': 'pounds',
+        'oz': 'ounces',
+        'ounce': 'ounces'
+    }
+    
+    # Get the standardized unit name
+    std_unit = unit_mapping.get(unit.lower(), unit)
+    
+    # If value is a whole number, convert to int for cleaner display
+    if value == int(value):
+        value = int(value)
+    
+    # Handle singular form for value of 1
+    if value == 1:
+        if std_unit.endswith('s'):
+            std_unit = std_unit[:-1]  # Remove the 's' for singular
+    
+    return f"{value} {std_unit}"
 
 def extract_price_from_text(text):
     if not text:
@@ -367,15 +331,66 @@ def scrape_product_details(page, product_url):
                 if not variations_list_json: # Handles case of empty list in JSON data
                     logger.warning(f"Empty variations list from JSON on {current_page_effective_url}")
                     _append_error("Empty variations JSON.")
+                else:
+                    # Process variations from the JSON data
+                    product_overall_in_stock = False
+                    
+                    for variation in variations_list_json:
+                        # Extract variation attributes (combination of attributes like size, color, etc.)
+                        attributes = variation.get('attributes', {})
+                        attr_desc = []
+                        for attr_name, attr_value in attributes.items():
+                            # Format: remove 'attribute_' prefix and convert underscores to spaces
+                            clean_name = attr_name.replace('attribute_', '').replace('_', ' ')
+                            attr_desc.append(f"{clean_name}: {attr_value}")
+                        
+                        # Create size description from attributes or use fallback
+                        size = ", ".join(attr_desc) if attr_desc else "Default"
+                        
+                        # Extract price
+                        price = float(variation.get('display_price', 0.0))
+                        
+                        # Extract stock status
+                        is_in_stock = variation.get('is_in_stock', False)
+                        
+                        # Extract SKU
+                        sku = variation.get('sku', 'N/A')
+                        
+                        # Parse weight from size description
+                        parsed_weight_info = parse_weight_from_string(size)
+                        
+                        standardized_size = standardize_size_format(size, parsed_weight_info)
+                        
+                        # Add the variation to our product data
+                        variation_data = {
+                            'size': standardized_size,
+                            'price': price,
+                            'is_variation_in_stock': is_in_stock,
+                            'weight_kg': parsed_weight_info['weight_kg'] if parsed_weight_info else None,
+                            'original_weight_value': parsed_weight_info['value'] if parsed_weight_info else None,
+                            'original_weight_unit': parsed_weight_info['unit'] if parsed_weight_info else None,
+                            'sku': sku
+                        }
+                        
+                        product_data['variations'].append(variation_data)
+                        
+                        # Update overall stock status
+                        if is_in_stock:
+                            product_overall_in_stock = True
+                            
+                    # Set the overall product stock status
+                    product_data['is_in_stock'] = product_overall_in_stock
+                    
+                    logger.info(f"Processed {len(product_data['variations'])} variations from JSON for {current_page_effective_url}")
                 
-                product_overall_in_stock = False
                 if not product_data['variations'] and variations_list_json is not None: 
                     logger.warning(f"Variations JSON processed for {current_page_effective_url}, but no variations were added to product_data.")
                     _append_error("No variations extracted from non-empty JSON.")
                     # Add placeholder if scrape_error wasn't already set to something more specific like "Empty variations JSON"
                     if not any(v['sku'] != 'N/A' for v in product_data['variations']): # Avoid double placeholders
                         product_data['variations'].append({
-                            'size': 'default (no variations processed from JSON)', 'price': 0.0, 'is_variation_in_stock': False,
+                            'size': 'Default (no variations processed from JSON)',
+                            'price': 0.0, 'is_variation_in_stock': False,
                             'weight_kg': None, 'original_weight_value': None, 'original_weight_unit': None, 'sku': 'N/A'
                         })
 
@@ -385,6 +400,47 @@ def scrape_product_details(page, product_url):
         else: # variations_json_string is None or empty (e.g., from timeout or missing attribute)
             logger.warning(f"Variations form or 'data-product_variations' attribute not found/empty for {current_page_effective_url}. Might be simple product or page error.")
             _append_error("Variations data JSON not found or empty (simple product or error).")
+            
+            # Try to handle simple products without variations
+            try:
+                # Look for the price of a simple product
+                price_elem = page.locator('p.price span.woocommerce-Price-amount.amount')
+                if price_elem.count() > 0:
+                    price_text = price_elem.first.text_content()
+                    price = extract_price_from_text(price_text)
+                    
+                    # Check stock status
+                    out_of_stock_elem = page.locator('p.stock.out-of-stock')
+                    is_in_stock = out_of_stock_elem.count() == 0  # In stock if no out-of-stock message
+                    
+                    # Get product title for size
+                    title_elem = page.locator('h1.product_title')
+                    size = title_elem.text_content().strip() if title_elem.count() > 0 else "Default"
+                    
+                    # Parse weight from size
+                    parsed_weight_info = parse_weight_from_string(size)
+                    
+                    standardized_size = standardize_size_format(size, parsed_weight_info)
+                    
+                    # Add simple product variation
+                    product_data['variations'].append({
+                        'size': standardized_size,
+                        'price': price,
+                        'is_variation_in_stock': is_in_stock,
+                        'weight_kg': parsed_weight_info['weight_kg'] if parsed_weight_info else None,
+                        'original_weight_value': parsed_weight_info['value'] if parsed_weight_info else None,
+                        'original_weight_unit': parsed_weight_info['unit'] if parsed_weight_info else None,
+                        'sku': page.locator('.sku').text_content().strip() if page.locator('.sku').count() > 0 else 'N/A'
+                    })
+                    
+                    product_data['is_in_stock'] = is_in_stock
+                    logger.info(f"Processed simple product without variations for {current_page_effective_url}")
+                else:
+                    logger.warning(f"Could not find price for simple product at {current_page_effective_url}")
+                    _append_error("No price found for simple product")
+            except Exception as simple_e:
+                logger.warning(f"Error processing simple product at {current_page_effective_url}: {simple_e}")
+                _append_error(f"Simple product processing error: {str(simple_e)}")
 
     except PlaywrightTimeoutError as pte:
         logger.error(f"Playwright timeout during detail extraction for {product_url} (effective: {current_page_effective_url}). Error: {pte}", exc_info=True)
@@ -401,7 +457,7 @@ def scrape_product_details(page, product_url):
         if not error_note_for_placeholder: error_note_for_placeholder = 'Unknown issue during scraping or simple product without variations data.'
         
         product_data['variations'].append({
-            'size': 'default (error or no data)',
+            'size': 'Default (error or no data)',
             'price': 0.0,
             'is_variation_in_stock': False,
             'weight_kg': None,
@@ -416,43 +472,50 @@ def scrape_product_details(page, product_url):
     return product_data
 
 def scrape_product_list(page, max_pages_override=None):
-    """Scrapes product titles, URLs, and basic info from Germina.ca product list pages."""
-    basic_products = []
-    current_page_num = 1
+    """
+    Scrapes the product list from Germina.ca, handling pagination.
+    Returns a list of product URLs and their titles.
+    """
+    # Use a more specific starting URL that is known to list products
+    initial_shop_url = "https://germina.ca/en/product-category/organic-seeds/"
     
-    max_pages = float('inf')
-    if TEST_MODE:
-        max_pages = 1 # Limit for testing
-        logger.info(f"TEST_MODE is True. Limiting product list scrape to {max_pages} page(s).")
+    all_products_on_list_pages = []
+    page_num = 1
+    max_pages = 1 if TEST_MODE else 100 # Default max pages, reduced in test mode
     if max_pages_override is not None:
         max_pages = max_pages_override
         logger.info(f"Max pages overridden to: {max_pages}")
 
-    if BASE_SHOP_URL not in page.url:
-        logger.info(f"Navigating to initial shop page: {BASE_SHOP_URL}")
-        page.goto(BASE_SHOP_URL, timeout=90000, wait_until="domcontentloaded") # Increased timeout
-    else:
-        logger.info(f"Already on shop page: {page.url}. Ensuring content is loaded.")
-        page.wait_for_load_state("domcontentloaded", timeout=90000)
+    current_url_to_load = initial_shop_url
 
-    while current_page_num <= max_pages:
+    while page_num <= max_pages:
         try:
-            logger.info(f"Scraping product list page: {page.url} (Page {current_page_num})")
-            page.wait_for_selector('ul.products li.product', timeout=60000, state='visible') # WooCommerce common selector
+            if current_url_to_load not in page.url:
+                 logger.info(f"Navigating to product list page: {current_url_to_load}")
+                 page.goto(current_url_to_load, timeout=90000, wait_until="domcontentloaded")
+            else:
+                logger.info(f"Already on page: {page.url}. Ensuring content is loaded or reloaded.")
+                # Consider reloading if it's the same URL to get fresh content,
+                # but be careful about infinite loops if content never appears.
+                # For now, let's assume if we are on the URL, we proceed to wait for selector.
+                # page.reload(wait_until="domcontentloaded")
 
-            product_item_locators = page.locator('ul.products li.product')
-            count = product_item_locators.count()
-            if count == 0:
-                logger.warning(f"No products found on {page.url}. Waiting briefly to check again.")
-                page.wait_for_timeout(10000) # Longer wait for slow site
-                count = product_item_locators.count()
-                if count == 0:
-                    logger.warning(f"Still no products on {page.url}. Breaking list scrape for this page.")
-                    break
+
+            logger.info(f"Scraping product list page: {page.url} (Attempting page {page_num})")
             
-            logger.info(f"Found {count} product items on {page.url}.")
-            for i in range(count):
-                item_locator = product_item_locators.nth(i)
+            # Wait for product items to be visible
+            # The selector 'ul.products li.product' is common for WooCommerce.
+            # If this times out, it means the products are not loading on the current page.
+            page.wait_for_selector('ul.products li.product', timeout=60000, state='visible') 
+            
+            products_on_page = page.locator('ul.products li.product').all()
+            if not products_on_page:
+                logger.info(f"No products found on page {page.url}. This might be the end of pagination or an issue.")
+                break
+
+            logger.info(f"Found {len(products_on_page)} products on {page.url}")
+            for i in range(len(products_on_page)):
+                item_locator = products_on_page[i]
                 item_classes = item_locator.get_attribute('class') or ""
 
                 if TARGET_PRODUCT_CATEGORY_CLASS not in item_classes:
@@ -473,28 +536,33 @@ def scrape_product_list(page, max_pages_override=None):
 
                 if title and product_url_path:
                     product_url = urljoin(BASE_URL_FOR_PRODUCTS, product_url_path) if not product_url_path.startswith('http') else product_url_path
-                    parsed_title_info = parse_cultivar_and_variety_from_title(title)
+                    parsed_title_info = parse_with_botanical_field_names(title)
+                    
+                    # Skip products that don't match a known cultivar (N/A)
+                    if parsed_title_info['common_name'] == "N/A":
+                        logger.info(f"Skipping product '{title}' - no matching common name found in known_cultivars.csv")
+                        continue
                     
                     product_data = {
                         'title': title,
-                        'cultivar': parsed_title_info['cultivar'],
-                        'plant_variety': parsed_title_info['plant_variety'],
+                        'common_name': parsed_title_info['common_name'],
+                        'cultivar_name': parsed_title_info['cultivar_name'],
                         'url': product_url
                     }
-                    basic_products.append(product_data)
+                    all_products_on_list_pages.append(product_data)
                     logger.info(f"Found target product: {title} - URL: {product_url}")
                 else:
                     logger.warning(f"Could not find full title/URL for a target product on {page.url}. Classes: {item_classes}")
             
             next_page_locator = page.locator('nav.woocommerce-pagination a.next.page-numbers').first
-            if next_page_locator.count() > 0 and current_page_num < max_pages:
+            if next_page_locator.count() > 0 and page_num < max_pages:
                 next_page_url_path = next_page_locator.get_attribute('href')
                 if next_page_url_path:
                     next_page_url = urljoin(BASE_URL_FOR_PRODUCTS, next_page_url_path)
                     logger.info(f"Navigating to next product list page: {next_page_url}")
                     page.goto(next_page_url, timeout=90000, wait_until="domcontentloaded")
                     time.sleep(5) # Increased politeness delay for slow site
-                    current_page_num += 1
+                    page_num += 1
                 else:
                     logger.info("Next page link found, but no href. Ending list scrape.")
                     break
@@ -507,15 +575,28 @@ def scrape_product_list(page, max_pages_override=None):
         except Exception as e:
             logger.exception(f"Error on product list page {page.url}: {e}. Stopping list scrape.")
             break
-    return basic_products
+    return all_products_on_list_pages
 
 # --- Main Execution --- 
 
 def main_sync():
+    # Configure command-line arguments
+    parser = argparse.ArgumentParser(description='Scrape germina.ca for organic seeds data')
+    parser.add_argument('--cultivar', type=str, help='Only scrape products matching this cultivar name (case-insensitive)')
+    parser.add_argument('--test', action='store_true', help='Enable test mode (limited number of pages)')
+    args = parser.parse_args()
+    
+    # Override test mode if specified in command line
+    global TEST_MODE
+    if args.test:
+        TEST_MODE = True
+    
     setup_logging()
 
     overall_start_time = time.time()
     logger.info("Starting Germina.ca scraper (main_sync). HEADLESS=%s, TEST_MODE=%s", HEADLESS, TEST_MODE)
+    if args.cultivar:
+        logger.info(f"Filtering for cultivar: {args.cultivar}")
 
     all_scraped_product_details = []
 
@@ -534,17 +615,32 @@ def main_sync():
 
         try:
             # --- Product List Scraping ---
-            logger.info(f"Starting product list scraping from: {BASE_SHOP_URL}")
+            logger.info(f"Starting product list scraping from: {BASE_URL_FOR_PRODUCTS}")
             basic_target_products = scrape_product_list(page) # Max pages handled by TEST_MODE inside function
 
             # --- Product Detail Scraping ---
             if basic_target_products:
                 logger.info(f"Found {len(basic_target_products)} target products. Scraping details...")
                 
-                products_to_scrape_details_for = basic_target_products
-                if TEST_MODE:
-                    products_to_scrape_details_for = basic_target_products[:10] # Limit detail scraping in test mode
+                # Filter by specific cultivar if requested
+                if args.cultivar:
+                    filtered_products = []
+                    cultivar_pattern = re.compile(re.escape(args.cultivar), re.IGNORECASE)
+                    for product in basic_target_products:
+                        if cultivar_pattern.search(product['cultivar_name']):
+                            filtered_products.append(product)
+                            logger.info(f"Including product: {product['title']} (matches cultivar filter)")
+                        else:
+                            logger.debug(f"Excluding product: {product['title']} (doesn't match cultivar filter)")
+                    
+                    products_to_scrape_details_for = filtered_products
+                    logger.info(f"Filtered to {len(products_to_scrape_details_for)} products matching cultivar: {args.cultivar}")
+                elif TEST_MODE:
+                    products_to_scrape_details_for = basic_target_products[:2] # Limit detail scraping in test mode
                     logger.info(f"TEST_MODE: Will scrape details for {len(products_to_scrape_details_for)} products.")
+                else:
+                    products_to_scrape_details_for = basic_target_products
+                    logger.info(f"Will scrape details for all {len(products_to_scrape_details_for)} products.")
 
                 for i, basic_product_info in enumerate(products_to_scrape_details_for):
                     logger.info(f"Processing product {i+1}/{len(products_to_scrape_details_for)}: {basic_product_info['title']}")
@@ -559,8 +655,8 @@ def main_sync():
                     
                     final_product_data = {
                         'title': basic_product_info['title'],
-                        'cultivar': basic_product_info['cultivar'],
-                        'plant_variety': basic_product_info['plant_variety'],
+                        'common_name': basic_product_info['common_name'],
+                        'cultivar_name': basic_product_info['cultivar_name'],
                         'url': detailed_info['url'],
                         'is_in_stock': detailed_info['is_in_stock'],
                         'variations': detailed_info['variations']
@@ -577,10 +673,11 @@ def main_sync():
                     "timestamp": datetime.now().isoformat(),
                     "scrape_duration_seconds": core_scrape_duration_seconds,
                     "source_site": BASE_URL_FOR_PRODUCTS,
+                    "currency_code": "CAD",
                     "product_count": len(all_scraped_product_details),
                     "data": all_scraped_product_details
                 }
-                save_products_to_json(output_data, SUPPLIER_NAME, base_filename_prefix="organic_seeds")
+                save_products_to_json(output_data, "germina_ca", base_filename_prefix="organic_seeds")
             else:
                 logger.info("No products were scraped in detail.")
 

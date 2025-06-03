@@ -1,0 +1,2715 @@
+{
+    "timestamp": "2025-06-03T11:16:18.389182",
+    "scrape_duration_seconds": 2101.6,
+    "source_site": "https://germina.ca",
+    "currency_code": "CAD",
+    "product_count": 53,
+    "data": [
+        {
+            "title": "Betterave Jaune biologique",
+            "common_name": "Betterave",
+            "cultivar_name": "Jaune",
+            "url": "https://germina.ca/en/boutique/betterave-jaune-biologique/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "50 grams",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "237721"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 15.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "237722"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 42.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237723"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 73.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237724"
+                }
+            ]
+        },
+        {
+            "title": "Organic Aganarpo Fennel",
+            "common_name": "Fennel",
+            "cultivar_name": "Aganarpo",
+            "url": "https://germina.ca/en/boutique/fenugrec-aganarpo/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 5.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "239154"
+                },
+                {
+                    "size": "50 grams",
+                    "price": 10.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "239155"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 20.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "239156"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 42.5,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "239157"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 80.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "239158"
+                }
+            ]
+        },
+        {
+            "title": "Organic Alfalfa",
+            "common_name": "Alfalfa",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-alfalfa/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235524"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235525"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 16.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235526"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 26.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235527"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 110.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237091"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 200.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237644"
+                }
+            ]
+        },
+        {
+            "title": "Organic Arrowroot",
+            "common_name": "Arrowroot",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-arrowroot/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 55.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237877"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 120.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237878"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 170.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237879"
+                }
+            ]
+        },
+        {
+            "title": "Organic Arugula",
+            "common_name": "Arugula",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-aragula/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235495"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235496"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 15.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235713"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 26.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235497"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 105.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235498"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 200.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237663"
+                }
+            ]
+        },
+        {
+            "title": "Organic Basil Cinnamon",
+            "common_name": "Basil",
+            "cultivar_name": "Cinnamon",
+            "url": "https://germina.ca/en/boutique/organic-basil-cinnamon/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 23.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "237908"
+                },
+                {
+                    "size": "50 grams",
+                    "price": 40.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "237909"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 80.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237910"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 150.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237911"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 280.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237912"
+                }
+            ]
+        },
+        {
+            "title": "Organic Black Kale",
+            "common_name": "Kale",
+            "cultivar_name": "Black",
+            "url": "https://germina.ca/en/boutique/organic-black-kale/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "60 grams",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.06,
+                    "original_weight_value": 60.0,
+                    "original_weight_unit": "g",
+                    "sku": "235515"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 15.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "235516"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 43.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235518"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 73.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236607"
+                }
+            ]
+        },
+        {
+            "title": "Organic Black Radish",
+            "common_name": "Radish",
+            "cultivar_name": "Black",
+            "url": "https://germina.ca/en/boutique/organic-black-radish/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235508"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235509"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 13.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235711"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 21.75,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235510"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 94.2,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235511"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 178.8,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237659"
+                }
+            ]
+        },
+        {
+            "title": "Organic Bok Choy",
+            "common_name": "Bok Choy",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-bok-choy/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "60 grams",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.06,
+                    "original_weight_value": 60.0,
+                    "original_weight_unit": "g",
+                    "sku": "237741"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 15.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "237742"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 38.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237743"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 63.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237744"
+                }
+            ]
+        },
+        {
+            "title": "Organic Broccoli Calabrese",
+            "common_name": "Broccoli",
+            "cultivar_name": "Calabrese",
+            "url": "https://germina.ca/en/boutique/organic-calabrese-broccoli/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "60 grams",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.06,
+                    "original_weight_value": 60.0,
+                    "original_weight_unit": "g",
+                    "sku": "236538"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 15.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "236539"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 38.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "236540"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 58.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236541"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 269.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236542"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 528.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237628"
+                }
+            ]
+        },
+        {
+            "title": "Organic Broccoli Rabe",
+            "common_name": "Broccoli",
+            "cultivar_name": "Rabe",
+            "url": "https://germina.ca/en/boutique/organic-broccoli-root/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 6.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235722"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 10.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235723"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 15.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235724"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 25.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235725"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 105.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237051"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 200.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237631"
+                }
+            ]
+        },
+        {
+            "title": "Organic Buckwheat",
+            "common_name": "Buckwheat",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-buckwheat/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "250 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237681"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237682"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 15.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237683"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 45.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237684"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 80.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237685"
+                },
+                {
+                    "size": "20 kilograms",
+                    "price": 150.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 20.0,
+                    "original_weight_value": 20.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237686"
+                }
+            ]
+        },
+        {
+            "title": "Organic Bull Blood Beet",
+            "common_name": "Beet",
+            "cultivar_name": "Bull Blood",
+            "url": "https://germina.ca/en/boutique/beet-bull-blood-bio/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "50 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "237060"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 12.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "237061"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 36.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237062"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 61.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237063"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 285.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237064"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 560.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237065"
+                }
+            ]
+        },
+        {
+            "title": "Organic Cantaloupe Melon",
+            "common_name": "Melon",
+            "cultivar_name": "Cantaloupe",
+            "url": "https://germina.ca/en/boutique/organic-melon-cantaloup/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 55.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "238076"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 130.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "238077"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 250.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "238078"
+                }
+            ]
+        },
+        {
+            "title": "Organic Celery",
+            "common_name": "Celery",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-celery/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 30.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "238149"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 90.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237755"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 190.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237756"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 360.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237757"
+                }
+            ]
+        },
+        {
+            "title": "Organic Coriander (Split)",
+            "common_name": "Coriander",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-coriander-split/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "50 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "236547"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "236546"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 17.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "236545"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 25.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236544"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 110.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236543"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 190.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237635"
+                }
+            ]
+        },
+        {
+            "title": "Organic Cress",
+            "common_name": "Cress",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-cress/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235435"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235436"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 17.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235438"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 25.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235437"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 115.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237637"
+                }
+            ]
+        },
+        {
+            "title": "Organic Crimson Clover",
+            "common_name": "Clover",
+            "cultivar_name": "Crimson",
+            "url": "https://germina.ca/en/boutique/organic-crimson-clover/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 6.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235473"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 10.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235474"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 19.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235477"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 33.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235475"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 145.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235476"
+                }
+            ]
+        },
+        {
+            "title": "Organic Daikon Radish",
+            "common_name": "Radish",
+            "cultivar_name": "Daikon",
+            "url": "https://germina.ca/en/boutique/organic-dalkon-radish/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235504"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235505"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 14.5,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235710"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 25.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235506"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 110.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235507"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 205.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237657"
+                }
+            ]
+        },
+        {
+            "title": "Organic Early Wonder Beet",
+            "common_name": "Beet",
+            "cultivar_name": "Early Wonder",
+            "url": "https://germina.ca/en/boutique/organic-early-wonder-beet/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "50 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "237072"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 12.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "237071"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 36.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237070"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 61.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237069"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 285.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237068"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 560.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237067"
+                }
+            ]
+        },
+        {
+            "title": "Organic Fennel",
+            "common_name": "Fennel",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-fennel/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Default (error or no data)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A",
+                    "error_note": "Variations data JSON not found or empty (simple product or error).; No price found for simple product"
+                }
+            ],
+            "scrape_error": "Variations data JSON not found or empty (simple product or error).; No price found for simple product"
+        },
+        {
+            "title": "Organic Fenugreek",
+            "common_name": "Fenugreek",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-fenugreek/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": ""
+                },
+                {
+                    "size": "200 grams",
+                    "price": 8.48,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": ""
+                },
+                {
+                    "size": "500 grams",
+                    "price": 17.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": ""
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 33.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": ""
+                }
+            ]
+        },
+        {
+            "title": "Organic Fenugreek",
+            "common_name": "Fenugreek",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/fenugrec-biologique/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "250 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "239164"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "239165"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 17.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "239166"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 33.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "239167"
+                }
+            ]
+        },
+        {
+            "title": "Organic Garlic Chives",
+            "common_name": "Garlic Chives",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-garlic-chives/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "240028"
+                },
+                {
+                    "size": "50 grams",
+                    "price": 14.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "240029"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 25.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "240030"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 47.5,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "240031"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 75.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "240032"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 120.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "240033"
+                }
+            ]
+        },
+        {
+            "title": "Organic Genovese Basil",
+            "common_name": "Basil",
+            "cultivar_name": "Genovese",
+            "url": "https://germina.ca/en/boutique/basilic-genovese/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 12.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "238125"
+                },
+                {
+                    "size": "50 grams",
+                    "price": 15.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "238126"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 28.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "238127"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 50.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "238128"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 85.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "238129"
+                }
+            ]
+        },
+        {
+            "title": "Organic Germix (Alfalfa, Clover, Radish)",
+            "common_name": "Alfalfa",
+            "cultivar_name": "Germix (, Clover, Radish)",
+            "url": "https://germina.ca/en/boutique/organic-germix-alfalfa-clover-radish/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 6.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235462"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 10.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235463"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 18.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235464"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 27.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235465"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 120.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235466"
+                }
+            ]
+        },
+        {
+            "title": "Organic Green Shiso",
+            "common_name": "Shiso",
+            "cultivar_name": "Green",
+            "url": "https://germina.ca/en/boutique/organic-green-shiso/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 90.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237817"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 210.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237818"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 330.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237819"
+                }
+            ]
+        },
+        {
+            "title": "Organic Italian Giant Parsley",
+            "common_name": "Parsley",
+            "cultivar_name": "Italian Giant",
+            "url": "https://germina.ca/en/boutique/persil-geant-ditalie-biologique/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 5.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "238087"
+                },
+                {
+                    "size": "50 grams",
+                    "price": 7.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "238088"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 12.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "238089"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 29.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "238090"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 57.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "238091"
+                }
+            ]
+        },
+        {
+            "title": "Organic Large Alfalfa",
+            "common_name": "Alfalfa",
+            "cultivar_name": "Large",
+            "url": "https://germina.ca/en/boutique/organic-large-alfalfa/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235519"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235520"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 16.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235521"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 26.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235522"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 100.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235523"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 190.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237646"
+                }
+            ]
+        },
+        {
+            "title": "Organic Leek",
+            "common_name": "Leek",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-leek/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 14.99,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235532"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 72.99,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235533"
+                }
+            ]
+        },
+        {
+            "title": "Organic Lemon Balm",
+            "common_name": "Lemon Balm",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-lemon-balm/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 58.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "238065"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 140.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "238066"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 270.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "238067"
+                }
+            ]
+        },
+        {
+            "title": "Organic Lettuce",
+            "common_name": "Lettuce",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-lettuce/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 15.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "238681"
+                },
+                {
+                    "size": "50 grams",
+                    "price": 27.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "238682"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 54.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "238683"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 135.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "238684"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 265.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "238685"
+                }
+            ]
+        },
+        {
+            "title": "Organic Mizuna Red",
+            "common_name": "Mizuna",
+            "cultivar_name": "Red",
+            "url": "https://germina.ca/en/boutique/organic-mizuna-red/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "60 grams",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.06,
+                    "original_weight_value": 60.0,
+                    "original_weight_unit": "g",
+                    "sku": "237786"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 15.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "237787"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 45.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237788"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 84.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237789"
+                }
+            ]
+        },
+        {
+            "title": "Organic Mizuna, Green",
+            "common_name": "Mizuna",
+            "cultivar_name": "Green",
+            "url": "https://germina.ca/en/boutique/organic-green-mizuna/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "60 grams",
+                    "price": 6.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.06,
+                    "original_weight_value": 60.0,
+                    "original_weight_unit": "g",
+                    "sku": "235529"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 10.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "235530"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 36.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237639"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 69.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235531"
+                }
+            ]
+        },
+        {
+            "title": "Organic Parsley",
+            "common_name": "Parsley",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/parsley/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Default (error or no data)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A",
+                    "error_note": "Variations data JSON not found or empty (simple product or error).; No price found for simple product"
+                }
+            ],
+            "scrape_error": "Variations data JSON not found or empty (simple product or error).; No price found for simple product"
+        },
+        {
+            "title": "Organic Pink China Radish",
+            "common_name": "Radish",
+            "cultivar_name": "Pink China",
+            "url": "https://germina.ca/en/boutique/organic-pink-china-radish/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235512"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "235513"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 16.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235709"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 26.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235514"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 115.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237652"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 215.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237653"
+                }
+            ]
+        },
+        {
+            "title": "Organic Purple Kohlrabi",
+            "common_name": "Kohlrabi",
+            "cultivar_name": "Purple",
+            "url": "https://germina.ca/en/boutique/organic-purple-kohlrabi/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237942"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 21.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "237943"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 45.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237944"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 75.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237945"
+                }
+            ]
+        },
+        {
+            "title": "Organic Purple Peas",
+            "common_name": "Purple",
+            "cultivar_name": "Peas",
+            "url": "https://germina.ca/en/boutique/pea-violet-organic/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "250 grams",
+                    "price": 3.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237650"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "236906"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236907"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 28.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236908"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 45.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236909"
+                },
+                {
+                    "size": "20 kilograms",
+                    "price": 70.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 20.0,
+                    "original_weight_value": 20.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236910"
+                }
+            ]
+        },
+        {
+            "title": "Organic Red Cabbage",
+            "common_name": "Cabbage",
+            "cultivar_name": "Red",
+            "url": "https://germina.ca/en/boutique/organic-red-cabbage/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 15.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "235449"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 24.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "237633"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 55.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235448"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 100.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236602"
+                }
+            ]
+        },
+        {
+            "title": "Organic Red Chard",
+            "common_name": "Swiss Chard",
+            "cultivar_name": "Red",
+            "url": "https://germina.ca/en/boutique/organic-red-chard/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "50 grams",
+                    "price": 8.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "237701"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 12.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "237702"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 36.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237703"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 60.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237704"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 278.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237705"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 546.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237706"
+                }
+            ]
+        },
+        {
+            "title": "Organic Red Chicory",
+            "common_name": "Chicory",
+            "cultivar_name": "Red",
+            "url": "https://germina.ca/en/boutique/organic-red-chicory/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 20.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "237925"
+                },
+                {
+                    "size": "50 grams",
+                    "price": 35.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "237926"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 60.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237927"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 130.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237928"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 240.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237929"
+                }
+            ]
+        },
+        {
+            "title": "Organic Red Kale",
+            "common_name": "Kale",
+            "cultivar_name": "Red",
+            "url": "https://germina.ca/en/boutique/organic-red-kale/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "60 grams",
+                    "price": 9.99,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.06,
+                    "original_weight_value": 60.0,
+                    "original_weight_unit": "g",
+                    "sku": "237769"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 15.49,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "237770"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 46.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237771"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 76.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237772"
+                },
+                {
+                    "size": "format: ",
+                    "price": 300.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "237773"
+                }
+            ]
+        },
+        {
+            "title": "Organic Red Shiso",
+            "common_name": "Red Shiso",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-red-shiso/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 85.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237828"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 200.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237829"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 310.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237830"
+                }
+            ]
+        },
+        {
+            "title": "Organic Red Spring Wheat",
+            "common_name": "Wheat",
+            "cultivar_name": "Red Spring",
+            "url": "https://germina.ca/en/boutique/organic-red-spring-wheat/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "250 grams",
+                    "price": 3.99,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237626"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235696"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 8.99,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235440"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 29.99,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235441"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 55.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235442"
+                },
+                {
+                    "size": "20 kilograms",
+                    "price": 100.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 20.0,
+                    "original_weight_value": 20.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235443"
+                }
+            ]
+        },
+        {
+            "title": "Organic Ruby Red Radish",
+            "common_name": "Radish",
+            "cultivar_name": "Ruby Red",
+            "url": "https://germina.ca/en/boutique/radish-red-ruby-organic/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "Default (error or no data)",
+                    "price": 0.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": null,
+                    "original_weight_value": null,
+                    "original_weight_unit": null,
+                    "sku": "N/A",
+                    "error_note": "Variations data JSON not found or empty (simple product or error).; No price found for simple product"
+                }
+            ],
+            "scrape_error": "Variations data JSON not found or empty (simple product or error).; No price found for simple product"
+        },
+        {
+            "title": "Organic Spinach",
+            "common_name": "Spinach",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-spinach/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "28 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.028,
+                    "original_weight_value": 28.0,
+                    "original_weight_unit": "g",
+                    "sku": "237982"
+                },
+                {
+                    "size": "50 grams",
+                    "price": 9.45,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.05,
+                    "original_weight_value": 50.0,
+                    "original_weight_unit": "g",
+                    "sku": "237983"
+                },
+                {
+                    "size": "100 grams",
+                    "price": 18.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237984"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 40.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237985"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 69.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237986"
+                }
+            ]
+        },
+        {
+            "title": "Organic Sunflower",
+            "common_name": "Sunflower",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-sunflower/",
+            "is_in_stock": false,
+            "variations": [
+                {
+                    "size": "250 grams",
+                    "price": 8.99,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "235478"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 14.5,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235479"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 23.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235480"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 67.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235481"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 125.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235482"
+                },
+                {
+                    "size": "20 kilograms",
+                    "price": 220.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 20.0,
+                    "original_weight_value": 20.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235483"
+                }
+            ]
+        },
+        {
+            "title": "Organic Tatsoi",
+            "common_name": "Tatsoi",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-tatsoi/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "60 grams",
+                    "price": 6.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.06,
+                    "original_weight_value": 60.0,
+                    "original_weight_unit": "g",
+                    "sku": "238136"
+                },
+                {
+                    "size": "120 grams",
+                    "price": 10.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.12,
+                    "original_weight_value": 120.0,
+                    "original_weight_unit": "g",
+                    "sku": "238137"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 35.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "238138"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 63.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "238139"
+                }
+            ]
+        },
+        {
+            "title": "Organic Venom Radish",
+            "common_name": "Radish",
+            "cultivar_name": "Venom",
+            "url": "https://germina.ca/en/boutique/radish-venom/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 6.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "236528"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 10.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "236529"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 17.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "236530"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 28.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236531"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 125.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "236532"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 235.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237661"
+                }
+            ]
+        },
+        {
+            "title": "Organic Volcano Radish",
+            "common_name": "Radish",
+            "cultivar_name": "Volcano",
+            "url": "https://germina.ca/en/boutique/organic-volcano-radish/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 11.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237077"
+                },
+                {
+                    "size": "200 grams",
+                    "price": 19.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.2,
+                    "original_weight_value": 200.0,
+                    "original_weight_unit": "g",
+                    "sku": "237076"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 32.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237075"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 50.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237074"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 230.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "237073"
+                }
+            ]
+        },
+        {
+            "title": "Organic Watercress",
+            "common_name": "Watercress",
+            "cultivar_name": "N/A",
+            "url": "https://germina.ca/en/boutique/organic-watercress/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "100 grams",
+                    "price": 200.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.1,
+                    "original_weight_value": 100.0,
+                    "original_weight_unit": "g",
+                    "sku": "237971"
+                },
+                {
+                    "size": "250 grams",
+                    "price": 375.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237972"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 550.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "237973"
+                }
+            ]
+        },
+        {
+            "title": "Organic Yellow Pea",
+            "common_name": "Pea",
+            "cultivar_name": "Yellow",
+            "url": "https://germina.ca/en/boutique/organic-yellow-pea/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "250 grams",
+                    "price": 3.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "237648"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "235467"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 9.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235468"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 29.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235469"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 46.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235470"
+                },
+                {
+                    "size": "20 kilograms",
+                    "price": 70.0,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 20.0,
+                    "original_weight_value": 20.0,
+                    "original_weight_unit": "kg",
+                    "sku": "235471"
+                }
+            ]
+        },
+        {
+            "title": "Pois Violet biologique",
+            "common_name": "Pois",
+            "cultivar_name": "Violet",
+            "url": "https://germina.ca/en/boutique/pois-violet-biologique/",
+            "is_in_stock": true,
+            "variations": [
+                {
+                    "size": "250 grams",
+                    "price": 3.99,
+                    "is_variation_in_stock": true,
+                    "weight_kg": 0.25,
+                    "original_weight_value": 250.0,
+                    "original_weight_unit": "g",
+                    "sku": "239051"
+                },
+                {
+                    "size": "500 grams",
+                    "price": 5.49,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 0.5,
+                    "original_weight_value": 500.0,
+                    "original_weight_unit": "g",
+                    "sku": "239052"
+                },
+                {
+                    "size": "1 kilogram",
+                    "price": 9.99,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 1.0,
+                    "original_weight_value": 1.0,
+                    "original_weight_unit": "kg",
+                    "sku": "239053"
+                },
+                {
+                    "size": "5 kilograms",
+                    "price": 29.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 5.0,
+                    "original_weight_value": 5.0,
+                    "original_weight_unit": "kg",
+                    "sku": "239054"
+                },
+                {
+                    "size": "10 kilograms",
+                    "price": 46.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 10.0,
+                    "original_weight_value": 10.0,
+                    "original_weight_unit": "kg",
+                    "sku": "239055"
+                },
+                {
+                    "size": "20 kilograms",
+                    "price": 70.0,
+                    "is_variation_in_stock": false,
+                    "weight_kg": 20.0,
+                    "original_weight_value": 20.0,
+                    "original_weight_unit": "kg",
+                    "sku": "239056"
+                }
+            ]
+        }
+    ]
+}

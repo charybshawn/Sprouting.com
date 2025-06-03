@@ -8,88 +8,23 @@ from urllib.error import URLError, HTTPError
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from datetime import datetime
-import logging
-import logging.handlers
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+from seed_name_parser import parse_with_botanical_field_names
+from scraper_utils import (
+    setup_logging, retry_on_failure, parse_weight_from_string,
+    standardize_size_format, extract_price, save_products_to_json,
+    validate_product_data, clean_text, ScraperError, NetworkError
+)
 
 # --- Constants ---
 ATOM_FEED_URL = "https://www.damseeds.com/collections/microgreens.atom"
-SHARED_OUTPUT_DIR = "./scraper_data/json_files/"  # Shared with sprouting_scraper
-LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs") # Shared log dir
-LOG_FILE = os.path.join(LOG_DIR, "damseeds_scraper.log")
+SHARED_OUTPUT_DIR = "./scraper_data/json_files/damm_seeds"  # Shared with sprouting_scraper
 SUPPLIER_NAME = "damseeds_com"
 HEADLESS = True # Set to False for debugging Playwright interactions
 TEST_MODE = False # Set to True to limit scraping for testing
 
 # --- Setup Logger ---
-logger = logging.getLogger("DamseedsScraper")
-logger.setLevel(logging.INFO)
-
-
-def setup_logging():
-    """Configures logging to console and rotating file."""
-    if not os.path.exists(LOG_DIR):
-        try:
-            os.makedirs(LOG_DIR)
-        except OSError as e:
-            print(f"Error creating log directory {LOG_DIR}: {e}")
-            logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-            return
-
-    log_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(funcName)s - %(message)s')
-
-    try:
-        file_handler = logging.handlers.RotatingFileHandler(
-            LOG_FILE, maxBytes=5*1024*1024, backupCount=3, encoding='utf-8'
-        )
-        file_handler.setFormatter(log_formatter)
-        logger.addHandler(file_handler)
-    except Exception as e:
-        print(f"Error setting up file logger for damseeds_scraper: {e}")
-
-    console_handler = logging.StreamHandler()
-    console_handler.setFormatter(log_formatter)
-    logger.addHandler(console_handler)
-
-    logger.info("Damseeds Scraper logging configured. Saving logs to: %s", LOG_FILE)
-
-
-def parse_cultivar_and_variety_from_title(title_string):
-    """Parses cultivar and plant variety from a product title string, using comma or dash as a separator."""
-    if not title_string:
-        return {"cultivar": "N/A", "plant_variety": "N/A"}
-    
-    cultivar = "N/A"
-    plant_variety = "N/A"
-
-    # Try splitting by comma first
-    parts = title_string.split(',', 1)
-    if len(parts) == 2:
-        cultivar = parts[0].strip()
-        plant_variety = parts[1].strip()
-    else:
-        # If comma not found or didn't split into two, try splitting by dash
-        parts = title_string.split('-', 1)
-        if len(parts) == 2:
-            cultivar = parts[0].strip()
-            plant_variety = parts[1].strip()
-        else:
-            # If neither comma nor dash allows a split into two parts, assume whole title is cultivar
-            cultivar = title_string.strip()
-            # plant_variety remains "N/A"
-
-    # Handle cases where splitting might result in empty strings
-    if not cultivar: cultivar = title_string.strip() # If cultivar became empty, use whole title
-    if not plant_variety and cultivar != title_string.strip(): # If variety is empty but we did split
-        plant_variety = "N/A" # Or some other placeholder if preferred
-    elif not plant_variety and cultivar == title_string.strip(): # No split happened
-         plant_variety = "N/A"
-    
-    # Ensure cultivar is not empty if title_string itself was just a separator (e.g. "," or "-")
-    if not cultivar and title_string.strip() in [",", "-"]:
-        cultivar = "N/A"
-
-    return {"cultivar": cultivar, "plant_variety": plant_variety}
+logger = setup_logging("damseeds_scraper")
 
 
 class SummaryHTMLParser(HTMLParser):
@@ -157,6 +92,7 @@ class SummaryHTMLParser(HTMLParser):
         self.td_colspan_found = False
 
 
+@retry_on_failure(max_attempts=3, delay=2.0)
 def fetch_atom_feed(url):
     """Fetches the Atom feed content from the given URL."""
     logger.info(f"Fetching Atom feed from: {url}")
@@ -166,17 +102,16 @@ def fetch_atom_feed(url):
                 logger.info("Successfully fetched Atom feed.")
                 return response.read().decode('utf-8')
             else:
-                logger.error(f"Failed to fetch Atom feed. Status code: {response.status}")
-                return None
+                raise NetworkError(f"Failed to fetch Atom feed. Status code: {response.status}")
     except HTTPError as e:
         logger.error(f"HTTPError fetching feed: {e.code} {e.reason}", exc_info=True)
-        return None
+        raise NetworkError(f"HTTP Error {e.code}: {e.reason}")
     except URLError as e:
         logger.error(f"URLError fetching feed: {e.reason}", exc_info=True)
-        return None
+        raise NetworkError(f"URL Error: {e.reason}")
     except Exception as e:
         logger.error(f"Unexpected error fetching feed: {e}", exc_info=True)
-        return None
+        raise
 
 def parse_products_from_feed(feed_content):
     """Parses product information from the Atom feed XML content."""
@@ -202,9 +137,9 @@ def parse_products_from_feed(feed_content):
             product_data['title'] = original_title
 
             # Parse cultivar and plant variety from title
-            parsed_title_info = parse_cultivar_and_variety_from_title(original_title)
-            product_data['cultivar'] = parsed_title_info['cultivar']
-            product_data['plant_variety'] = parsed_title_info['plant_variety']
+            parsed_title_info = parse_with_botanical_field_names(original_title)
+            product_data['common_name'] = parsed_title_info['common_name']
+            product_data['cultivar_name'] = parsed_title_info['cultivar_name']
 
             link_element = entry.find('atom:link[@rel="alternate"][@type="text/html"]', namespaces)
             product_data['url'] = link_element.get('href') if link_element is not None else "N/A"
@@ -244,28 +179,49 @@ def parse_products_from_feed(feed_content):
                 var_title_element = variant_element.find('atom:title', namespaces) # Shopify uses atom:title for variant title
                 var_title = var_title_element.text.strip() if var_title_element is not None and var_title_element.text else "N/A"
                 
-                parsed_weight_info = parse_weight_from_string(var_title)
-
+                # Parse weight from title
+                weight_kg, original_value, original_unit = parse_weight_from_string(var_title)
+                
+                # Also check s:grams field as a fallback/validation
+                grams_element = variant_element.find('s:grams', namespaces)
+                if grams_element is not None and grams_element.text:
+                    try:
+                        grams_value = float(grams_element.text)
+                        if grams_value > 0:
+                            # If we didn't get weight from title, use grams
+                            if weight_kg is None:
+                                weight_kg = grams_value / 1000.0  # Convert grams to kg
+                                original_value = grams_value
+                                original_unit = 'g'
+                            # If we got weight from title, validate against grams
+                            else:
+                                expected_grams = weight_kg * 1000
+                                if abs(expected_grams - grams_value) > 1:  # Allow 1g tolerance
+                                    logger.warning(f"Weight mismatch for {var_title}: parsed {weight_kg}kg vs {grams_value}g in feed")
+                    except (ValueError, TypeError):
+                        pass
+                
+                standardized_size = standardize_size_format(var_title)
+                
                 price_element = variant_element.find('s:price', namespaces)
-                var_price = float(price_element.text) if price_element is not None and price_element.text else 0.0
+                var_price = extract_price(price_element.text) if price_element is not None else None
                 
                 sku_element = variant_element.find('s:sku', namespaces)
                 var_sku = sku_element.text.strip() if sku_element is not None and sku_element.text else "N/A"
                 
                 variants_data.append({
-                    'title': var_title,
+                    'size': standardized_size,
                     'price': var_price,
                     'sku': var_sku,
-                    'stock_status_from_feed': 'Not Available', # Updated stock status
-                    'weight_kg': parsed_weight_info['weight_kg'] if parsed_weight_info else None,
-                    'original_weight_value': parsed_weight_info['value'] if parsed_weight_info else None,
-                    'original_weight_unit': parsed_weight_info['unit'] if parsed_weight_info else None,
+                    'is_variation_in_stock': False, # Default value, updated later with live data
+                    'weight_kg': weight_kg,
+                    'original_weight_value': original_value,
+                    'original_weight_unit': original_unit,
                 })
-            product_data['variants'] = variants_data
+            product_data['variations'] = variants_data
             
             # Overall stock status is not available from the feed
-            product_data['stock_status_from_feed'] = 'Not Available' # Updated product-level stock status
-
+            product_data['is_in_stock'] = False # Default value, updated later with live data
 
             products.append(product_data)
             logger.debug(f"Parsed product: {product_data['title']}")
@@ -279,6 +235,7 @@ def parse_products_from_feed(feed_content):
     return products
 
 
+@retry_on_failure(max_attempts=2, delay=3.0)
 def scrape_product_page_details(page, product_url):
     """
     Scrapes product page for real-time stock information using Playwright.
@@ -378,11 +335,9 @@ def scrape_product_page_details(page, product_url):
                     logger.info(f"Successfully extracted stock for {len(variant_stock_info)} variants from JSON on {product_url}")
                 else:
                     logger.warning(f"Product JSON parsed, but no variants with SKUs found for {product_url}. Check JSON structure.")
-                    # logger.debug(f"Parsed JSON for {product_url}: {json.dumps(product_data, indent=2)}") # Log for debugging structure
 
             except json.JSONDecodeError as e:
                 logger.error(f"Could not parse product JSON data from {product_url}: {e}", exc_info=True)
-                # logger.debug(f"Problematic JSON text from {product_url}: {product_json_text[:1000]}...") # Log snippet for debugging
             except Exception as e_parse:
                 logger.error(f"Error processing parsed product JSON for {product_url}: {e_parse}", exc_info=True)
 
@@ -426,87 +381,15 @@ def scrape_product_page_details(page, product_url):
     return variant_stock_info
 
 
-def parse_weight_from_string(text_string):
-    """
-    Parses weight information (value and unit) from a string and converts to kilograms.
-    Handles grams, g, kilograms, kilo, kg, pounds, pound, lbs, lb.
-    Returns a dictionary with 'value', 'unit', and 'weight_kg' or None if no match.
-    """
-    if not text_string:
-        return None
-
-    # Define conversion factors to kilograms
-    TO_KG = {
-        'grams': 0.001, 'gram': 0.001, 'g': 0.001,
-        'kilos': 1.0, 'kilo': 1.0, 'kilograms': 1.0, 'kilogram': 1.0, 'kg': 1.0,
-        'pounds': 0.45359237, 'pound': 0.45359237, 'lbs': 0.45359237, 'lb': 0.45359237,
-        # Add other units like ounces if needed in the future
-        # 'oz': 0.0283495, 'ounce': 0.0283495,
-    }
-
-    # Regex to capture value and unit
-    # It looks for a number (int or float) followed by optional space and then one of the units.
-    # Using word boundaries (\\b) for units to avoid partial matches (e.g., 'g' in 'grams').
-    # Adjusted to handle cases like "22.5 kilos" vs "22.5kilos"
-    pattern = re.compile(r"(\d+\.?\d*)\s*(" + "|".join(TO_KG.keys()) + r")", re.IGNORECASE)
-    match = pattern.search(text_string)
-
-    if match:
-        value_str = match.group(1)
-        unit_str = match.group(2).lower()
-        
-        try:
-            value = float(value_str)
-            weight_kg = value * TO_KG[unit_str]
-            return {
-                'value': value,
-                'unit': unit_str,
-                'weight_kg': round(weight_kg, 6) #Rounding to avoid float precision issues
-            }
-        except ValueError:
-            logger.warning(f"Could not convert value '{value_str}' to float for weight parsing in '{text_string}'")
-            return None
-    return None
-
-def save_products_to_json(data_to_save, supplier_name_val, base_filename_prefix="products"):
-    """Saves data to a JSON file in the SHARED_OUTPUT_DIR."""
-    if not data_to_save.get("data"):
-        logger.warning("No product data provided to save_products_to_json.")
-        return
-
-    try:
-        os.makedirs(SHARED_OUTPUT_DIR, exist_ok=True)
-    except OSError as e:
-        logger.error(f"Error creating directory {SHARED_OUTPUT_DIR}: {e}. Please check permissions.", exc_info=True)
-        return
-
-    timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{supplier_name_val}_{base_filename_prefix}_{timestamp_str}.json"
-    output_filename = os.path.join(SHARED_OUTPUT_DIR, filename)
-
-    try:
-        with open(output_filename, 'w', encoding='utf-8') as output_file:
-            json.dump(data_to_save, output_file, ensure_ascii=False, indent=4)
-        # Attempt to set permissions, handle potential errors gracefully
-        try:
-            os.chmod(output_filename, 0o664) # rw-rw-r--
-        except OSError as e_chmod:
-            logger.warning(f"Could not set permissions for {output_filename}: {e_chmod}")
-        logger.info(f"Data saved to {output_filename}")
-    except IOError as e:
-        logger.error(f"Error writing to file {output_filename}: {e}", exc_info=True)
-
-
 def main():
     """Main function to orchestrate the scraping process."""
-    setup_logging()
     logger.info("Starting Damseeds scraper main process.")
     overall_start_time = time.time()
 
-    feed_content = fetch_atom_feed(ATOM_FEED_URL)
-    
-    if not feed_content:
-        logger.critical("Failed to fetch Atom feed. Exiting.")
+    try:
+        feed_content = fetch_atom_feed(ATOM_FEED_URL)
+    except Exception as e:
+        logger.critical(f"Failed to fetch Atom feed: {e}")
         return
 
     # Products parsed from the Atom feed (basic info)
@@ -539,54 +422,62 @@ def main():
             time.sleep(1) # Politeness delay
 
             # Scrape the live product page for stock details
-            live_variant_stock_info = scrape_product_page_details(page, atom_product_data['url'])
+            try:
+                live_variant_stock_info = scrape_product_page_details(page, atom_product_data['url'])
+            except Exception as e:
+                logger.error(f"Failed to scrape product page details: {e}")
+                live_variant_stock_info = {}
 
             # Update variants from Atom feed with live stock info
             updated_variants = []
             any_variant_in_stock = False
-            for feed_variant in atom_product_data.get('variants', []):
+            for feed_variant in atom_product_data.get('variations', []):
                 sku = feed_variant.get('sku')
                 live_info = live_variant_stock_info.get(sku) if sku else None
                 
                 current_variant_data = feed_variant.copy() # Start with feed data
                 if live_info:
-                    current_variant_data['is_in_stock'] = live_info['is_in_stock']
+                    current_variant_data['is_variation_in_stock'] = live_info['is_in_stock']
                     if live_info['is_in_stock']:
                         any_variant_in_stock = True
                     # Title consistency check (optional)
-                    if live_info.get('title') and live_info['title'].lower() != feed_variant.get('title','').lower():
-                        logger.debug(f"  Variant title mismatch for SKU {sku}: Feed='{feed_variant.get('title')}', Page='{live_info.get('title')}'. Using page title for stock context.")
+                    if live_info.get('title') and live_info['title'].lower() != feed_variant.get('size','').lower():
+                        logger.debug(f"  Variant with SKU {sku} has title mismatch: Page='{live_info.get('title')}', using standardized format for consistency.")
                 else:
-                    current_variant_data['is_in_stock'] = False # Assume OOS if not found on page / no SKU match
-                    logger.warning(f"  SKU '{sku}' (Title: '{feed_variant.get('title')}') from feed not found or no stock info on page {atom_product_data['url']}.")
+                    current_variant_data['is_variation_in_stock'] = False # Assume OOS if not found on page / no SKU match
+                    logger.warning(f"  SKU '{sku}' not found or no stock info on page {atom_product_data['url']}.")
                 
-                # Remove the old stock_status_from_feed as we now have live data or a fallback assumption
+                # Remove any old stock status fields if they exist
                 current_variant_data.pop('stock_status_from_feed', None) 
                 updated_variants.append(current_variant_data)
             
             # Create the final product entry
             final_product_entry = atom_product_data.copy()
-            final_product_entry['variants'] = updated_variants
+            final_product_entry['variations'] = updated_variants
             final_product_entry['is_in_stock'] = any_variant_in_stock
             final_product_entry.pop('stock_status_from_feed', None) # Remove old product-level status
 
-            detailed_products.append(final_product_entry)
+            # Validate product data
+            if validate_product_data(final_product_entry, logger):
+                detailed_products.append(final_product_entry)
+            else:
+                logger.warning(f"Product failed validation: {final_product_entry.get('title')}")
 
         logger.info("Closing browser.")
         browser.close()
 
-    core_scrape_duration_seconds = round(time.time() - overall_start_time, 2)
+    core_scrape_duration_seconds = time.time() - overall_start_time
 
     if detailed_products:
-        current_timestamp_iso = datetime.now().isoformat()
-        output_data = {
-            "timestamp": current_timestamp_iso,
-            "scrape_duration_seconds": core_scrape_duration_seconds,
-            "source_site": "https://www.damseeds.com",
-            "product_count": len(detailed_products),
-            "data": detailed_products
-        }
-        save_products_to_json(output_data, supplier_name_val=SUPPLIER_NAME, base_filename_prefix="microgreens_live_stock")
+        save_products_to_json(
+            products=detailed_products,
+            output_dir=SHARED_OUTPUT_DIR,
+            filename_prefix=f"{SUPPLIER_NAME}_microgreens_live_stock",
+            source_site="https://www.damseeds.com",
+            currency_code="CAD",
+            scrape_duration=core_scrape_duration_seconds,
+            logger=logger
+        )
     else:
         logger.info("No products were scraped from Damseeds feed or processed for live details.")
 
@@ -594,4 +485,4 @@ def main():
     logger.info(f"Damseeds scraper main process finished. Total duration: {overall_duration_seconds} seconds.")
 
 if __name__ == "__main__":
-    main() 
+    main()
