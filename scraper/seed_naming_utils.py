@@ -12,14 +12,17 @@ COMMON_NAME_MAPPING = {
     "chard": "Swiss Chard",
     "kale": "Kale",
     "radish": "Radish",
+    "winter radish": "Radish",
     "broccoli": "Broccoli",
     "sunflower": "Sunflower",
     "pea": "Pea",
+    "peas": "Pea",
     "alfalfa": "Alfalfa",
     "mustard": "Mustard",
     "arugula": "Arugula",
     "lettuce": "Lettuce",
     "beet": "Beet",
+    "beets": "Beet",
     "spinach": "Spinach",
     "basil": "Basil",
     "amaranth": "Amaranth",
@@ -28,6 +31,8 @@ COMMON_NAME_MAPPING = {
     "cilantro": "Cilantro",
     "coriander": "Coriander",
     "cress": "Cress",
+    "peppergrass": "Cress",
+    "garden cress": "Cress",
     "mung bean": "Mung Bean",
     "bean": "Bean",
     "wheatgrass": "Wheatgrass",
@@ -46,8 +51,10 @@ COMMON_NAME_MAPPING = {
     "leek": "Leek",
     "lentil": "Lentil",
     "mizuna": "Mizuna",
+    "komatsuna": "Komatsuna",
     "nasturtium": "Nasturtium",
     "onion": "Onion",
+    "onions": "Onion",
     "parsley": "Parsley",
     "quinoa": "Quinoa",
     "rutabaga": "Rutabaga",
@@ -60,6 +67,8 @@ COMMON_NAME_MAPPING = {
     "forage pea": "Pea",
     "green forage pea": "Pea",
     "green pea": "Pea",
+    "chervil": "Chervil",
+    # Note: "greens" removed from mapping - handled specially in comma-separated logic
     # Add more mappings as needed
 }
 
@@ -92,18 +101,8 @@ def load_known_common_names(csv_path):
     
     return common_names
 
-def parse_seed_name(product_title, known_common_names=None):
-    """
-    Parse a product title into common name, cultivar name, and additional descriptors
-    according to proper horticultural naming conventions.
-    
-    Args:
-        product_title (str): The product title to parse
-        known_common_names (list): Optional list of known common names to match against
-    
-    Returns:
-        dict: Contains 'common_name', 'cultivar_name', and 'additional_descriptors'
-    """
+def _parse_seed_name_internal(product_title, known_common_names=None):
+    """Internal parsing function without cleaning."""
     if not product_title:
         return {
             "common_name": "N/A",
@@ -117,6 +116,9 @@ def parse_seed_name(product_title, known_common_names=None):
     
     # Remove "seeds" or "seed" from the end
     processed_title = re.sub(r'\s+(seeds|seed)$', '', processed_title, flags=re.IGNORECASE).strip()
+    
+    # Clean trailing commas and extra spaces from the title
+    processed_title = re.sub(r',\s*$', '', processed_title).strip()
     
     # Special case for titles like "Greencrops, 4010 Green Forage Pea - Organic"
     # Check for known common names embedded in the title
@@ -186,6 +188,10 @@ def parse_seed_name(product_title, known_common_names=None):
             left_part = parts[0].strip()
             right_part = parts[1].strip() if len(parts) > 1 else ""
             
+            # Clean trailing commas from parts before processing
+            left_part = re.sub(r',\s*$', '', left_part).strip()
+            right_part = re.sub(r'^\s*,', '', right_part).strip()
+            
             # If left part is a known common name or matches our mapping
             if is_common_name(left_part, known_common_names):
                 common_name = standardize_common_name(left_part)
@@ -218,6 +224,44 @@ def parse_seed_name(product_title, known_common_names=None):
                         "cultivar_name": "N/A",
                         "additional_descriptors": right_part if right_part else "N/A"
                     }
+            
+            # Special case: Handle "Greens," prefix pattern that indicates the common name is in the right part
+            if left_part.lower().strip() == "greens":
+                # Check for specific plant names FIRST before checking mapping
+                if 'amaranth' in right_part.lower():
+                    # Extract cultivar from titles like "Red Garnet Amaranth"
+                    amaranth_match = re.search(r'(.+?)\s+amaranth', right_part, re.IGNORECASE)
+                    if amaranth_match:
+                        cultivar = amaranth_match.group(1).strip()
+                        return {"common_name": "Amaranth", "cultivar_name": cultivar, "additional_descriptors": "N/A"}
+                    else:
+                        return {"common_name": "Amaranth", "cultivar_name": "N/A", "additional_descriptors": "N/A"}
+                elif 'mizuna' in right_part.lower():
+                    return {"common_name": "Mizuna", "cultivar_name": "N/A", "additional_descriptors": "N/A"}
+                elif 'komatsuna' in right_part.lower():
+                    return {"common_name": "Komatsuna", "cultivar_name": "N/A", "additional_descriptors": "N/A"}
+                elif 'garden cress' in right_part.lower() or 'peppergrass' in right_part.lower():
+                    return {"common_name": "Cress", "cultivar_name": "Peppergrass", "additional_descriptors": "N/A"}
+                
+                # Look for actual common name in the right part (longest match first)
+                sorted_mapping = sorted(COMMON_NAME_MAPPING.items(), key=lambda x: len(x[0]), reverse=True)
+                for key, value in sorted_mapping:
+                    if re.search(r'\b' + re.escape(key) + r'\b', right_part, re.IGNORECASE):
+                        # Remove the matched common name from right part to get cultivar
+                        remaining_right = re.sub(r'\b' + re.escape(key) + r'\b', '', right_part, flags=re.IGNORECASE).strip()
+                        remaining_right = re.sub(r'^[,\-\s]+|[,\-\s]+$', '', remaining_right).strip()  # Clean punctuation
+                        return {
+                            "common_name": value,
+                            "cultivar_name": remaining_right if remaining_right else "N/A",
+                            "additional_descriptors": "N/A"
+                        }
+                
+                # If no specific mapping found, treat the right part as the common name
+                return {
+                    "common_name": right_part.title(),
+                    "cultivar_name": "N/A", 
+                    "additional_descriptors": "N/A"
+                }
             
             # If the first part is not a common name, check if it's a cultivar indicator
             # and look for common names in the right part
@@ -345,6 +389,21 @@ def parse_seed_name(product_title, known_common_names=None):
         "additional_descriptors": "N/A"
     }
 
+def parse_seed_name(product_title, known_common_names=None):
+    """
+    Parse a product title into common name, cultivar name, and additional descriptors
+    according to proper horticultural naming conventions.
+    
+    Args:
+        product_title (str): The product title to parse
+        known_common_names (list): Optional list of known common names to match against
+    
+    Returns:
+        dict: Contains 'common_name', 'cultivar_name', and 'additional_descriptors'
+    """
+    result = _parse_seed_name_internal(product_title, known_common_names)
+    return clean_parse_result(result)
+
 def extract_common_name(text, known_common_names=None):
     """Extract common name from text."""
     if not text:
@@ -401,10 +460,34 @@ def is_common_name(text, known_common_names=None):
     
     return False
 
+def clean_name_component(text):
+    """Clean name component by removing extra spaces, commas, and punctuation."""
+    if not text or text == "N/A":
+        return "N/A"
+    
+    # Remove trailing commas, spaces, and dashes
+    cleaned = re.sub(r'^[,\-\s]+|[,\-\s]+$', '', text).strip()
+    
+    # Normalize internal spaces
+    cleaned = ' '.join(cleaned.split())
+    
+    return cleaned if cleaned else "N/A"
+
+def clean_parse_result(result):
+    """Apply universal cleaning to parse result components."""
+    return {
+        "common_name": clean_name_component(result.get("common_name", "N/A")),
+        "cultivar_name": clean_name_component(result.get("cultivar_name", "N/A")),
+        "additional_descriptors": clean_name_component(result.get("additional_descriptors", "N/A"))
+    }
+
 def standardize_common_name(text):
     """Standardize common name format."""
     if not text:
         return "N/A"
+    
+    # Clean the text first
+    text = clean_name_component(text)
     
     # Check against our mapping first
     if text.lower() in COMMON_NAME_MAPPING:

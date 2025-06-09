@@ -1,0 +1,2946 @@
+{
+  "timestamp": "2025-06-05T23:40:47.934320",
+  "scrape_duration_seconds": 12.11,
+  "source_site": "https://www.damseeds.com",
+  "currency_code": "CAD",
+  "product_count": 25,
+  "data": [
+    {
+      "title": "Greencrops, 4010 Green Forage Pea - Organic",
+      "common_name": "Pea",
+      "cultivar_name": "Greencrops",
+      "organic": true,
+      "url": "https://www.damseeds.com/products/4010-green-forage-pea-organic",
+      "vendor": "William Dam Seeds",
+      "product_type": "",
+      "image_url": null,
+      "description": "Very effective Nitrogen and bio mass builder. 4010 peas are the best leafy forage peas for plowdown, producing over 40” of green mass in 10 weeks. Best practice is to allow three weeks before seeding following crops. Mow down and work into soil at flowering.",
+      "tags": [
+        "catalogueNo:4881",
+        "microgreens",
+        "primaryCat:Greencrops",
+        "subCat:",
+        "topCat:G"
+      ],
+      "variations": [
+        {
+          "size": "450 grams",
+          "price": 9.95,
+          "sku": "4881A",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 9.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 15.75,
+            "markup_percentage": 58.3
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 19.95,
+          "sku": "4881B",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 19.95,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 45.75,
+            "markup_percentage": 129.3
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 35.55,
+          "sku": "4881C",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 35.55,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 70.65,
+            "markup_percentage": 98.7
+          }
+        },
+        {
+          "size": "10 kilograms",
+          "price": 55.45,
+          "sku": "4881D",
+          "is_variation_in_stock": true,
+          "weight_kg": 10.0,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 55.45,
+            "shipping_cad": 41.5,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 96.95,
+            "markup_percentage": 74.8
+          }
+        },
+        {
+          "size": "22.5 kilograms",
+          "price": 85.45,
+          "sku": "4881E",
+          "is_variation_in_stock": true,
+          "weight_kg": 22.5,
+          "original_weight_value": 22.5,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 85.45,
+            "shipping_cad": 65.25,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 150.7,
+            "markup_percentage": 76.4
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Swiss Chard, Eldorado",
+      "common_name": "Swiss Chard",
+      "cultivar_name": "Eldorado",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/eldorado",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/941.jpg?v=1576374162",
+      "description": "Improved Golden Sunrise. Fresh new colour for salad blends. Bright orange stalks and veins with contrasting dark green leaves. Can be used as full-grown bunches or as baby leaves in salads and braising mixes. Good frost tolerance. Matures at 45cm/18”. 32 days baby; 59 days bunching Pkt contains 100-120 sds.",
+      "tags": [
+        "catalogueNo:941",
+        "microgreens",
+        "primaryCat:Swiss Chard",
+        "subCat:",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 7.95,
+          "sku": "941B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 7.95,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 8.27,
+            "markup_percentage": 4.1
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 17.95,
+          "sku": "941C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 17.95,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 19.24,
+            "markup_percentage": 7.2
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 49.95,
+          "sku": "941D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 49.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 55.76,
+            "markup_percentage": 11.6
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 159.65,
+          "sku": "941E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 159.65,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 185.45,
+            "markup_percentage": 16.2
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 349.55,
+          "sku": "941F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 349.55,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 384.65,
+            "markup_percentage": 10.0
+          }
+        },
+        {
+          "size": "25 pounds",
+          "price": 718.85,
+          "sku": "941G",
+          "is_variation_in_stock": true,
+          "weight_kg": 11.3398,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "pound",
+          "canadian_costs": {
+            "base_price_cad": 718.85,
+            "shipping_cad": 47.06,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 765.91,
+            "markup_percentage": 6.5
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Swiss Chard, Ruby Red",
+      "common_name": "Swiss Chard",
+      "cultivar_name": "Ruby Red",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/ruby-red",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/921.jpg?v=1576374146",
+      "description": "Excellent for baby leaves or bunching. Dark green, crumpled leaves with crimson stalks and veins. Sweet, mild flavour. Plants grow 18” high. Also known as rhubarb chard. 32 days baby; 59 days bunching Pkt contains 100-225 sds.",
+      "tags": [
+        "catalogueNo:921",
+        "microgreens",
+        "primaryCat:Swiss Chard",
+        "subCat:",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 5.45,
+          "sku": "921B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.45,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.77,
+            "markup_percentage": 5.9
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 11.95,
+          "sku": "921C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 11.95,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 13.24,
+            "markup_percentage": 10.8
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 35.75,
+          "sku": "921D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 35.75,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 41.55,
+            "markup_percentage": 16.2
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 97.5,
+          "sku": "921E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 97.5,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 123.3,
+            "markup_percentage": 26.5
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 221.3,
+          "sku": "921F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 221.3,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 256.4,
+            "markup_percentage": 15.9
+          }
+        },
+        {
+          "size": "25 pounds",
+          "price": 451.55,
+          "sku": "921G",
+          "is_variation_in_stock": true,
+          "weight_kg": 11.3398,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "pound",
+          "canadian_costs": {
+            "base_price_cad": 451.55,
+            "shipping_cad": 47.06,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 498.61,
+            "markup_percentage": 10.4
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Beets, Early Wonder AC Strain",
+      "common_name": "Beet",
+      "cultivar_name": "Early Wonder AC Strain",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/early-wonder-ac-strain",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/861.jpg?v=1574986063",
+      "description": "Our earliest non-hybrid variety. Produces a topshaped, blood-red root for all purposes. Tall green tops are good for bunching. 60 days Pkt contains 150-200 sds",
+      "tags": [
+        "catalogueNo:861",
+        "microgreens",
+        "primaryCat:Beets",
+        "subCat:Round Beets",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 6.25,
+          "sku": "861B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 6.25,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 6.57,
+            "markup_percentage": 5.2
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 11.6,
+          "sku": "861C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 11.6,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 12.89,
+            "markup_percentage": 11.1
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 35.5,
+          "sku": "861D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 35.5,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 41.3,
+            "markup_percentage": 16.4
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 100.05,
+          "sku": "861E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 100.05,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 125.85,
+            "markup_percentage": 25.8
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 214.2,
+          "sku": "861F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 214.2,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 249.3,
+            "markup_percentage": 16.4
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Beets, Bull's Blood",
+      "common_name": "Beet",
+      "cultivar_name": "Bull's Blood",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/bulls-blood",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/821.jpg?v=1574986030",
+      "description": "The ultimate beet top. Dark red leaves and stems add colour and zest to salads and cooked top recipes. Beets are flat-globed and have alternating red-white zones. Tops are 10-12” in height and hold up well in the heat. 60 days Pkt contains 100-140 sds",
+      "tags": [
+        "catalogueNo:821",
+        "microgreens",
+        "primaryCat:Beets",
+        "subCat:Baby Leaf Beets",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 8.1,
+          "sku": "821B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 8.1,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 8.42,
+            "markup_percentage": 4.0
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 18.7,
+          "sku": "821C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 18.7,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 19.99,
+            "markup_percentage": 6.9
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 48.75,
+          "sku": "821D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 48.75,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 54.55,
+            "markup_percentage": 11.9
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 174.95,
+          "sku": "821E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 174.95,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 200.75,
+            "markup_percentage": 14.7
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 368.7,
+          "sku": "821F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 368.7,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 403.8,
+            "markup_percentage": 9.5
+          }
+        },
+        {
+          "size": "25 pounds",
+          "price": 742.05,
+          "sku": "821G",
+          "is_variation_in_stock": true,
+          "weight_kg": 11.3398,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "pound",
+          "canadian_costs": {
+            "base_price_cad": 742.05,
+            "shipping_cad": 47.06,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 789.11,
+            "markup_percentage": 6.3
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Sorrel, Green de Belleville",
+      "common_name": "Sorrel",
+      "cultivar_name": "Green de Belleville",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/green-de-belleville",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5315.jpg?v=1574909535",
+      "description": "R. acetosa All green strain with lemony taste. Perennial | Ht. 45cm/18” | 800-1000 sds/gm.",
+      "tags": [
+        "catalogueNo:5315",
+        "microgreens",
+        "primaryCat:Sorrel",
+        "subCat:",
+        "topCat:H"
+      ],
+      "variations": [
+        {
+          "size": "10 grams",
+          "price": 5.25,
+          "sku": "5315B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.01,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.25,
+            "shipping_cad": 0.13,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.38,
+            "markup_percentage": 2.5
+          }
+        },
+        {
+          "size": "25 grams",
+          "price": 8.25,
+          "sku": "5315C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 8.25,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 8.57,
+            "markup_percentage": 3.9
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 16.75,
+          "sku": "5315D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 16.75,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 18.04,
+            "markup_percentage": 7.7
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 54.95,
+          "sku": "5315E",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 54.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 60.76,
+            "markup_percentage": 10.6
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 172.75,
+          "sku": "5315F",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 172.75,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 198.55,
+            "markup_percentage": 14.9
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Dill, Bouquet",
+      "common_name": "Dill",
+      "cultivar_name": "Bouquet",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/bouquet",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5197.jpg?v=1574909456",
+      "description": "A tall dill producing many flowerheads. Annual | Ht. 120cm/48” | 450-500 sds/gm.",
+      "tags": [
+        "catalogueNo:5197",
+        "microgreens",
+        "primaryCat:Dill",
+        "subCat:",
+        "topCat:H"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 6.95,
+          "sku": "5197B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 6.95,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 7.27,
+            "markup_percentage": 4.6
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 16.75,
+          "sku": "5197C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 16.75,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 18.04,
+            "markup_percentage": 7.7
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 45.95,
+          "sku": "5197D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 45.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 51.76,
+            "markup_percentage": 12.6
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 159.75,
+          "sku": "5197E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 159.75,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 185.55,
+            "markup_percentage": 16.2
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 337.95,
+          "sku": "5197F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 337.95,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 373.05,
+            "markup_percentage": 10.4
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Cilantro, Santo Organic",
+      "common_name": "Cilantro",
+      "cultivar_name": "Santo",
+      "organic": true,
+      "url": "https://www.damseeds.com/products/santo-organic",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5183.jpg?v=1574909444",
+      "description": "Slow bolting selection producing broad, fresh green leaves on strong stems. Excellent for bunching. Organically grown seed. Annual | 50-100 sds/gm.",
+      "tags": [
+        "catalogueNo:5183",
+        "microgreens",
+        "primaryCat:Cilantro",
+        "subCat:",
+        "topCat:H"
+      ],
+      "variations": [
+        {
+          "size": "5 grams",
+          "price": 5.25,
+          "sku": "5183B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.005,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.25,
+            "shipping_cad": 0.06,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.31,
+            "markup_percentage": 1.2
+          }
+        },
+        {
+          "size": "25 grams",
+          "price": 8.95,
+          "sku": "5183C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 8.95,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 9.27,
+            "markup_percentage": 3.6
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 24.75,
+          "sku": "5183D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 24.75,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 26.04,
+            "markup_percentage": 5.2
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 72.95,
+          "sku": "5183E",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 72.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 78.76,
+            "markup_percentage": 8.0
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 256.75,
+          "sku": "5183F",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 256.75,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 282.55,
+            "markup_percentage": 10.0
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 587.65,
+          "sku": "5183G",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 587.65,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 622.75,
+            "markup_percentage": 6.0
+          }
+        },
+        {
+          "size": "10 kilograms",
+          "price": 1340.7,
+          "sku": "5183H",
+          "is_variation_in_stock": true,
+          "weight_kg": 10.0,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 1340.7,
+            "shipping_cad": 41.5,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 1382.2,
+            "markup_percentage": 3.1
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Cilantro, Santo",
+      "common_name": "Cilantro",
+      "cultivar_name": "Santo",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/santo",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5182.jpg?v=1574909442",
+      "description": "Slow bolting selection producing broad, fresh green leaves on strong stems. Excellent for bunching. Annual | 50-100 sds/gm.",
+      "tags": [
+        "catalogueNo:5182",
+        "microgreens",
+        "primaryCat:Cilantro",
+        "subCat:",
+        "topCat:H"
+      ],
+      "variations": [
+        {
+          "size": "10 grams",
+          "price": 5.25,
+          "sku": "5182B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.01,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.25,
+            "shipping_cad": 0.13,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.38,
+            "markup_percentage": 2.5
+          }
+        },
+        {
+          "size": "25 grams",
+          "price": 6.95,
+          "sku": "5182C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 6.95,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 7.27,
+            "markup_percentage": 4.6
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 11.75,
+          "sku": "5182D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 11.75,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 13.04,
+            "markup_percentage": 11.0
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 41.65,
+          "sku": "5182E",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 41.65,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 47.45,
+            "markup_percentage": 13.9
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 111.75,
+          "sku": "5182F",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 111.75,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 137.55,
+            "markup_percentage": 23.1
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 258.75,
+          "sku": "5182G",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 258.75,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 293.85,
+            "markup_percentage": 13.6
+          }
+        },
+        {
+          "size": "25 pounds",
+          "price": 532.0,
+          "sku": "5182H",
+          "is_variation_in_stock": true,
+          "weight_kg": 11.3398,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "pound",
+          "canadian_costs": {
+            "base_price_cad": 532.0,
+            "shipping_cad": 47.06,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 579.06,
+            "markup_percentage": 8.8
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Chervil, Brussels Winter Vertissimo",
+      "common_name": "Chervil",
+      "cultivar_name": "Brussels Winter Vertissimo",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/brussels-winter-vertissimo",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5159.jpg?v=1574909427",
+      "description": "Anthriscus cerefolium Brussels Winter strain. A preferred selection with darker green leaves. Chervil is a delicate leaved herb that enhances the flavours of other herbs. It is one of the fine herbs used in French cooking. Best direct seeded and kept moist until growth is seen. Annual | Ht. 45cm/18” | 300-400 sds/gm.",
+      "tags": [
+        "catalogueNo:5159",
+        "microgreens",
+        "primaryCat:Chervil",
+        "subCat:",
+        "topCat:H"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 6.75,
+          "sku": "5159C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 6.75,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 7.07,
+            "markup_percentage": 4.8
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 12.45,
+          "sku": "5159D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 12.45,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 13.74,
+            "markup_percentage": 10.4
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 29.75,
+          "sku": "5159E",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 29.75,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 35.55,
+            "markup_percentage": 19.5
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 87.75,
+          "sku": "5159F",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 87.75,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 113.55,
+            "markup_percentage": 29.4
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 185.95,
+          "sku": "5159G",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 185.95,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 221.05,
+            "markup_percentage": 18.9
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Basil, Red Rubin Improved",
+      "common_name": "Basil",
+      "cultivar_name": "Red Rubin Improved",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/red-rubin-improved",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/5136.jpg?v=1574909416",
+      "description": "Improved Dark Opal. Develops deep purple colour in less favourable conditions. Suitable for greenhouse growing. Great accent plant for containers. Interesting in salads. Annual | Ht. 40cm/16” | 400-700 sds/gm.",
+      "tags": [
+        "catalogueNo:5136",
+        "microgreens",
+        "primaryCat:Basil",
+        "subCat:Red Basil",
+        "topCat:H"
+      ],
+      "variations": [
+        {
+          "size": "5 grams",
+          "price": 8.75,
+          "sku": "5136B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.005,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 8.75,
+            "shipping_cad": 0.06,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 8.81,
+            "markup_percentage": 0.7
+          }
+        },
+        {
+          "size": "10 grams",
+          "price": 12.65,
+          "sku": "5136C",
+          "is_variation_in_stock": false,
+          "weight_kg": 0.01,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 12.65,
+            "shipping_cad": 0.13,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 12.78,
+            "markup_percentage": 1.0
+          }
+        },
+        {
+          "size": "25 grams",
+          "price": 22.45,
+          "sku": "5136D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 22.45,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 22.77,
+            "markup_percentage": 1.4
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 61.75,
+          "sku": "5136E",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 61.75,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 63.04,
+            "markup_percentage": 2.1
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 207.0,
+          "sku": "5136F",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 207.0,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 212.81,
+            "markup_percentage": 2.8
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Greencrops, Buckwheat Organic",
+      "common_name": "Buckwheat",
+      "cultivar_name": "Greencrops",
+      "organic": true,
+      "url": "https://www.damseeds.com/products/buckwheat-organic",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4888.jpg?v=1576374036",
+      "description": "Fastest growing summer covercrop. Buckwheat out grows everything including weeds, making it a great short term smother crop. While buckwheat does not yield a large biomass, it is an excellent scavenger of phosphorus and potassium releasing it to the next crop.",
+      "tags": [
+        "catalogueNo:4888",
+        "microgreens",
+        "primaryCat:Greencrops",
+        "subCat:Summer Seeded Greencrops",
+        "topCat:G"
+      ],
+      "variations": [
+        {
+          "size": "450 grams",
+          "price": 8.75,
+          "sku": "4888A",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 8.75,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 14.55,
+            "markup_percentage": 66.3
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 22.15,
+          "sku": "4888B",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 22.15,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 47.95,
+            "markup_percentage": 116.5
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 37.95,
+          "sku": "4888C",
+          "is_variation_in_stock": false,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 37.95,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 73.05,
+            "markup_percentage": 92.5
+          }
+        },
+        {
+          "size": "10 kilograms",
+          "price": 71.65,
+          "sku": "4888D",
+          "is_variation_in_stock": false,
+          "weight_kg": 10.0,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 71.65,
+            "shipping_cad": 41.5,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 113.15,
+            "markup_percentage": 57.9
+          }
+        },
+        {
+          "size": "22.5 kilograms",
+          "price": 109.65,
+          "sku": "4888E",
+          "is_variation_in_stock": false,
+          "weight_kg": 22.5,
+          "original_weight_value": 22.5,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 109.65,
+            "shipping_cad": 65.25,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 174.9,
+            "markup_percentage": 59.5
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Greens, Mizuna",
+      "common_name": "Mizuna",
+      "cultivar_name": "N/A",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/mizuna",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4651.jpg?v=1574985825",
+      "description": "Very prolific, bolt-tolerant green producing up to 200 stems with holly-like serrated leaves. Excellent in gourmet salads and stir-fries. Pkt contains 650-750 sds.",
+      "tags": [
+        "catalogueNo:4651",
+        "microgreens",
+        "primaryCat:Greens",
+        "subCat:Mizuna Greens",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 6.95,
+          "sku": "4651B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 6.95,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 7.27,
+            "markup_percentage": 4.6
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 14.95,
+          "sku": "4651C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 14.95,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 16.24,
+            "markup_percentage": 8.6
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 29.75,
+          "sku": "4651D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 29.75,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 35.55,
+            "markup_percentage": 19.5
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 56.95,
+          "sku": "4651E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 56.95,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 82.75,
+            "markup_percentage": 45.3
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 135.0,
+          "sku": "4651F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 135.0,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 170.1,
+            "markup_percentage": 26.0
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Greens, Komatsuna",
+      "common_name": "Komatsuna",
+      "cultivar_name": "N/A",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/komatsuna",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4638.jpg?v=1574985816",
+      "description": "Easy to grow. Upright, fresh green plant produces tender, mild stalks with dark green, rounded leaves. Good for salads and braising. Pkt contains 500-650 sds.",
+      "tags": [
+        "catalogueNo:4638",
+        "microgreens",
+        "primaryCat:Greens",
+        "subCat:Komatsuna Greens",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "5 grams",
+          "price": 5.4,
+          "sku": "4638B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.005,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.4,
+            "shipping_cad": 0.06,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.46,
+            "markup_percentage": 1.2
+          }
+        },
+        {
+          "size": "25 grams",
+          "price": 10.45,
+          "sku": "4638C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 10.45,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 10.77,
+            "markup_percentage": 3.1
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 27.95,
+          "sku": "4638D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 27.95,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 29.24,
+            "markup_percentage": 4.6
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 81.1,
+          "sku": "4638E",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 81.1,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 86.91,
+            "markup_percentage": 7.2
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 325.0,
+          "sku": "4638F",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 325.0,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 350.8,
+            "markup_percentage": 7.9
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Greens, Garden Cress Peppergrass",
+      "common_name": "Cress",
+      "cultivar_name": "Peppergrass",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/garden-cress-peppergrass",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4625.jpg?v=1574985794",
+      "description": "Lepidium sativum Peppergrass. A quick growing, extra curly cress that is ready to eat in two weeks. Tasty on sandwiches or in salads. Pkt contains 1800-1950 sds.",
+      "tags": [
+        "catalogueNo:4625",
+        "microgreens",
+        "primaryCat:Greens",
+        "subCat:Cress Greens",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 5.5,
+          "sku": "4625B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.5,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.82,
+            "markup_percentage": 5.9
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 10.95,
+          "sku": "4625C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 10.95,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 12.24,
+            "markup_percentage": 11.8
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 21.9,
+          "sku": "4625D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 21.9,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 27.7,
+            "markup_percentage": 26.5
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 70.0,
+          "sku": "4625E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 70.0,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 95.8,
+            "markup_percentage": 36.9
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 137.35,
+          "sku": "4625F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 137.35,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 172.45,
+            "markup_percentage": 25.6
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Greens, Red Garnet Amaranth",
+      "common_name": "Amaranth",
+      "cultivar_name": "Red Garnet",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/red-garnet-amaranth",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/4601.jpg?v=1574985776",
+      "description": "Interesting red leaves with soft texture. Tolerant to hot and dry conditions. Used to brighten up salads. Pkt contains 1150-1250 sds.",
+      "tags": [
+        "catalogueNo:4601",
+        "microgreens",
+        "primaryCat:Greens",
+        "subCat:Amaranth Greens",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 6.95,
+          "sku": "4601B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 6.95,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 7.27,
+            "markup_percentage": 4.6
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 19.95,
+          "sku": "4601C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 19.95,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 21.24,
+            "markup_percentage": 6.5
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 46.95,
+          "sku": "4601D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 46.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 52.76,
+            "markup_percentage": 12.4
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 162.5,
+          "sku": "4601E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 162.5,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 188.3,
+            "markup_percentage": 15.9
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 299.55,
+          "sku": "4601F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 299.55,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 334.65,
+            "markup_percentage": 11.7
+          }
+        },
+        {
+          "size": "22.5 kilograms",
+          "price": 979.1,
+          "sku": "4601G",
+          "is_variation_in_stock": true,
+          "weight_kg": 22.5,
+          "original_weight_value": 22.5,
+          "original_weight_unit": "kilos",
+          "canadian_costs": {
+            "base_price_cad": 979.1,
+            "shipping_cad": 65.25,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 1044.35,
+            "markup_percentage": 6.7
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Winter Radish, Red Arrow / China Rose",
+      "common_name": "Radish",
+      "cultivar_name": "Red Arrow / China Rose",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/china-rose",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3511.jpg?v=1574983576",
+      "description": "Long, rose-coloured roots with mild, white flesh for fall and winter use. Produces pink sprouts with a nice spicy flavour. 60 days Pkt contains 300-500 sds.",
+      "tags": [
+        "catalogueNo:3511",
+        "microgreens",
+        "primaryCat:Winter Radish",
+        "subCat:European Storage Winter Radish",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 5.1,
+          "sku": "3511B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.1,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.42,
+            "markup_percentage": 6.3
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 10.15,
+          "sku": "3511C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 10.15,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 11.44,
+            "markup_percentage": 12.7
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 19.7,
+          "sku": "3511D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 19.7,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 25.5,
+            "markup_percentage": 29.5
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 49.95,
+          "sku": "3511E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 49.95,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 75.75,
+            "markup_percentage": 51.7
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 89.65,
+          "sku": "3511F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 89.65,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 124.75,
+            "markup_percentage": 39.2
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Winter Radish, Round Black Spanish",
+      "common_name": "Radish",
+      "cultivar_name": "Round Black Spanish",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/round-black-spanish",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3501.jpg?v=1574983574",
+      "description": "An excellent black-skinned variety with crisp, spicy white flesh. Up to 4” wide. Great keeper. 55 days Pkt contains 400-450 sds.",
+      "tags": [
+        "catalogueNo:3501",
+        "microgreens",
+        "primaryCat:Winter Radish",
+        "subCat:European Storage Winter Radish",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 5.1,
+          "sku": "3501B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.1,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.42,
+            "markup_percentage": 6.3
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 11.95,
+          "sku": "3501C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 11.95,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 13.24,
+            "markup_percentage": 10.8
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 22.95,
+          "sku": "3501D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 22.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 28.75,
+            "markup_percentage": 25.3
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 56.55,
+          "sku": "3501E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 56.55,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 82.35,
+            "markup_percentage": 45.6
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 115.95,
+          "sku": "3501F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 115.95,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 151.05,
+            "markup_percentage": 30.3
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Winter Radish, Minowase-Diakon",
+      "common_name": "Radish",
+      "cultivar_name": "Minowase",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/minowase-diakon",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3493.jpg?v=1574983571",
+      "description": "",
+      "tags": [
+        "catalogueNo:3493",
+        "microgreens",
+        "primaryCat:Winter Radish",
+        "subCat:",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "100 grams",
+          "price": 8.95,
+          "sku": "3493B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 8.95,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 10.24,
+            "markup_percentage": 14.4
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 20.55,
+          "sku": "3493C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 20.55,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 26.36,
+            "markup_percentage": 28.2
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 44.95,
+          "sku": "3493D",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 44.95,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 70.75,
+            "markup_percentage": 57.4
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 86.5,
+          "sku": "3493E",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 86.5,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 121.6,
+            "markup_percentage": 40.6
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Peas, Dwarf Grey Sugar",
+      "common_name": "Pea",
+      "cultivar_name": "Dwarf Grey Sugar",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/dwarf-grey-sugar",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3092.jpg?v=1576373938",
+      "description": "",
+      "tags": [
+        "catalogueNo:3092",
+        "microgreens",
+        "primaryCat:Peas",
+        "subCat:",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "450 grams",
+          "price": 9.45,
+          "sku": "3092A",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 9.45,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 15.25,
+            "markup_percentage": 61.4
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 34.95,
+          "sku": "3092B",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 34.95,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 60.75,
+            "markup_percentage": 73.8
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 67.85,
+          "sku": "3092C",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 67.85,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 102.95,
+            "markup_percentage": 51.7
+          }
+        },
+        {
+          "size": "10 kilograms",
+          "price": 98.45,
+          "sku": "3092D",
+          "is_variation_in_stock": true,
+          "weight_kg": 10.0,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 98.45,
+            "shipping_cad": 41.5,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 139.95,
+            "markup_percentage": 42.2
+          }
+        },
+        {
+          "size": "22.5 kilograms",
+          "price": 199.5,
+          "sku": "3092E",
+          "is_variation_in_stock": true,
+          "weight_kg": 22.5,
+          "original_weight_value": 22.5,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 199.5,
+            "shipping_cad": 65.25,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 264.75,
+            "markup_percentage": 32.7
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Peas, Oregon Sugar Pod II",
+      "common_name": "Pea",
+      "cultivar_name": "Oregon Sugar Pod II",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/oregon-sugar-pod-ii",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/3091.jpg?v=1574985716",
+      "description": "Large, sweet pods. Produces heavy yields of 4½” long and ¾” wide flat pods. Large, 3-4ft vines protect tender pods from the sun. Also known as Ho-lan-dow. Developed by OSU. 63 days Pkt contains 135-150 sds.",
+      "tags": [
+        "catalogueNo:3091",
+        "microgreens",
+        "primaryCat:Peas",
+        "subCat:Snow/Sugar Peas",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "125 grams",
+          "price": 5.25,
+          "sku": "3091B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.125,
+          "original_weight_value": 125.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.25,
+            "shipping_cad": 1.61,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 6.86,
+            "markup_percentage": 30.7
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 8.95,
+          "sku": "3091C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 8.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 14.75,
+            "markup_percentage": 64.9
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 30.25,
+          "sku": "3091D",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 30.25,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 56.05,
+            "markup_percentage": 85.3
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 46.6,
+          "sku": "3091E",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 46.6,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 81.7,
+            "markup_percentage": 75.3
+          }
+        },
+        {
+          "size": "10 kilograms",
+          "price": 73.7,
+          "sku": "3091F",
+          "is_variation_in_stock": true,
+          "weight_kg": 10.0,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 73.7,
+            "shipping_cad": 41.5,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 115.2,
+            "markup_percentage": 56.3
+          }
+        },
+        {
+          "size": "22.5 kilograms",
+          "price": 136.75,
+          "sku": "3091G",
+          "is_variation_in_stock": true,
+          "weight_kg": 22.5,
+          "original_weight_value": 22.5,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 136.75,
+            "shipping_cad": 65.25,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 202.0,
+            "markup_percentage": 47.7
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Peas, Aladdin pvp",
+      "common_name": "Pea",
+      "cultivar_name": "Aladdin pvp",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/aladdin-pvp",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2951.jpg?v=1574985689",
+      "description": "Excellent processing pea for canners. It produces high yields of 3” long pods with dark green, medium-sized peas concentrated in one or two pickings. Plants are semi-leafless and dwarf growing to 18-28” high depending on time of year. Aladdin is very heat tolerant so it can be grown as a summer pea in many areas. (HR:F/BLRV IR:PM/ PEMV) 67 days Pkt contains 150-175 sds.",
+      "tags": [
+        "catalogueNo:2951",
+        "microgreens",
+        "primaryCat:Peas",
+        "subCat:Main Season Peas",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "125 grams",
+          "price": 5.35,
+          "sku": "2951B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.125,
+          "original_weight_value": 125.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.35,
+            "shipping_cad": 1.61,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 6.96,
+            "markup_percentage": 30.1
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 9.95,
+          "sku": "2951C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 9.95,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 15.75,
+            "markup_percentage": 58.3
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 32.5,
+          "sku": "2951D",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 32.5,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 58.3,
+            "markup_percentage": 79.4
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 48.75,
+          "sku": "2951E",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 48.75,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 83.85,
+            "markup_percentage": 72.0
+          }
+        },
+        {
+          "size": "10 kilograms",
+          "price": 80.65,
+          "sku": "2951F",
+          "is_variation_in_stock": true,
+          "weight_kg": 10.0,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 80.65,
+            "shipping_cad": 41.5,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 122.15,
+            "markup_percentage": 51.5
+          }
+        },
+        {
+          "size": "22.5 kilograms",
+          "price": 160.45,
+          "sku": "2951G",
+          "is_variation_in_stock": true,
+          "weight_kg": 22.5,
+          "original_weight_value": 22.5,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 160.45,
+            "shipping_cad": 65.25,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 225.7,
+            "markup_percentage": 40.7
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Onions, Evergreen Long White Nebuka",
+      "common_name": "Onion",
+      "cultivar_name": "Evergreen Long White Nebuka",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/evergreen-long-white-nebuka",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2811.jpg?v=1574983329",
+      "description": "Long, slim, white stems. Very hardy for overwintering. Little to no bulbing. 70 days Pkt contains 400-500 sds.",
+      "tags": [
+        "catalogueNo:2811",
+        "microgreens",
+        "primaryCat:Onions",
+        "subCat:Bunching Onions",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 8.25,
+          "sku": "2811B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 8.25,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 8.57,
+            "markup_percentage": 3.9
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 20.65,
+          "sku": "2811C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 20.65,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 21.94,
+            "markup_percentage": 6.2
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 60.45,
+          "sku": "2811D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 60.45,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 66.26,
+            "markup_percentage": 9.6
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 199.5,
+          "sku": "2811E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 199.5,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 225.3,
+            "markup_percentage": 12.9
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 458.95,
+          "sku": "2811F",
+          "is_variation_in_stock": true,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 458.95,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 494.05,
+            "markup_percentage": 7.6
+          }
+        }
+      ],
+      "is_in_stock": true
+    },
+    {
+      "title": "Fennel, Finnochio/Florence",
+      "common_name": "Fennel",
+      "cultivar_name": "Finnochio/Florence",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/finnochio-florence",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/2245_1.jpg?v=1576011876",
+      "description": "Common fennel. Recommended for foliage use. Great in salad blends and microgreen mixes. 100 days. Pkt contains 150-300 sds.",
+      "tags": [
+        "catalogueNo:2245",
+        "microgreens",
+        "primaryCat:Fennel",
+        "subCat:Foliage Fennel",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "10 grams",
+          "price": 5.25,
+          "sku": "2245B",
+          "is_variation_in_stock": false,
+          "weight_kg": 0.01,
+          "original_weight_value": 10.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 5.25,
+            "shipping_cad": 0.13,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 5.38,
+            "markup_percentage": 2.5
+          }
+        },
+        {
+          "size": "25 grams",
+          "price": 7.95,
+          "sku": "2245C",
+          "is_variation_in_stock": false,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 7.95,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 8.27,
+            "markup_percentage": 4.1
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 17.45,
+          "sku": "2245D",
+          "is_variation_in_stock": false,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 17.45,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 18.74,
+            "markup_percentage": 7.4
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 46.45,
+          "sku": "2245E",
+          "is_variation_in_stock": false,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 46.45,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 52.26,
+            "markup_percentage": 12.5
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 124.75,
+          "sku": "2245F",
+          "is_variation_in_stock": false,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 124.75,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 150.55,
+            "markup_percentage": 20.7
+          }
+        },
+        {
+          "size": "5 kilograms",
+          "price": 278.45,
+          "sku": "2245G",
+          "is_variation_in_stock": false,
+          "weight_kg": 5.0,
+          "original_weight_value": 5.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 278.45,
+            "shipping_cad": 35.1,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 313.55,
+            "markup_percentage": 12.6
+          }
+        }
+      ],
+      "is_in_stock": false
+    },
+    {
+      "title": "Kohlrabi, White Vienna",
+      "common_name": "Kohlrabi",
+      "cultivar_name": "White Vienna",
+      "organic": false,
+      "url": "https://www.damseeds.com/products/white-vienna",
+      "vendor": "Dam Seeds",
+      "product_type": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0244/8248/0177/products/1441.jpg?v=1576373880",
+      "description": "Common kohlrabi with light green skin and white flesh. Best used for salad blends and microgreen mixes. 65-70 days Pkt contains 150-200 sds",
+      "tags": [
+        "catalogueNo:1441",
+        "microgreens",
+        "primaryCat:Kohlrabi",
+        "subCat:White Kohlrabi",
+        "topCat:V"
+      ],
+      "variations": [
+        {
+          "size": "25 grams",
+          "price": 6.35,
+          "sku": "1441B",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.025,
+          "original_weight_value": 25.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 6.35,
+            "shipping_cad": 0.32,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 6.67,
+            "markup_percentage": 5.1
+          }
+        },
+        {
+          "size": "100 grams",
+          "price": 12.1,
+          "sku": "1441C",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.1,
+          "original_weight_value": 100.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 12.1,
+            "shipping_cad": 1.29,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 13.39,
+            "markup_percentage": 10.7
+          }
+        },
+        {
+          "size": "450 grams",
+          "price": 30.65,
+          "sku": "1441D",
+          "is_variation_in_stock": true,
+          "weight_kg": 0.45,
+          "original_weight_value": 450.0,
+          "original_weight_unit": "g",
+          "canadian_costs": {
+            "base_price_cad": 30.65,
+            "shipping_cad": 5.81,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 36.45,
+            "markup_percentage": 18.9
+          }
+        },
+        {
+          "size": "2 kilograms",
+          "price": 97.2,
+          "sku": "1441E",
+          "is_variation_in_stock": true,
+          "weight_kg": 2.0,
+          "original_weight_value": 2.0,
+          "original_weight_unit": "kilo",
+          "canadian_costs": {
+            "base_price_cad": 97.2,
+            "shipping_cad": 25.8,
+            "duties_cad": 0.0,
+            "taxes_cad": 0.0,
+            "brokerage_cad": 0.0,
+            "total_cad": 123.0,
+            "markup_percentage": 26.5
+          }
+        }
+      ],
+      "is_in_stock": true
+    }
+  ]
+}

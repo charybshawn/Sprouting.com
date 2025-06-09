@@ -3,6 +3,7 @@ import os
 import json
 import time
 import re
+import random
 import urllib.request
 from urllib.error import URLError, HTTPError
 import xml.etree.ElementTree as ET
@@ -13,7 +14,8 @@ from seed_name_parser import parse_with_botanical_field_names
 from scraper_utils import (
     setup_logging, retry_on_failure, parse_weight_from_string,
     standardize_size_format, extract_price, save_products_to_json,
-    validate_product_data, clean_text, ScraperError, NetworkError
+    validate_product_data, clean_text, is_organic_product, ScrapingConfig,
+    calculate_canadian_import_costs, ScraperError, NetworkError
 )
 
 # --- Constants ---
@@ -22,6 +24,7 @@ SHARED_OUTPUT_DIR = "./scraper_data/json_files/damm_seeds"  # Shared with sprout
 SUPPLIER_NAME = "damseeds_com"
 HEADLESS = True # Set to False for debugging Playwright interactions
 TEST_MODE = False # Set to True to limit scraping for testing
+SPEED_MODE = "fast" # Options: "conservative", "safe", "fast", "aggressive"
 
 # --- Setup Logger ---
 logger = setup_logging("damseeds_scraper")
@@ -140,6 +143,9 @@ def parse_products_from_feed(feed_content):
             parsed_title_info = parse_with_botanical_field_names(original_title)
             product_data['common_name'] = parsed_title_info['common_name']
             product_data['cultivar_name'] = parsed_title_info['cultivar_name']
+            
+            # Detect if product is organic
+            product_data['organic'] = is_organic_product(original_title)
 
             link_element = entry.find('atom:link[@rel="alternate"][@type="text/html"]', namespaces)
             product_data['url'] = link_element.get('href') if link_element is not None else "N/A"
@@ -209,15 +215,27 @@ def parse_products_from_feed(feed_content):
                 sku_element = variant_element.find('s:sku', namespaces)
                 var_sku = sku_element.text.strip() if sku_element is not None and sku_element.text else "N/A"
                 
-                variants_data.append({
-                    'size': standardized_size,
-                    'price': var_price,
-                    'sku': var_sku,
-                    'is_variation_in_stock': False, # Default value, updated later with live data
-                    'weight_kg': weight_kg,
-                    'original_weight_value': original_value,
-                    'original_weight_unit': original_unit,
-                })
+                # Skip packet variations
+                if var_title.lower().strip() != "packet":
+                    # Calculate Canadian costs (domestic supplier - tax exempt for commercial use)
+                    cost_breakdown = calculate_canadian_import_costs(
+                        base_price=var_price or 0.0,
+                        source_currency="CAD",
+                        province="BC",
+                        weight_kg=weight_kg,
+                        commercial_use=True
+                    )
+                    
+                    variants_data.append({
+                        'size': standardized_size,
+                        'price': var_price,
+                        'sku': var_sku,
+                        'is_variation_in_stock': False, # Default value, updated later with live data
+                        'weight_kg': weight_kg,
+                        'original_weight_value': original_value,
+                        'original_weight_unit': original_unit,
+                        'canadian_costs': cost_breakdown
+                    })
             product_data['variations'] = variants_data
             
             # Overall stock status is not available from the feed
@@ -256,7 +274,9 @@ def scrape_product_page_details(page, product_url):
     logger.info(f"Scraping product page for stock details: {product_url}")
     variant_stock_info = {}
     try:
-        page.goto(product_url, timeout=60000, wait_until="domcontentloaded")
+        # Use configurable timeout and wait strategy from ScrapingConfig
+        config = ScrapingConfig(SPEED_MODE if 'SPEED_MODE' in globals() else "safe")
+        page.goto(product_url, timeout=config.get_page_timeout(), wait_until=config.wait_strategy)
         # Common Shopify pattern for embedding product data
         json_data_script_locator = page.locator('script[type="application/json"][data-product-json]')
         # Alternative common pattern (often used by Shopify themes, might be in various IDs)
@@ -385,6 +405,10 @@ def main():
     """Main function to orchestrate the scraping process."""
     logger.info("Starting Damseeds scraper main process.")
     overall_start_time = time.time()
+    
+    # Initialize scraping configuration
+    config = ScrapingConfig(SPEED_MODE)
+    logger.info(f"Using speed mode: {SPEED_MODE} (delay: {config.get_request_delay()}s, timeout: {config.get_page_timeout()}ms)")
 
     try:
         feed_content = fetch_atom_feed(ATOM_FEED_URL)
@@ -414,12 +438,15 @@ def main():
 
         products_to_process_details_for = atom_products
         if TEST_MODE:
-            logger.info(f"TEST_MODE is True. Limiting product detail scraping to 2 products.")
-            products_to_process_details_for = atom_products[:2]
+            test_count = min(5, len(atom_products))
+            products_to_process_details_for = random.sample(atom_products, test_count)
+            logger.info(f"TEST_MODE is True. Randomly selected {test_count} products for testing.")
+            for i, product in enumerate(products_to_process_details_for):
+                logger.info(f"  Test product {i+1}: {product['title']}")
 
         for i, atom_product_data in enumerate(products_to_process_details_for):
             logger.info(f"\nProcessing product {i+1}/{len(products_to_process_details_for)} for details: {atom_product_data['title']} ({atom_product_data['url']})" )
-            time.sleep(1) # Politeness delay
+            time.sleep(config.get_request_delay()) # Configurable politeness delay
 
             # Scrape the live product page for stock details
             try:
@@ -432,6 +459,10 @@ def main():
             updated_variants = []
             any_variant_in_stock = False
             for feed_variant in atom_product_data.get('variations', []):
+                # Skip packet variations (already filtered in feed parsing, but double-check)
+                if feed_variant.get('size', '').lower().strip() == "packet":
+                    continue
+                    
                 sku = feed_variant.get('sku')
                 live_info = live_variant_stock_info.get(sku) if sku else None
                 

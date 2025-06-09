@@ -63,6 +63,64 @@ def setup_logging(scraper_name: str, log_dir: str = "logs") -> logging.Logger:
     return logger
 
 
+class ScrapingConfig:
+    """Configuration class for scraping performance and safety settings."""
+    
+    def __init__(self, speed_mode: str = "safe"):
+        """
+        Initialize scraping configuration.
+        
+        Args:
+            speed_mode: "conservative", "safe", "fast", or "aggressive"
+        """
+        self.speed_mode = speed_mode
+        self._configure_for_mode()
+    
+    def _configure_for_mode(self):
+        """Set configuration values based on speed mode."""
+        if self.speed_mode == "conservative":
+            self.request_delay = 2.0          # 2 seconds between requests
+            self.page_timeout = 90000         # 90 seconds
+            self.element_timeout = 30000      # 30 seconds
+            self.concurrent_requests = 1      # Sequential only
+            self.wait_strategy = "load"       # Wait for all resources
+            
+        elif self.speed_mode == "safe":      # Recommended default
+            self.request_delay = 0.5          # 500ms between requests
+            self.page_timeout = 30000         # 30 seconds
+            self.element_timeout = 15000      # 15 seconds
+            self.concurrent_requests = 1      # Sequential only
+            self.wait_strategy = "domcontentloaded"
+            
+        elif self.speed_mode == "fast":
+            self.request_delay = 0.2          # 200ms between requests
+            self.page_timeout = 15000         # 15 seconds
+            self.element_timeout = 8000       # 8 seconds
+            self.concurrent_requests = 2      # 2 concurrent requests
+            self.wait_strategy = "domcontentloaded"
+            
+        elif self.speed_mode == "aggressive": # High risk
+            self.request_delay = 0.05         # 50ms between requests
+            self.page_timeout = 10000         # 10 seconds
+            self.element_timeout = 5000       # 5 seconds
+            self.concurrent_requests = 3      # 3 concurrent requests
+            self.wait_strategy = "domcontentloaded"
+        else:
+            raise ValueError(f"Unknown speed_mode: {self.speed_mode}")
+    
+    def get_request_delay(self) -> float:
+        """Get delay between requests in seconds."""
+        return self.request_delay
+    
+    def get_page_timeout(self) -> int:
+        """Get page load timeout in milliseconds."""
+        return self.page_timeout
+    
+    def get_element_timeout(self) -> int:
+        """Get element wait timeout in milliseconds."""
+        return self.element_timeout
+
+
 def retry_on_failure(max_attempts: int = 3, delay: float = 1.0, backoff: float = 2.0):
     """
     Decorator to retry a function on failure with exponential backoff.
@@ -112,10 +170,14 @@ def parse_weight_from_string(weight_str: str) -> Tuple[Optional[float], Optional
     conversions = {
         'kg': 1.0,
         'kgs': 1.0,
+        'kilo': 1.0,
+        'kilos': 1.0,
+        'killos': 1.0,  # Handle typo variant
         'kilogram': 1.0,
         'kilograms': 1.0,
         'g': 0.001,
         'gr': 0.001,
+        'gs': 0.001,  # Add support for "gs" abbreviation
         'gram': 0.001,
         'grams': 0.001,
         'lb': 0.453592,
@@ -127,35 +189,53 @@ def parse_weight_from_string(weight_str: str) -> Tuple[Optional[float], Optional
         'ounces': 0.0283495
     }
     
-    # Try different patterns
+    # Try different patterns - fractions MUST come first, then multiplication patterns
     patterns = [
-        r'(\d+(?:\.\d+)?)\s*(?:x\s*)?(\d+(?:\.\d+)?)\s*(kg|kgs|g|gr|gram|grams|lb|lbs|pound|pounds|oz|ounce|ounces)',
-        r'(\d+(?:\.\d+)?)\s*(kg|kgs|g|gr|gram|grams|lb|lbs|pound|pounds|oz|ounce|ounces)',
-        r'(\d+(?:\.\d+)?)\s*(?:x\s*)?(\d+(?:\.\d+)?)\s*(?:kilogram|kilograms)',
-        r'(\d+(?:\.\d+)?)\s*(?:kilogram|kilograms)'
+        r'(\d+)/(\d+)\s*(kg|kgs|kilo|kilos|killos|gs|g|gr|gram|grams|lb|lbs|pound|pounds|oz|ounce|ounces)',  # Fractions (FIRST)
+        r'(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*(kg|kgs|kilo|kilos|killos|gs|g|gr|gram|grams|lb|lbs|pound|pounds|oz|ounce|ounces)',  # Multiple weights (SECOND)
+        r'(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*(?:kilogram|kilograms)',  # Multiple kilograms (THIRD)
+        r'(\d+(?:\.\d+)?)\s*(kg|kgs|kilo|kilos|killos|gs|g|gr|gram|grams|lb|lbs|pound|pounds|oz|ounce|ounces)',  # Single weight
+        r'(\d+(?:\.\d+)?)\s*(?:kilogram|kilograms)'  # Kilogram without abbreviation
     ]
     
     for pattern in patterns:
         match = re.search(pattern, weight_str)
         if match:
             groups = match.groups()
-            if len(groups) == 3:  # Multiple weights (e.g., "5 x 500g")
+            
+            # Check if this is a fraction pattern (3 groups where first two are numbers)
+            if (len(groups) == 3 and 
+                pattern.startswith(r'(\d+)/(\d+)') and 
+                groups[0].isdigit() and groups[1].isdigit()):
+                # Handle fractions (e.g., "1/4 pound")
+                numerator = float(groups[0])
+                denominator = float(groups[1])
+                unit = groups[2]
+                total_weight = numerator / denominator
+                original_value = total_weight  # Fraction result in original units
+                
+            elif len(groups) == 3:  # Multiple weights (e.g., "5 x 500g")
                 quantity = float(groups[0])
                 weight = float(groups[1])
                 unit = groups[2]
                 total_weight = quantity * weight
+                original_value = total_weight  # Total in original units
+                
             elif len(groups) == 2:  # Single weight
                 total_weight = float(groups[0])
                 unit = groups[1]
+                original_value = total_weight  # Same as total for single weights
             else:
                 continue
                 
             # Convert to kg
             if unit in conversions:
                 weight_kg = total_weight * conversions[unit]
-                return weight_kg, total_weight, unit
+                # Normalize "killos" typo to "kilos"
+                normalized_unit = "kilos" if unit == "killos" else unit
+                return weight_kg, original_value, normalized_unit
             elif 'kilogram' in str(groups[-1]):
-                return total_weight, total_weight, 'kg'
+                return total_weight, original_value, 'kg'
     
     return None, None, None
 
@@ -176,24 +256,27 @@ def standardize_size_format(size_str: str) -> str:
     # Clean up the string
     size_str = size_str.strip()
     
-    # Common replacements
-    replacements = {
-        ' gram': 'g',
-        ' grams': 'g',
-        ' kilogram': ' kg',
-        ' kilograms': ' kg',
-        ' pound': ' lb',
-        ' pounds': ' lb',
-        ' ounce': ' oz',
-        ' ounces': ' oz',
-        'gram ': 'g ',
-        'grams ': 'g ',
-        'kilogram ': 'kg ',
-        'kilograms ': 'kg ',
-    }
+    # Normalize units to full names for consistency across scrapers
+    # Handle "gs" -> "grams"
+    size_str = re.sub(r'\bgs\b', 'grams', size_str)
     
-    for old, new in replacements.items():
-        size_str = size_str.replace(old, new)
+    # Handle "g" -> "grams" (but not in the middle of words)
+    size_str = re.sub(r'\bg\b', 'grams', size_str)
+    
+    # Handle "kg" -> "kilograms"
+    size_str = re.sub(r'\bkg\b', 'kilograms', size_str)
+    
+    # Handle "kilo" and "kilos" -> "kilograms"
+    size_str = re.sub(r'\bkilos?\b', 'kilograms', size_str)
+    
+    # Handle "killos" typo -> "kilograms"
+    size_str = re.sub(r'\bkillos\b', 'kilograms', size_str)
+    
+    # Handle "lb" and "lbs" -> "pounds"
+    size_str = re.sub(r'\blbs?\b', 'pounds', size_str)
+    
+    # Handle "oz" -> "ounces"
+    size_str = re.sub(r'\boz\b', 'ounces', size_str)
     
     # Ensure space between number and unit
     size_str = re.sub(r'(\d)([a-zA-Z])', r'\1 \2', size_str)
@@ -232,6 +315,154 @@ def extract_price(price_str: str) -> Optional[float]:
     return None
 
 
+def calculate_canada_post_shipping(weight_kg: float) -> float:
+    """
+    Calculate Canada Post Expedited Parcel shipping cost based on weight.
+    Based on real invoice data from sprouting.com with economies of scale.
+    
+    Args:
+        weight_kg: Package weight in kilograms
+        
+    Returns:
+        Shipping cost in CAD
+    """
+    if weight_kg <= 0:
+        return 0.0
+    
+    # Weight tiers based on real invoice data analysis
+    # Data points: 2kg->$25.80, 3kg->$26.70, 5kg->$35.09, 10kg->$41.52, 
+    # 11kg->$42.87, 13kg->$46.79, 31.8kg->$92.22, 35kg->$93.89, 52kg->$121.62
+    
+    if weight_kg <= 2:
+        # Small orders: $12.90/kg
+        return weight_kg * 12.90
+    elif weight_kg <= 5:
+        # Medium orders: $7.02/kg
+        return weight_kg * 7.02
+    elif weight_kg <= 15:
+        # Large orders: $4.15/kg average
+        return weight_kg * 4.15
+    elif weight_kg <= 35:
+        # Very large orders: $2.90/kg average
+        return weight_kg * 2.90
+    else:
+        # Bulk orders: $2.34/kg
+        return weight_kg * 2.34
+
+
+def calculate_canadian_import_costs(
+    base_price: float,
+    source_currency: str = "CAD",
+    province: str = "BC",
+    min_shipping: float = 0.0,
+    max_shipping: float = 0.0,
+    brokerage_fee: float = 0.0,
+    weight_kg: float = None,
+    commercial_use: bool = True
+) -> Dict[str, float]:
+    """
+    Calculate Canadian import costs including shipping, duties, taxes, and brokerage.
+    
+    Args:
+        base_price: Product price in source currency
+        source_currency: Currency of the base price (CAD, USD)
+        province: Canadian province for tax calculation
+        min_shipping: Minimum shipping cost in source currency
+        max_shipping: Maximum shipping cost in source currency
+        brokerage_fee: Brokerage fee in CAD
+        weight_kg: Product weight in kg for shipping calculation
+        commercial_use: Whether seeds are for commercial agricultural use (tax-exempt in Canada)
+        
+    Returns:
+        Dictionary with detailed cost breakdown
+    """
+    if base_price <= 0:
+        return {
+            'base_price_cad': 0.0,
+            'shipping_cad': 0.0,
+            'duties_cad': 0.0,
+            'taxes_cad': 0.0,
+            'brokerage_cad': 0.0,
+            'total_cad': 0.0,
+            'markup_percentage': 0.0
+        }
+    
+    # Exchange rates (approximate)
+    exchange_rates = {
+        'CAD': 1.0,
+        'USD': 1.37
+    }
+    
+    # Provincial tax rates (GST + PST/HST)
+    provincial_tax_rates = {
+        'BC': 0.12,  # 5% GST + 7% PST
+        'AB': 0.05,  # 5% GST only
+        'SK': 0.11,  # 5% GST + 6% PST
+        'MB': 0.12,  # 5% GST + 7% PST
+        'ON': 0.13,  # 13% HST
+        'QC': 0.15,  # 5% GST + 9.975% QST
+        'NB': 0.15,  # 15% HST
+        'NS': 0.15,  # 15% HST
+        'PE': 0.15,  # 15% HST
+        'NL': 0.15,  # 15% HST
+        'YT': 0.05,  # 5% GST only
+        'NT': 0.05,  # 5% GST only
+        'NU': 0.05   # 5% GST only
+    }
+    
+    # Convert to CAD
+    exchange_rate = exchange_rates.get(source_currency, 1.0)
+    base_price_cad = base_price * exchange_rate
+    
+    # Calculate shipping
+    if source_currency != 'CAD' and min_shipping > 0 and max_shipping > 0:
+        # International shipping calculation
+        if base_price < 25:
+            shipping_source = min_shipping
+        elif base_price > 400:
+            shipping_source = max_shipping
+        else:
+            # Linear interpolation
+            shipping_source = min_shipping + (base_price / 400) * (max_shipping - min_shipping)
+        shipping_cad = shipping_source * exchange_rate
+    elif source_currency == 'CAD' and weight_kg is not None:
+        # Domestic shipping using weight-based Canada Post algorithm
+        shipping_cad = calculate_canada_post_shipping(weight_kg)
+    else:
+        # No shipping for domestic suppliers without weight
+        shipping_cad = 0.0
+    
+    # Duties (seeds are typically duty-free)
+    duties_cad = 0.0
+    
+    # Taxes (on product value only, not shipping)
+    # Seeds for commercial agricultural use are tax-exempt in Canada from Canadian suppliers
+    if source_currency == 'CAD' and commercial_use:
+        taxes_cad = 0.0  # Tax-exempt for commercial agricultural seeds from Canadian suppliers
+    else:
+        tax_rate = provincial_tax_rates.get(province.upper(), 0.13)  # Default to ON rate
+        taxes_cad = base_price_cad * tax_rate
+    
+    # Brokerage (only for international shipments)
+    brokerage_cad = brokerage_fee if source_currency != 'CAD' else 0.0
+    
+    # Total cost
+    total_cad = base_price_cad + shipping_cad + duties_cad + taxes_cad + brokerage_cad
+    
+    # Markup percentage
+    markup_percentage = ((total_cad - base_price_cad) / base_price_cad) * 100 if base_price_cad > 0 else 0.0
+    
+    return {
+        'base_price_cad': round(base_price_cad, 2),
+        'shipping_cad': round(shipping_cad, 2),
+        'duties_cad': round(duties_cad, 2),
+        'taxes_cad': round(taxes_cad, 2),
+        'brokerage_cad': round(brokerage_cad, 2),
+        'total_cad': round(total_cad, 2),
+        'markup_percentage': round(markup_percentage, 1)
+    }
+
+
 def save_products_to_json(
     products: List[Dict[str, Any]], 
     output_dir: str, 
@@ -259,10 +490,10 @@ def save_products_to_json(
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
     
-    # Generate filename with timestamp
+    # Generate filename with timestamp only (since each scraper has its own directory)
     timestamp = datetime.now()
     timestamp_str = timestamp.strftime("%Y%m%d_%H%M%S")
-    filename = f"{filename_prefix}_{timestamp_str}.json"
+    filename = f"{timestamp_str}.json"
     filepath = os.path.join(output_dir, filename)
     
     # Prepare data structure
@@ -283,6 +514,25 @@ def save_products_to_json(
         logger.info(f"Saved {len(products)} products to {filepath}")
     
     return filepath
+
+
+def is_organic_product(title: str) -> bool:
+    """
+    Check if a product is organic based on its title.
+    
+    Args:
+        title: Product title to check
+        
+    Returns:
+        True if product contains organic indicators, False otherwise
+    """
+    if not title:
+        return False
+    
+    title_lower = title.lower()
+    organic_keywords = ['organic', 'biologique', 'bio ', ' bio']
+    
+    return any(keyword in title_lower for keyword in organic_keywords)
 
 
 def validate_product_data(product: Dict[str, Any], logger: Optional[logging.Logger] = None) -> bool:

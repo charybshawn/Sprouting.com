@@ -4,6 +4,7 @@ import csv
 import time
 import json
 import re 
+import random
 import argparse
 from urllib.parse import urljoin
 from datetime import datetime
@@ -13,8 +14,8 @@ from seed_name_parser import parse_with_botanical_field_names
 from scraper_utils import (
     setup_logging, retry_on_failure, parse_weight_from_string,
     standardize_size_format, extract_price, save_products_to_json,
-    validate_product_data, clean_text, make_absolute_url,
-    ScraperError, NetworkError
+    validate_product_data, clean_text, make_absolute_url, is_organic_product,
+    calculate_canadian_import_costs, ScraperError, NetworkError
 )
 
 """
@@ -30,6 +31,7 @@ from scraper_utils import (
             "title": "Product Name",           # Full product title
             "common_name": "Sunflower",        # Common name (e.g., "Sunflower")
             "cultivar_name": "Black Oil",      # Cultivar name (e.g., "Black Oil") 
+            "organic": true,                   # True if product title contains organic indicators
             "url": "https://example.com/product/sunflower", # Product page URL
             "is_in_stock": true,               # Overall product stock status
             "variations": [                    # Array of product variations
@@ -359,7 +361,21 @@ def scrape_product_details(page, product_url):
                         # Parse weight from size description
                         parsed_weight_info = parse_weight_from_string(size)
                         
+                        # Skip packet variations
+                        if "packet" in size.lower():
+                            logger.info(f"    Skipping variation: {size} - labeled as packet")
+                            continue
+                        
                         standardized_size = standardize_size_format(size, parsed_weight_info)
+                        
+                        # Calculate Canadian costs (domestic supplier - tax exempt for commercial use)
+                        cost_breakdown = calculate_canadian_import_costs(
+                            base_price=price,
+                            source_currency="CAD",
+                            province="BC",
+                            weight_kg=parsed_weight_info['weight_kg'] if parsed_weight_info else None,
+                            commercial_use=True
+                        )
                         
                         # Add the variation to our product data
                         variation_data = {
@@ -369,7 +385,8 @@ def scrape_product_details(page, product_url):
                             'weight_kg': parsed_weight_info['weight_kg'] if parsed_weight_info else None,
                             'original_weight_value': parsed_weight_info['value'] if parsed_weight_info else None,
                             'original_weight_unit': parsed_weight_info['unit'] if parsed_weight_info else None,
-                            'sku': sku
+                            'sku': sku,
+                            'canadian_costs': cost_breakdown
                         }
                         
                         product_data['variations'].append(variation_data)
@@ -420,18 +437,32 @@ def scrape_product_details(page, product_url):
                     # Parse weight from size
                     parsed_weight_info = parse_weight_from_string(size)
                     
-                    standardized_size = standardize_size_format(size, parsed_weight_info)
-                    
-                    # Add simple product variation
-                    product_data['variations'].append({
-                        'size': standardized_size,
-                        'price': price,
-                        'is_variation_in_stock': is_in_stock,
-                        'weight_kg': parsed_weight_info['weight_kg'] if parsed_weight_info else None,
-                        'original_weight_value': parsed_weight_info['value'] if parsed_weight_info else None,
-                        'original_weight_unit': parsed_weight_info['unit'] if parsed_weight_info else None,
-                        'sku': page.locator('.sku').text_content().strip() if page.locator('.sku').count() > 0 else 'N/A'
-                    })
+                    # Skip packet variations
+                    if "packet" not in size.lower():
+                        standardized_size = standardize_size_format(size, parsed_weight_info)
+                        
+                        # Calculate Canadian costs (domestic supplier - tax exempt for commercial use)
+                        cost_breakdown = calculate_canadian_import_costs(
+                            base_price=price,
+                            source_currency="CAD",
+                            province="BC",
+                            weight_kg=parsed_weight_info['weight_kg'] if parsed_weight_info else None,
+                            commercial_use=True
+                        )
+                        
+                        # Add simple product variation
+                        product_data['variations'].append({
+                            'size': standardized_size,
+                            'price': price,
+                            'is_variation_in_stock': is_in_stock,
+                            'weight_kg': parsed_weight_info['weight_kg'] if parsed_weight_info else None,
+                            'original_weight_value': parsed_weight_info['value'] if parsed_weight_info else None,
+                            'original_weight_unit': parsed_weight_info['unit'] if parsed_weight_info else None,
+                            'sku': page.locator('.sku').text_content().strip() if page.locator('.sku').count() > 0 else 'N/A',
+                            'canadian_costs': cost_breakdown
+                        })
+                    else:
+                        logger.info(f"    Skipping simple product: {size} - labeled as packet")
                     
                     product_data['is_in_stock'] = is_in_stock
                     logger.info(f"Processed simple product without variations for {current_page_effective_url}")
@@ -456,6 +487,15 @@ def scrape_product_details(page, product_url):
         error_note_for_placeholder = product_data.get('scrape_error', '') # Should be a string
         if not error_note_for_placeholder: error_note_for_placeholder = 'Unknown issue during scraping or simple product without variations data.'
         
+        # Calculate Canadian costs for error case
+        cost_breakdown = calculate_canadian_import_costs(
+            base_price=0.0,
+            source_currency="CAD",
+            province="BC",
+            weight_kg=None,
+            commercial_use=True
+        )
+        
         product_data['variations'].append({
             'size': 'Default (error or no data)',
             'price': 0.0,
@@ -464,7 +504,8 @@ def scrape_product_details(page, product_url):
             'original_weight_value': None,
             'original_weight_unit': None,
             'sku': 'N/A',
-            'error_note': error_note_for_placeholder
+            'error_note': error_note_for_placeholder,
+            'canadian_costs': cost_breakdown
         })
         product_data['is_in_stock'] = False # Ensure overall stock is false if ended up here
     
@@ -547,6 +588,7 @@ def scrape_product_list(page, max_pages_override=None):
                         'title': title,
                         'common_name': parsed_title_info['common_name'],
                         'cultivar_name': parsed_title_info['cultivar_name'],
+                        'organic': is_organic_product(title),
                         'url': product_url
                     }
                     all_products_on_list_pages.append(product_data)
@@ -636,8 +678,11 @@ def main_sync():
                     products_to_scrape_details_for = filtered_products
                     logger.info(f"Filtered to {len(products_to_scrape_details_for)} products matching cultivar: {args.cultivar}")
                 elif TEST_MODE:
-                    products_to_scrape_details_for = basic_target_products[:2] # Limit detail scraping in test mode
-                    logger.info(f"TEST_MODE: Will scrape details for {len(products_to_scrape_details_for)} products.")
+                    test_count = min(5, len(basic_target_products))
+                    products_to_scrape_details_for = random.sample(basic_target_products, test_count)
+                    logger.info(f"TEST_MODE: Randomly selected {test_count} products for testing.")
+                    for i, product in enumerate(products_to_scrape_details_for):
+                        logger.info(f"  Test product {i+1}: {product['title']}")
                 else:
                     products_to_scrape_details_for = basic_target_products
                     logger.info(f"Will scrape details for all {len(products_to_scrape_details_for)} products.")
